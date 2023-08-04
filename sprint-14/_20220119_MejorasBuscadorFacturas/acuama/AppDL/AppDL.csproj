@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC50E15C-C767-4762-B829-6B2C8BB021DB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DL</RootNamespace>
+    <AssemblyName>DL</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EncrypterBL">
+      <HintPath>..\Lib\EncrypterBL.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Almacen\cAlmacenDL.cs" />
+    <Compile Include="Almacen\cAnaConjuntoAnaDL.cs" />
+    <Compile Include="Almacen\cAnalisisBotellasDL.cs" />
+    <Compile Include="Almacen\cAnalisisDL.cs" />
+    <Compile Include="Almacen\cAnalisisMuestrasDL.cs" />
+    <Compile Include="Almacen\cAnalisisResultadosDL.cs" />
+    <Compile Include="Almacen\cAnaParamDL.cs" />
+    <Compile Include="Almacen\cAreasDL.cs" />
+    <Compile Include="Almacen\cBotellasDL.cs" />
+    <Compile Include="Almacen\cCaracteristicaCompTiposDL.cs" />
+    <Compile Include="Almacen\cCaracteristicasDL.cs" />
+    <Compile Include="Almacen\cCaracteristicasTiposDL.cs" />
+    <Compile Include="Almacen\cComCarDL.cs" />
+    <Compile Include="Almacen\cComOpeDL.cs" />
+    <Compile Include="Almacen\cComponentesDL.cs" />
+    <Compile Include="Almacen\cConjuntoAnaDL.cs" />
+    <Compile Include="Almacen\cDepartamentoDL.cs" />
+    <Compile Include="Almacen\cEntradaDL.cs" />
+    <Compile Include="Almacen\cFamiliaDL.cs" />
+    <Compile Include="Almacen\cGeneracionMuestrasPorConjuntoAnalisisDL.cs" />
+    <Compile Include="Almacen\cLaboratoriosDL.cs" />
+    <Compile Include="Almacen\cMaterialesDL.cs" />
+    <Compile Include="Almacen\cMetodosEnsayoDL.cs" />
+    <Compile Include="Almacen\cMotCierreDL.cs" />
+    <Compile Include="Almacen\cMovmpsDL.cs" />
+    <Compile Include="Almacen\cMpiDL.cs" />
+    <Compile Include="Almacen\cMpsDetalleDL.cs" />
+    <Compile Include="Almacen\cMpsDL.cs" />
+    <Compile Include="Almacen\cMpsTarifasDL.cs" />
+    <Compile Include="Almacen\cMuestrasDL.cs" />
+    <Compile Include="Almacen\cOperacionesActDL.cs" />
+    <Compile Include="Almacen\cOperacionesCompTiposDL.cs" />
+    <Compile Include="Almacen\cOperacionesDL.cs" />
+    <Compile Include="Almacen\cOrdenTrabajoTrabDL.cs" />
+    <Compile Include="Almacen\cOtCategoriasDL.cs" />
+    <Compile Include="Almacen\cOtDatosDL.cs" />
+    <Compile Include="Almacen\cOtManComDL.cs" />
+    <Compile Include="Almacen\cOtManOpeActDL.cs" />
+    <Compile Include="Almacen\cOtTiposCategoriasDL.cs" />
+    <Compile Include="Almacen\cOtTiposDatosDL.cs" />
+    <Compile Include="Almacen\cOtDatosValorDL.cs" />
+    <Compile Include="Almacen\cOtTiposDefConDL.cs" />
+    <Compile Include="Almacen\cPeriodicidadDL.cs" />
+    <Compile Include="Almacen\cProductosDL.cs" />
+    <Compile Include="Almacen\cPuntoMDL.cs" />
+    <Compile Include="Almacen\cPuntoMuestreoCaracteristicasValoresDL.cs" />
+    <Compile Include="Almacen\cPuntoMuestreoSubtiposDL.cs" />
+    <Compile Include="Almacen\cPuntoMuestreoCaracteristicasDL.cs" />
+    <Compile Include="Almacen\cPuntoMuestreoTiposCarDL.cs" />
+    <Compile Include="Almacen\cPuntoMuestreoTiposDL.cs" />
+    <Compile Include="Almacen\cReclinDL.cs" />
+    <Compile Include="Almacen\cRecuentoDL.cs" />
+    <Compile Include="Almacen\cContadorCambioDL.cs" />
+    <Compile Include="Almacen\cComponentesTiposDL.cs" />
+    <Compile Include="Almacen\cRefereniasProveedoresDL.cs" />
+    <Compile Include="Almacen\cStockDL.cs" />
+    <Compile Include="Almacen\cTiposAditivoDL.cs" />
+    <Compile Include="Almacen\cTiposEnvaseDL.cs" />
+    <Compile Include="Almacen\cTiposParametroAnalisisDL.cs" />
+    <Compile Include="Catastro\cAcometidasDL.cs" />
+    <Compile Include="Catastro\cBonificacionesDL.cs" />
+    <Compile Include="Catastro\cBonificacionesEstadosDL.cs" />
+    <Compile Include="Catastro\cBonificacionesFacturarTrabDL.cs" />
+    <Compile Include="Catastro\cBonificacionesRegESDL.cs" />
+    <Compile Include="Catastro\cBonificacionesSituacionDL.cs" />
+    <Compile Include="Catastro\cBonificacionesTiposDL.cs" />
+    <Compile Include="Catastro\cBonificacionesTrabDL.cs" />
+    <Compile Include="Catastro\cCatalogosPaisesDL.cs" />
+    <Compile Include="Catastro\cCatalogosLocalidadDL.cs" />
+    <Compile Include="Catastro\cContadoresTiposDL.cs" />
+    <Compile Include="Catastro\cContratosComunitariosDL.cs" />
+    <Compile Include="Catastro\cEquiposTiposDL.cs" />
+    <Compile Include="Catastro\cMandatosDL.cs" />
+    <Compile Include="Catastro\cModConDL.cs" />
+    <Compile Include="Catastro\cOficinasContablesDL.cs" />
+    <Compile Include="Catastro\cOrganismosDL.cs" />
+    <Compile Include="Catastro\cOrganismosGestoresDL.cs" />
+    <Compile Include="Catastro\cTiposViaDL.cs" />
+    <Compile Include="Catastro\cTiposVipDL.cs" />
+    <Compile Include="Catastro\cUnidadesTramitadorasDL.cs" />
+    <Compile Include="Cobros\cApremiosCabDL.cs" />
+    <Compile Include="Cobros\cCobroApremiosDL.cs" />
+    <Compile Include="Cobros\cApremiosLinDL.cs" />
+    <Compile Include="Cobros\cApremiosTrabDL.cs" />
+    <Compile Include="Cobros\cCobrosLinDesgloseDL.cs" />
+    <Compile Include="Cobros\cBicDL.cs" />
+    <Compile Include="Cobros\cComisionesFacturarTrabAgrupadasDL.cs" />
+    <Compile Include="Cobros\cAgentesCobrosDL.cs" />
+    <Compile Include="Cobros\cComisionesFacturarTrabDL.cs" />
+    <Compile Include="Cobros\cCuaderno57DL.cs" />
+    <Compile Include="Cobros\cDeudasClienteDL.cs" />
+    <Compile Include="Cobros\cEfectosPendientesDL.cs" />
+    <Compile Include="Cobros\cComisionesDL.cs" />
+    <Compile Include="Cobros\cExpedientesCorteTiposDL.cs" />
+    <Compile Include="Cobros\cLiquidacionesDL.cs" />
+    <Compile Include="Cobros\cBOEDL.cs" />
+    <Compile Include="Cobros\cSapCobrosDL.cs" />
+    <Compile Include="Comun\cDataBaseOpsDL.cs" />
+    <Compile Include="Comun\cMenuPerfilTitulosDL.cs" />
+    <Compile Include="Comun\dSimpleBD.cs" />
+    <Compile Include="Comun\dSimpleBDSOA.cs" />
+    <Compile Include="Contabilidad\cMod340DL.cs" />
+    <Compile Include="Contabilidad\cMod347DL.cs" />
+    <Compile Include="Contabilidad\cOrdenSAPDL.cs" />
+    <Compile Include="Contabilidad\cSAPMaestrosDL.cs" />
+    <Compile Include="Contabilidad\cTraspasoAsientosDL.cs" />
+    <Compile Include="Contabilidad\cTraspasoAsientosTrabDL.cs" />
+    <Compile Include="Contabilidad\cVtoProDL.cs" />
+    <Compile Include="Almacen\cZonabasDL.cs" />
+    <Compile Include="Catastro\cCartaTiposDL.cs" />
+    <Compile Include="Catastro\cCondicionDL.cs" />
+    <Compile Include="Catastro\cCondicionesCtrDL.cs" />
+    <Compile Include="Catastro\cCondicionesServiciosDL.cs" />
+    <Compile Include="Catastro\cCondicionesTarifasDL.cs" />
+    <Compile Include="Catastro\cCondicionesTiposDL.cs" />
+    <Compile Include="Catastro\cContratoservicioDL.cs" />
+    <Compile Include="Catastro\cContadorDL.cs" />
+    <Compile Include="Catastro\cDocContratosDL.cs" />
+    <Compile Include="Catastro\cDocumentacionDL.cs" />
+    <Compile Include="Catastro\cPackServDL.cs" />
+    <Compile Include="Catastro\cPackServLinDL.cs" />
+    <Compile Include="Catastro\cPoblacionesDL.cs" />
+    <Compile Include="Catastro\cProvinciasDL.cs" />
+    <Compile Include="Catastro\cServicioDefConDL.cs" />
+    <Compile Include="Contabilidad\cBalancesDefiniblesDetCtaDL.cs" />
+    <Compile Include="Contabilidad\cBalancesDefiniblesDetDL.cs" />
+    <Compile Include="Contabilidad\cBalancesDefiniblesDL.cs" />
+    <Compile Include="Cobros\cCobrosLinDL.cs" />
+    <Compile Include="Cobros\cCobrosDL.cs" />
+    <Compile Include="Cobros\cDevBancariaDL.cs" />
+    <Compile Include="Cobros\cExpedientesCorteDL.cs" />
+    <Compile Include="Cobros\cPpagosDL.cs" />
+    <Compile Include="Cobros\cRemesasDL.cs" />
+    <Compile Include="Comun\cAccionesFrecuentesDL.cs" />
+    <Compile Include="Contabilidad\cActivoDL.cs" />
+    <Compile Include="Contabilidad\cActivosGrupoDL.cs" />
+    <Compile Include="Contabilidad\cApartadoDL.cs" />
+    <Compile Include="Contabilidad\cCapituloDL.cs" />
+    <Compile Include="Contabilidad\cConceptosContablesDL.cs" />
+    <Compile Include="Contabilidad\cContabVentasDL.cs" />
+    <Compile Include="Contabilidad\cMovConDL.cs" />
+    <Compile Include="Contabilidad\cBalancesDefiniblesTiposDL.cs" />
+    <Compile Include="Contabilidad\cVtoProTrabDL.cs" />
+    <Compile Include="Excel\cExcelConsultaDL.cs" />
+    <Compile Include="Excel\cExcelFiltroDL.cs" />
+    <Compile Include="Facturacion\cCausasExencionDL.cs" />
+    <Compile Include="Facturacion\cFaclinDesgloseDL.cs" />
+    <Compile Include="Almacen\cFacProTotalesDL.cs" />
+    <Compile Include="Facturacion\cFacturasFicherosIntercambioCabDL.cs" />
+    <Compile Include="Facturacion\cFacturasFicherosIntercambioLinDL.cs" />
+    <Compile Include="Facturacion\cFacturasSIIDesgloseDL.cs" />
+    <Compile Include="Facturacion\cFacturasSIIDL.cs" />
+    <Compile Include="Facturacion\cFacturasSIILoteDL.cs" />
+    <Compile Include="Facturacion\cInterlocutoresFacturaeDL.cs" />
+    <Compile Include="Facturacion\cSERESDL.cs" />
+    <Compile Include="Facturacion\cTPLLecturasFicherosJSONDL.cs" />
+    <Compile Include="Facturacion\cTPLLecturasDL.cs" />
+    <Compile Include="Facturacion\cTPLLecturasFicherosXMLDL.cs" />
+    <Compile Include="Facturacion\cSituacionFacturasDL.cs" />
+    <Compile Include="Facturacion\cFacuraDeudaEstados.cs" />
+    <Compile Include="Maestros\cImputacionManualDL.cs" />
+    <Compile Include="Maestros\cImputacionGruposDL.cs" />
+    <Compile Include="Maestros\cDiasNoLaborablesDL.cs" />
+    <Compile Include="Maestros\cRegistroEntradasArchivosDL.cs" />
+    <Compile Include="Maestros\cRegistroEntradasDL.cs" />
+    <Compile Include="Maestros\cRegistroEntradasTipoDL.cs" />
+    <Compile Include="Maestros\cSAP_TPagoDL.cs" />
+    <Compile Include="Online\cSolicitudesDocumentosDL.cs" />
+    <Compile Include="Online\cTextosDL.cs" />
+    <Compile Include="PanelControl\cPanelControlDL.cs" />
+    <Compile Include="Sistema\cEMailTemplatesDL.cs" />
+    <Compile Include="Sistema\cErrorLog.cs" />
+    <Compile Include="Sistema\cFTPSiteDL.cs" />
+    <Compile Include="Sistema\cImpuestosDL.cs" />
+    <Compile Include="Sistema\cMotivosExencionDL.cs" />
+    <Compile Include="Sistema\cOficinasDL.cs" />
+    <Compile Include="Sistema\cOficinasTiposDL.cs" />
+    <Compile Include="Contabilidad\cPartidaDL.cs" />
+    <Compile Include="Contabilidad\cCuentasDL.cs" />
+    <Compile Include="Contabilidad\cPlantillasApuntesDL.cs" />
+    <Compile Include="Contabilidad\cPlantillasApuntesLineasDL.cs" />
+    <Compile Include="Contabilidad\cPresupuestosDL.cs" />
+    <Compile Include="Contabilidad\cTipoDiarioDL.cs" />
+    <Compile Include="Contabilidad\cFacProTrabDL.cs" />
+    <Compile Include="Facturacion\cDiferidosDL.cs" />
+    <Compile Include="Almacen\cFacProDL.cs" />
+    <Compile Include="Facturacion\cFacturasDL.cs" />
+    <Compile Include="Facturacion\cLineasFacturaDL.cs" />
+    <Compile Include="Facturacion\cNotificacionesDL.cs" />
+    <Compile Include="Facturacion\cPerzonaloteDL.cs" />
+    <Compile Include="Facturacion\cPerzonaDL.cs" />
+    <Compile Include="Facturacion\cSituacionDL.cs" />
+    <Compile Include="Facturacion\cUsosDL.cs" />
+    <Compile Include="Maestros\cBancosDL.cs" />
+    <Compile Include="Catastro\cContratoDL.cs" />
+    <Compile Include="Catastro\cCtrConDL.cs" />
+    <Compile Include="Maestros\cReclamacionLineasDL.cs" />
+    <Compile Include="Maestros\cSgreclamacionDL.cs" />
+    <Compile Include="Maestros\cGreclamacionDL.cs" />
+    <Compile Include="Cobros\cMedpcDL.cs" />
+    <Compile Include="Cobros\cPpcajaDL.cs" />
+    <Compile Include="Cobros\cPpoficinaDL.cs" />
+    <Compile Include="Catastro\cMarconDL.cs" />
+    <Compile Include="Almacen\cPedProDL.cs" />
+    <Compile Include="Almacen\cSectortDL.cs" />
+    <Compile Include="Almacen\cOrdenTrabajoDL.cs" />
+    <Compile Include="Almacen\cOttipoDL.cs" />
+    <Compile Include="Almacen\cSubclasifotDL.cs" />
+    <Compile Include="Catastro\cClaseconDL.cs" />
+    <Compile Include="Catastro\cEmplazaDL.cs" />
+    <Compile Include="Facturacion\cIncilecDL.cs" />
+    <Compile Include="Comun\cColoresDL.cs" />
+    <Compile Include="Comun\cMenuPerfilDL.cs" />
+    <Compile Include="Cobros\cPpentidadDL.cs" />
+    <Compile Include="Facturacion\cOrilecDL.cs" />
+    <Compile Include="Facturacion\cPeriodoDL.cs" />
+    <Compile Include="Facturacion\cTarifaDL.cs" />
+    <Compile Include="Facturacion\cTarvalDL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Catastro\cCalleDL.cs" />
+    <Compile Include="Catastro\cDocidenDL.cs" />
+    <Compile Include="Maestros\cImputacionDL.cs" />
+    <Compile Include="Almacen\cUmedidaDL.cs" />
+    <Compile Include="Catastro\cInmuebleDL.cs" />
+    <Compile Include="Maestros\cMpresentacionDL.cs" />
+    <Compile Include="Maestros\cTreclamacionDL.cs" />
+    <Compile Include="Maestros\cProveedorDL.cs" />
+    <Compile Include="Almacen\cSubfamiliaDL.cs" />
+    <Compile Include="Almacen\cTipoMovimientoDL.cs" />
+    <Compile Include="Catastro\cZonaDL.cs" />
+    <Compile Include="Comun\dBD.cs" />
+    <Compile Include="Comun\dFilterSQLBuilder.cs" />
+    <Compile Include="Comun\dParameter.cs" />
+    <Compile Include="Comun\dParamsCollection.cs" />
+    <Compile Include="Comun\dValidator.cs" />
+    <Compile Include="Catastro\cClienteDL.cs" />
+    <Compile Include="Almacen\cClasifotDL.cs" />
+    <Compile Include="Catastro\cMunicipioDL.cs" />
+    <Compile Include="Maestros\cForpagoDL.cs" />
+    <Compile Include="Catastro\cServicioDL.cs" />
+    <Compile Include="Maestros\cNacionDL.cs" />
+    <Compile Include="Maestros\cIdiomaDL.cs" />
+    <Compile Include="Online\cSolicitudesDatosDL.cs" />
+    <Compile Include="Online\cSolicitudesDL.cs" />
+    <Compile Include="Online\cSolicitudesTiposDL.cs" />
+    <Compile Include="Online\cUsuariosOnlineDL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Comun\cAccesosDL.cs" />
+    <Compile Include="Sistema\cContratistaDL.cs" />
+    <Compile Include="Sistema\cEMailDL.cs" />
+    <Compile Include="Online\cEMailOficinaOnlineDL.cs" />
+    <Compile Include="Sistema\cEmpleadoDL.cs" />
+    <Compile Include="Sistema\cFormatoImpresionDL.cs" />
+    <Compile Include="Sistema\cMensajeDL.cs" />
+    <Compile Include="Sistema\cEMailTemplateTypesDL.cs" />
+    <Compile Include="Sistema\cParametroDL.cs" />
+    <Compile Include="Sistema\cParametroTiposDL.cs" />
+    <Compile Include="Sistema\cPerfilDL.cs" />
+    <Compile Include="Maestros\cReclamacionesDL.cs" />
+    <Compile Include="Sistema\cPlantillasWordDL.cs" />
+    <Compile Include="Sistema\cPublicacionesDL.cs" />
+    <Compile Include="Sistema\cRetencionDL.cs" />
+    <Compile Include="Sistema\cSerieDL.cs" />
+    <Compile Include="Sistema\cSociedadDL.cs" />
+    <Compile Include="Sistema\cUsuarioDL.cs" />
+    <Compile Include="Tasks\cTaskManagerDL.cs" />
+    <Compile Include="Tasks\cTaskManagerParametersDL.cs" />
+    <Compile Include="WebService\webSrvContratosDL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppBO\AppBO.csproj">
+      <Project>{09A0D7AF-C44D-4519-95B3-810551F328C1}</Project>
+      <Name>BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

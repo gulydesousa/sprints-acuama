@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09A0D7AF-C44D-4519-95B3-810551F328C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BO</RootNamespace>
+    <AssemblyName>BO</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EncrypterBL">
+      <HintPath>..\Lib\EncrypterBL.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\Lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Almacen\cAlmacenBO.cs" />
+    <Compile Include="Almacen\cAnaConjuntoAnaBO.cs" />
+    <Compile Include="Almacen\cAnalisisBO.cs" />
+    <Compile Include="Almacen\cAnalisisBotellaBO.cs" />
+    <Compile Include="Almacen\cAnalisisMuestraBO.cs" />
+    <Compile Include="Almacen\cAnalisisResultadoBO.cs" />
+    <Compile Include="Almacen\cAnaParamBO.cs" />
+    <Compile Include="Almacen\cAreaBO.cs" />
+    <Compile Include="Almacen\cBotellaBO.cs" />
+    <Compile Include="Almacen\cCaracteristicaBO.cs" />
+    <Compile Include="Almacen\cCaracteristicaCompTiposBO.cs" />
+    <Compile Include="Almacen\cCaracteristicasTiposBO.cs" />
+    <Compile Include="Almacen\cComCarBO.cs" />
+    <Compile Include="Almacen\cComOpeBO.cs" />
+    <Compile Include="Almacen\cComponenteBO.cs" />
+    <Compile Include="Almacen\cConjuntoAnaBO.cs" />
+    <Compile Include="Almacen\cDepartamentoBO.cs" />
+    <Compile Include="Almacen\cEntradaBO.cs" />
+    <Compile Include="Almacen\cEntradaTotalesBO.cs" />
+    <Compile Include="Almacen\cFamiliaBO.cs" />
+    <Compile Include="Almacen\cGeneracionMuestrasPorConjuntoAnalisisBO.cs" />
+    <Compile Include="Almacen\cLaboratorioBO.cs" />
+    <Compile Include="Almacen\cMaterialesBO.cs" />
+    <Compile Include="Almacen\cMetodoEnsayoBO.cs" />
+    <Compile Include="Almacen\cMotCierreBO.cs" />
+    <Compile Include="Almacen\cMovmpsBO.cs" />
+    <Compile Include="Almacen\cMpiBO.cs" />
+    <Compile Include="Almacen\cMpsBO.cs" />
+    <Compile Include="Almacen\cMpsDetalleBO.cs" />
+    <Compile Include="Almacen\cMpsTarifasBO.cs" />
+    <Compile Include="Almacen\cMuestraBO.cs" />
+    <Compile Include="Almacen\cOperacionActBO.cs" />
+    <Compile Include="Almacen\cOperacionBO.cs" />
+    <Compile Include="Almacen\cOperacionCompTiposBO.cs" />
+    <Compile Include="Almacen\cOrdenTrabajoTrabBO.cs" />
+    <Compile Include="Almacen\cOtCategoriaBO.cs" />
+    <Compile Include="Almacen\cOtDatoBO.cs" />
+    <Compile Include="Almacen\cOtManComBO.cs" />
+    <Compile Include="Almacen\cOtManOpeActBO.cs" />
+    <Compile Include="Almacen\cOtTiposCategoriasBO.cs" />
+    <Compile Include="Almacen\cOtTiposDatosBO.cs" />
+    <Compile Include="Almacen\cOtDatosValorBO.cs" />
+    <Compile Include="Almacen\cOtTipoDefConBO.cs" />
+    <Compile Include="Almacen\cPeriodicidadBO.cs" />
+    <Compile Include="Almacen\cProductoBO.cs" />
+    <Compile Include="Almacen\cPuntoMBO.cs" />
+    <Compile Include="Almacen\cPuntoMuestreoCaracteristicaValorBO.cs" />
+    <Compile Include="Almacen\cPuntoMuestreoSubtipoBO.cs" />
+    <Compile Include="Almacen\cPuntoMuestreoTipoBO.cs" />
+    <Compile Include="Almacen\cPuntoMuestreoCaracteristicaBO.cs" />
+    <Compile Include="Almacen\cPuntoMuestreoTipoCarBO.cs" />
+    <Compile Include="Almacen\cReclinBO.cs" />
+    <Compile Include="Almacen\cRecuentoBO.cs" />
+    <Compile Include="Almacen\cContadorCambioBO.cs" />
+    <Compile Include="Almacen\cComponentesTiposBO.cs" />
+    <Compile Include="Almacen\cReferenciaProveedorBO.cs" />
+    <Compile Include="Almacen\cStockBO.cs" />
+    <Compile Include="Almacen\cTipoAditivoBO.cs" />
+    <Compile Include="Almacen\cTipoEnvaseBO.cs" />
+    <Compile Include="Almacen\cTipoParametroAnalisisBO.cs" />
+    <Compile Include="Catastro\cAcometidaBO.cs" />
+    <Compile Include="Catastro\cBonificacionBO.cs" />
+    <Compile Include="Catastro\cBonificacionesEstadoBO.cs" />
+    <Compile Include="Catastro\cBonificacionesRegESBO.cs" />
+    <Compile Include="Catastro\cBonificacionesSituacionBO.cs" />
+    <Compile Include="Catastro\cBonificacionesTipoBO.cs" />
+    <Compile Include="Catastro\cBonificacionFacturarTrabBO.cs" />
+    <Compile Include="Catastro\cBonificacionTrabBO.cs" />
+    <Compile Include="Catastro\cCatalogoLocalidadBO.cs" />
+    <Compile Include="Catastro\cContadoresTipoBO.cs" />
+    <Compile Include="Catastro\cContratoComunitarioBO.cs" />
+    <Compile Include="Catastro\cContratoServicioLogBO.cs" />
+    <Compile Include="Catastro\cEquiposTipoBO.cs" />
+    <Compile Include="Catastro\cMandatoBO.cs" />
+    <Compile Include="Catastro\cModConBO.cs" />
+    <Compile Include="Catastro\cOficinaContableBO.cs" />
+    <Compile Include="Catastro\cOrganismoBO.cs" />
+    <Compile Include="Catastro\cOrganismoGestorBO.cs" />
+    <Compile Include="Catastro\cCatalogoPaisBO.cs" />
+    <Compile Include="Catastro\cTipoViaBO.cs" />
+    <Compile Include="Catastro\cTipoVipBO.cs" />
+    <Compile Include="Catastro\cUnidadTramitadoraBO.cs" />
+    <Compile Include="Catastro\cZonaOtBO.cs" />
+    <Compile Include="Cobros\anuncios_notificacion_v_1_7.cs" />
+    <Compile Include="Cobros\cAgenteCobroBO.cs" />
+    <Compile Include="Cobros\cCobroApremiosBO.cs" />
+    <Compile Include="Cobros\cApremioLinBO.cs" />
+    <Compile Include="Cobros\cApremioCabBO.cs" />
+    <Compile Include="Cobros\cApremioTrabBO.cs" />
+    <Compile Include="Cobros\cCobrosLinDesgloseBO.cs" />
+    <Compile Include="Cobros\cBicBO.cs" />
+    <Compile Include="Cobros\cBOEBO.cs" />
+    <Compile Include="Cobros\cComisionesFacturarTrabAgrupadaBO.cs" />
+    <Compile Include="Cobros\cComisionesFacturarTrabBO.cs" />
+    <Compile Include="Cobros\cCuaderno57BO.cs" />
+    <Compile Include="Cobros\cDeudaClienteBO.cs" />
+    <Compile Include="Cobros\cEfectoPendienteBO.cs" />
+    <Compile Include="Cobros\cExpedientesCorteTipoBO.cs" />
+    <Compile Include="Cobros\cLiquidacionAsturiasBO.cs" />
+    <Compile Include="Cobros\cLiquidacionGValencianaBO.cs" />
+    <Compile Include="Cobros\cLiquidacionAVGBO.cs" />
+    <Compile Include="Cobros\cLiquidacionBO.cs" />
+    <Compile Include="Cobros\cComisionBO.cs" />
+    <Compile Include="Cobros\cSapCobroBO.cs" />
+    <Compile Include="Comun\AcuamaDateTime.cs" />
+    <Compile Include="Comun\Bx000.cs" />
+    <Compile Include="Comun\cCargaMasivaLineas.cs" />
+    <Compile Include="Comun\cCargaMasivaResult.cs" />
+    <Compile Include="Comun\cDataBaseOpsBO.cs" />
+    <Compile Include="Comun\CacheManager.cs" />
+    <Compile Include="Comun\cIBANBO.cs" />
+    <Compile Include="Comun\cTimeZoneParamsBo.cs" />
+    <Compile Include="Comun\Extensions.cs" />
+    <Compile Include="Comun\cMenuBO.cs" />
+    <Compile Include="Comun\FTP.cs" />
+    <Compile Include="Comun\HierarchicalDataSet.cs" />
+    <Compile Include="Comun\JsonConverter.cs" />
+    <Compile Include="Comun\OpenPop\Common\Logging\DefaultLogger.cs" />
+    <Compile Include="Comun\OpenPop\Common\Logging\DiagnosticsLogger.cs" />
+    <Compile Include="Comun\OpenPop\Common\Logging\FileLogger.cs" />
+    <Compile Include="Comun\OpenPop\Common\Logging\ILog.cs" />
+    <Compile Include="Comun\OpenPop\Common\StreamUtility.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Decode\Base64.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Decode\EncodedWord.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Decode\EncodingFinder.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Decode\QuotedPrintable.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Decode\Rfc2231Decoder.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Decode\Rfc2822DateTime.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Decode\Utility.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Header\ContentTransferEncoding.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Header\HeaderExtractor.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Header\HeaderFieldParser.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Header\MessageHeader.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Header\Received.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Header\RfcMailAddress.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Message.cs" />
+    <Compile Include="Comun\OpenPop\Mime\MessagePart.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Traverse\AnswerMessageTraverser.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Traverse\AttachmentFinder.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Traverse\FindAllMessagePartsWithMediaType.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Traverse\FindFirstMessagePartWithMediaType.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Traverse\IAnswerMessageTraverser.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Traverse\IQuestionAnswerMessageTraverser.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Traverse\MultipleMessagePartFinder.cs" />
+    <Compile Include="Comun\OpenPop\Mime\Traverse\TextVersionFinder.cs" />
+    <Compile Include="Comun\OpenPop\Pop3\Apop.cs" />
+    <Compile Include="Comun\OpenPop\Pop3\AuthenticationMethod.cs" />
+    <Compile Include="Comun\OpenPop\Pop3\ConnectionState.cs" />
+    <Compile Include="Comun\OpenPop\Pop3\CramMd5.cs" />
+    <Compile Include="Comun\OpenPop\Pop3\Disposable.cs" />
+    <Compile Include="Comun\OpenPop\Pop3\Exceptions\InvalidLoginException.cs" />
+    <Compile Include="Comun\OpenPop\Pop3\Exceptions\InvalidUseException.cs" />
+    <Compile Include="Comun\OpenPop\Pop3\Exceptions\LoginDelayException.cs" />
+    <Compile Include="Comun\OpenPop\Pop3\Exceptions\PopClientException.cs" />
+    <Compile Include="Comun\OpenPop\Pop3\Exceptions\PopServerException.cs" />
+    <Compile Include="Comun\OpenPop\Pop3\Exceptions\PopServerLockedException.cs" />
+    <Compile Include="Comun\OpenPop\Pop3\Exceptions\PopServerNotAvailableException.cs" />
+    <Compile Include="Comun\OpenPop\Pop3\Exceptions\PopServerNotFoundException.cs" />
+    <Compile Include="Comun\OpenPop\Pop3\Pop3Client.cs" />
+    <Compile Include="Comun\WebpageMailer.cs" />
+    <Compile Include="Contabilidad\cMod340BO.cs" />
+    <Compile Include="Contabilidad\cMod347BO.cs" />
+    <Compile Include="Contabilidad\cOrdenSAPBO.cs" />
+    <Compile Include="Contabilidad\cSAPMaestroBO.cs" />
+    <Compile Include="Contabilidad\cTraspasoAsientosBO.cs" />
+    <Compile Include="Contabilidad\cTraspasoAsientosTrabBO.cs" />
+    <Compile Include="Contabilidad\cVtoProBO.cs" />
+    <Compile Include="Almacen\cZonabasBO.cs" />
+    <Compile Include="Catastro\cCartaTipoBO.cs" />
+    <Compile Include="Catastro\cCondicionBO.cs" />
+    <Compile Include="Catastro\cCondicionesCtrBO.cs" />
+    <Compile Include="Catastro\cCondicionesTipoBO.cs" />
+    <Compile Include="Catastro\cCondicionServicioBO.cs" />
+    <Compile Include="Catastro\cCondicionTarifaBO.cs" />
+    <Compile Include="Catastro\cContratoservicioBO.cs" />
+    <Compile Include="Catastro\cDocContratoBO.cs" />
+    <Compile Include="Catastro\cDocumentacionBO.cs" />
+    <Compile Include="Catastro\cPackServBO.cs" />
+    <Compile Include="Catastro\cPoblacionBO.cs" />
+    <Compile Include="Catastro\cProvinciaBO.cs" />
+    <Compile Include="Catastro\cServicioDefConBO.cs" />
+    <Compile Include="Cobros\cCobroBO.cs" />
+    <Compile Include="Cobros\cCobroLinBO.cs" />
+    <Compile Include="Catastro\cPackServLinBO.cs" />
+    <Compile Include="Cobros\cDevBancariaBO.cs" />
+    <Compile Include="Cobros\cDevolucionBO.cs" />
+    <Compile Include="Cobros\cExpedienteCorteBO.cs" />
+    <Compile Include="Cobros\cPpagoBO.cs" />
+    <Compile Include="Cobros\cRemesaTrabBO.cs" />
+    <Compile Include="Cobros\cRemesaTrabSeleccionBO.cs" />
+    <Compile Include="Comun\cAccionFrecuenteBO.cs" />
+    <Compile Include="Comun\cAplicacion.cs" />
+    <Compile Include="Catastro\cContadorBO.cs" />
+    <Compile Include="Comun\cConfiguration.cs" />
+    <Compile Include="Comun\EMenu.cs" />
+    <Compile Include="Comun\SMTP.cs" />
+    <Compile Include="Contabilidad\cActivoBO.cs" />
+    <Compile Include="Contabilidad\cApartadoBO.cs" />
+    <Compile Include="Contabilidad\cBalanceDefinibleBO.cs" />
+    <Compile Include="Contabilidad\cBalanceDefinibleDetBO.cs" />
+    <Compile Include="Contabilidad\cBalanceDefinibleDetCtaBO.cs" />
+    <Compile Include="Contabilidad\cCapituloBO.cs" />
+    <Compile Include="Contabilidad\cConceptosContablesBO.cs" />
+    <Compile Include="Contabilidad\cActivosGrupoBO.cs" />
+    <Compile Include="Contabilidad\cContabVentasBO.cs" />
+    <Compile Include="Contabilidad\cMovConBO.cs" />
+    <Compile Include="Contabilidad\cCuentaBO.cs" />
+    <Compile Include="Contabilidad\cBalanceDefinibleTipoBO.cs" />
+    <Compile Include="Contabilidad\cVtoProTrabBO.cs" />
+    <Compile Include="Excel\cExcelConsultaBO.cs" />
+    <Compile Include="Excel\cExcelFiltrosBO.cs" />
+    <Compile Include="Facturacion\cCausaExencionBO.cs" />
+    <Compile Include="Facturacion\cCodigoBarrasFormato507BO.cs" />
+    <Compile Include="Facturacion\cFacLecBO.cs" />
+    <Compile Include="Facturacion\cFacturaDeudaEstado.cs" />
+    <Compile Include="Facturacion\cFacturaSIIBO.cs" />
+    <Compile Include="Facturacion\cFacturaSIIDesgloseBO.cs" />
+    <Compile Include="Facturacion\cFacturasPkBO.cs" />
+    <Compile Include="Facturacion\cFacturasSIILoteBO.cs" />
+    <Compile Include="Facturacion\cInterlocutorFacturaeBO.cs" />
+    <Compile Include="Facturacion\cPeriodoZonaDto.cs" />
+    <Compile Include="Facturacion\cSERESBO.cs" />
+    <Compile Include="Facturacion\cSimuladorDetalladoBO.cs" />
+    <Compile Include="Facturacion\DeliveryFeedback_v4_0.cs" />
+    <Compile Include="Facturacion\Facturae.cs" />
+    <Compile Include="Facturacion\cFaclinDesgloseBO.cs" />
+    <Compile Include="Almacen\cFacProTotalesBO.cs" />
+    <Compile Include="Facturacion\cFacturasFicheroIntercambioCabBO.cs" />
+    <Compile Include="Facturacion\cFacturasFicheroIntercambioLinBO.cs" />
+    <Compile Include="Facturacion\cLineaImportesBO.cs" />
+    <Compile Include="Facturacion\cTPLLecturaBO.cs" />
+    <Compile Include="Facturacion\cSituacionFacturasBO.cs" />
+    <Compile Include="Facturacion\cTPLLecturaFicheroJSONBO.cs" />
+    <Compile Include="Facturacion\cTPLLecturaFicheroXMLBO.cs" />
+    <Compile Include="Facturacion\xsdRespuestaAEAT.cs" />
+    <Compile Include="Maestros\cDiasNoLaborablesBO.cs" />
+    <Compile Include="Maestros\cImputacionManualBO.cs" />
+    <Compile Include="Maestros\cImputacionGruposBO.cs" />
+    <Compile Include="Maestros\cRegistroEntradasArchivosBO.cs" />
+    <Compile Include="Maestros\cRegistroEntradasBO.cs" />
+    <Compile Include="Maestros\cRegistroEntradasTipoBO.cs" />
+    <Compile Include="Maestros\cSAP_TPagoBO.cs" />
+    <Compile Include="Online\cAltaUsuario.cs" />
+    <Compile Include="Online\cSolicitudDocumentoBO.cs" />
+    <Compile Include="Online\cTextoBO.cs" />
+    <Compile Include="PanelControl\cPanelControlConsumoBO.cs" />
+    <Compile Include="PanelControl\cPanelControlContadoresBO.cs" />
+    <Compile Include="PanelControl\cPanelControlFacturacionPorServicioBO.cs" />
+    <Compile Include="PanelControl\cPanelControlFacturacionPorZonaBO.cs" />
+    <Compile Include="PanelControl\cPanelControlSeleccionConsumoBO.cs" />
+    <Compile Include="PanelControl\cPanelControlSeleccionContadoresBO.cs" />
+    <Compile Include="PanelControl\cPanelControlSeleccionResumenBO.cs" />
+    <Compile Include="PanelControl\cPanelControlResumenBO.cs" />
+    <Compile Include="PanelControl\cPanelControlSeleccionBO.cs" />
+    <Compile Include="PanelControl\cPanelControlSeleccionFacturacionBO.cs" />
+    <Compile Include="Reports\cReportParameterBO.cs" />
+    <Compile Include="Reports\cReportParameterCollectionBO.cs" />
+    <Compile Include="Resources\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resource.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SII\1.0\cSuministroLRFacturasEmitidasBL.cs" />
+    <Compile Include="SII\1.1\cSuministroLRFacturasEmitidasBL.cs" />
+    <Compile Include="Sistema\cCertificadoDigitalBO.cs" />
+    <Compile Include="Sistema\cEMailTemplateBO.cs" />
+    <Compile Include="Sistema\cEMailTemplateTypeBO.cs" />
+    <Compile Include="Sistema\cFTPSiteBO.cs" />
+    <Compile Include="Sistema\cImpuestoBO.cs" />
+    <Compile Include="Comun\cMenuPerfilTituloBO.cs" />
+    <Compile Include="Sistema\cMotivoExencionBO.cs" />
+    <Compile Include="Sistema\cOficinaBO.cs" />
+    <Compile Include="Sistema\cOficinasTipoBO.cs" />
+    <Compile Include="Contabilidad\cPartidaBO.cs" />
+    <Compile Include="Contabilidad\cPlantillaApuntesBO.cs" />
+    <Compile Include="Contabilidad\cPlantillaApuntesLinBO.cs" />
+    <Compile Include="Contabilidad\cPresupuestoBO.cs" />
+    <Compile Include="Contabilidad\cTipoDiarioBO.cs" />
+    <Compile Include="Contabilidad\cFacProTrabBO.cs" />
+    <Compile Include="Facturacion\cDiferidoBO.cs" />
+    <Compile Include="Almacen\cFacProBO.cs" />
+    <Compile Include="Facturacion\cFacturaBO.cs" />
+    <Compile Include="Facturacion\cFacturacionCierreBO.cs" />
+    <Compile Include="Facturacion\cLineaFacturaBO.cs" />
+    <Compile Include="Facturacion\cNotificacionBO.cs" />
+    <Compile Include="Facturacion\cPerzonaloteBO.cs" />
+    <Compile Include="Facturacion\cPerzonaBO.cs" />
+    <Compile Include="Facturacion\cSituacionBO.cs" />
+    <Compile Include="Facturacion\cUsosBO.cs" />
+    <Compile Include="Maestros\cBancoBO.cs" />
+    <Compile Include="Catastro\cContratoBO.cs" />
+    <Compile Include="Catastro\cCtrConBO.cs" />
+    <Compile Include="Maestros\cReclamacionBO.cs" />
+    <Compile Include="Maestros\cReclamacionLineasBO.cs" />
+    <Compile Include="Maestros\cSgreclamacionBO.cs" />
+    <Compile Include="Maestros\cGreclamacionBO.cs" />
+    <Compile Include="Cobros\cMedpcBO.cs" />
+    <Compile Include="Cobros\cPpcajaBO.cs" />
+    <Compile Include="Cobros\cPpoficinaBO.cs" />
+    <Compile Include="Catastro\cMarconBO.cs" />
+    <Compile Include="Almacen\cPedProBO.cs" />
+    <Compile Include="Almacen\cSectortBO.cs" />
+    <Compile Include="Almacen\cOrdenTrabajoBO.cs" />
+    <Compile Include="Almacen\cOttipoBO.cs" />
+    <Compile Include="Almacen\cSubclasifotBO.cs" />
+    <Compile Include="Catastro\cClaseconBO.cs" />
+    <Compile Include="Catastro\cEmplazaBO.cs" />
+    <Compile Include="Facturacion\cIncilecBO.cs" />
+    <Compile Include="Comun\cColorBO.cs" />
+    <Compile Include="Comun\cColorSeccionBO.cs" />
+    <Compile Include="Comun\cMenuPerfilBO.cs" />
+    <Compile Include="Cobros\cPpentidadBO.cs" />
+    <Compile Include="Facturacion\cOrilecBO.cs" />
+    <Compile Include="Facturacion\cPeriodoBO.cs" />
+    <Compile Include="Facturacion\cTarifaBO.cs" />
+    <Compile Include="Facturacion\cTarvalBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Catastro\cCalleBO.cs" />
+    <Compile Include="Catastro\cDocidenBO.cs" />
+    <Compile Include="Maestros\cImputacionBO.cs" />
+    <Compile Include="Almacen\cUmedidaBO.cs" />
+    <Compile Include="Catastro\cInmuebleBO.cs" />
+    <Compile Include="Maestros\cMpresentacionBO.cs" />
+    <Compile Include="Maestros\cTreclamacionBO.cs" />
+    <Compile Include="Maestros\cProveedorBO.cs" />
+    <Compile Include="Almacen\cSubfamiliaBO.cs" />
+    <Compile Include="Almacen\cTipoMovimientoBO.cs" />
+    <Compile Include="Catastro\cZonaBO.cs" />
+    <Compile Include="Comun\cBindableList.cs" />
+    <Compile Include="Comun\cExcepciones.cs" />
+    <Compile Include="Comun\cPropertyC.cs" />
+    <Compile Include="Comun\cRespuesta.cs" />
+    <Compile Include="Catastro\cClienteBO.cs" />
+    <Compile Include="Almacen\cClasifotBO.cs" />
+    <Compile Include="Catastro\cMunicipioBO.cs" />
+    <Compile Include="Maestros\cForpagoBO.cs" />
+    <Compile Include="Catastro\cServicioBO.cs" />
+    <Compile Include="Maestros\cNacionBO.cs" />
+    <Compile Include="Maestros\cIdiomaBO.cs" />
+    <Compile Include="Online\cSolicitudBO.cs" />
+    <Compile Include="Online\cSolicitudDatoBO.cs" />
+    <Compile Include="Online\cSolicitudTipoBO.cs" />
+    <Compile Include="Online\cUsuarioOnlineBO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Comun\cAccesoBO.cs" />
+    <Compile Include="Sistema\cContratistaBO.cs" />
+    <Compile Include="Sistema\cEMailBO.cs" />
+    <Compile Include="Online\cEMailOficinaOnlineBO.cs" />
+    <Compile Include="Sistema\cEmpleadoBO.cs" />
+    <Compile Include="Sistema\cFormatoImpresionBO.cs" />
+    <Compile Include="Sistema\cMensajeBO.cs" />
+    <Compile Include="Sistema\cParametroBO.cs" />
+    <Compile Include="Sistema\cParametroTipoBO.cs" />
+    <Compile Include="Sistema\cPerfilBO.cs" />
+    <Compile Include="Sistema\cPlantillaWordBO.cs" />
+    <Compile Include="Sistema\cPublicacionBO.cs" />
+    <Compile Include="Sistema\cRetencionBO.cs" />
+    <Compile Include="Sistema\cSerieBO.cs" />
+    <Compile Include="Sistema\cSociedadBO.cs" />
+    <Compile Include="Sistema\cUsoGestorDocumentalBO.cs" />
+    <Compile Include="Sistema\cUsuarioBO.cs" />
+    <Compile Include="Sistema\EFormatoImpresion.cs" />
+    <Compile Include="Tasks\cTaskParameterBO.cs" />
+    <Compile Include="Tasks\ETaskStatus.cs" />
+    <Compile Include="Tasks\ETaskType.cs" />
+    <Compile Include="Tasks\cTaskBO.cs" />
+    <Compile Include="Web References\ReportExecution2005\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\webSrvContratoBO.cs" />
+    <Compile Include="WebService\webSrvErrorBO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Resource.en.resx">
+      <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource.resx">
+      <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ReportExecution2005\DocumentMapNode1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ReportExecution2005\ExecutionInfo1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ReportExecution2005\Extension1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ReportExecution2005\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ReportExecution2005\reportexecution2005.wsdl" />
+    <None Include="Web References\ReportExecution2005\Warning1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://w2003/Reportserver/reportexecution2005.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ReportExecution2005\</RelPath>
+      <UpdateFromURL>http://w2003/Reportserver/reportexecution2005.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BO_ReportExecutionService_ReportExecutionService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

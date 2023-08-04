@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>16.51cm</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>2.54cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Subreport Name="Subreport1">
+                      <ReportName>CR010_EmisionCobroCAB</ReportName>
+                      <Parameters>
+                        <Parameter Name="sociedad">
+                          <Value>=Fields!cobScd.Value</Value>
+                        </Parameter>
+                        <Parameter Name="puntopago">
+                          <Value>=Fields!cobPpag.Value</Value>
+                        </Parameter>
+                        <Parameter Name="numcobro">
+                          <Value>=Fields!cobNum.Value</Value>
+                        </Parameter>
+                      </Parameters>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </Subreport>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="cobScd">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!cobScd.Value</GroupExpression>
+                  <GroupExpression>=Fields!cobPpag.Value</GroupExpression>
+                  <GroupExpression>=Fields!cobNum.Value</GroupExpression>
+                </GroupExpressions>
+                <PageBreak>
+                  <BreakLocation>Between</BreakLocation>
+                </PageBreak>
+              </Group>
+              <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields!cobScd.Value</Value>
+                </SortExpression>
+              </SortExpressions>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Detalles">
+                    <PageBreak>
+                      <BreakLocation>Between</BreakLocation>
+                    </PageBreak>
+                  </Group>
+                </TablixMember>
+              </TablixMembers>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>lstCobros</DataSetName>
+        <Height>2.54cm</Height>
+        <Width>16.51cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>1in</Height>
+    <Style />
+  </Body>
+  <Width>6.5in</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>0.5cm</LeftMargin>
+    <RightMargin>0.5cm</RightMargin>
+    <TopMargin>0.5cm</TopMargin>
+    <BottomMargin>0.5cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="dsCobros">
+      <DataSourceReference>ConexionBD</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>e1383e23-d7c4-48a1-84da-906fed5beb54</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="lstCobros">
+      <Query>
+        <DataSourceName>dsCobros</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@Numero">
+            <Value>=Parameters!Numero.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Sociedad">
+            <Value>=Parameters!Sociedad.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Ppago">
+            <Value>=Parameters!Ppago.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT DISTINCT 
+  cobScd
+, cobPpag
+, cobNum
+
+FROM dbo.cobros AS C
+INNER JOIN [dbo].[Split](@Numero, ',') AS ID
+ON   C.cobScd = @Sociedad
+AND C.cobPpag = @Ppago
+AND C.cobNum   =  ID.value
+ORDER BY cobNum;</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="cobScd">
+          <DataField>cobScd</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="cobPpag">
+          <DataField>cobPpag</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="cobNum">
+          <DataField>cobNum</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="Sociedad">
+      <DataType>Integer</DataType>
+      <Prompt>Sociedad</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Ppago">
+      <DataType>Integer</DataType>
+      <Prompt>Ppago</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Numero">
+      <DataType>String</DataType>
+      <Prompt>Numeros</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>0731ec07-805d-4792-bb19-622d1251234a</rd:ReportID>
+</Report>

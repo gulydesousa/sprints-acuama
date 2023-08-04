@@ -1,0 +1,3 @@
+SELECT * 
+--UPDATE U SET usodes='DOMÉSTICO'
+FROM usos AS U WHERE usocod=1 AND usodes='DOMESTICO'

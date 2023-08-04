@@ -1,0 +1,39 @@
+--[]Gen.porCambioCont
+
+SELECT * 
+--UPDATE M SET menucss='~/Almacen/Css/TO022_GeneracionOTCambioContador.css'
+FROM menu AS M WHERE menuurl  LIKE '%TM013%'
+
+--[]Liquidaciones_RIBADESELLA
+INSERT INTO dbo.ExcelConsultas
+VALUES ('RIBA/003',	'Fecha Liquidaciones RIBA.', 'Fecha Liquidaciones RIBADESELLA', 0, '[InformesExcel].[LiquidacionesFechas_RIBADESELLA]', '001', 'Lista las fechas en las que se han aplicado liquidaciones en los servicios de Ribadesella', NULL, NULL, NULL, NULL);
+
+INSERT INTO ExcelPerfil
+VALUES('RIBA/003', 'root', 4, NULL)
+
+INSERT INTO ExcelPerfil
+VALUES('RIBA/003', 'jefeExp', 4, NULL)
+
+INSERT INTO ExcelPerfil
+VALUES('RIBA/003', 'jefAdmon', 4, NULL)
+
+INSERT INTO ExcelPerfil
+VALUES('RIBA/003', 'comerc', 4, NULL)
+
+--[]TODAS_UsoFacturas
+
+SELECT * 
+--UPDATE U SET usodes='DOMÉSTICO'
+FROM usos AS U WHERE usocod=1 AND usodes='DOMESTICO'
+
+SELECT * 
+--UPDATE U SET usodes='DOMÉSTICO'
+FROM ACUAMA_BIAR.dbo.usos AS U WHERE usocod=1 AND usodes='DOMESTICO'
+
+SELECT * 
+--UPDATE U SET usodes='DOMÉSTICO'
+FROM ACUAMA_RIBADESELLA.dbo.usos AS U WHERE usocod=3 AND usodes='DOMESTICO'
+
+SELECT * 
+--UPDATE U SET usodes='DOMÉSTICO'
+FROM ACUAMA_SORIA.dbo.usos AS U WHERE usocod=1 AND usodes='DOMESTICO'

@@ -1,0 +1,3 @@
+SELECT * 
+UPDATE S SET scdFecIniC57='20200101'
+FROM sociedades AS S

@@ -1,0 +1,1 @@
+INSERT INTO dbo.ExcelFiltroGrupos VALUES(19, 'Valor, Zona(desde, hasta)')

@@ -1,0 +1,22 @@
+--DROP TYPE [dbo].[tCoblinPK]
+CREATE TYPE [dbo].[tCoblinPK] AS TABLE(
+	cobScd SMALLINT NOT NULL,
+	cobPpag	SMALLINT NOT NULL,
+	cobNum	INT NOT NULL,
+	cblLin SMALLINT NOT NULL,
+	cblImporte MONEY NOT NULL,
+	cobFecReg DATETIME NOT NULL,
+	cobFec DATETIME NOT NULL,
+	facCod SMALLINT NOT NULL,	
+	facCtrCod INT NOT NULL,	
+	facPerCod VARCHAR(6) NOT NULL,	
+	facVersion SMALLINT NOT NULL,
+
+	PRIMARY KEY CLUSTERED 
+	(
+		[cobScd] ASC,
+		[cobPpag] ASC,
+		[cobNum] ASC,
+		[cblLin] ASC
+	)WITH (IGNORE_DUP_KEY = OFF)
+)

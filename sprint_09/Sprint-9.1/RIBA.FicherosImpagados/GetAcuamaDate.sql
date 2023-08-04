@@ -1,0 +1,17 @@
+CREATE FUNCTION [dbo].[GetAcuamaDate]()
+RETURNS DATETIME
+AS
+BEGIN
+
+DECLARE @acuamaDate AS DATETIME = NULL
+
+SELECT @acuamaDate = CONVERT(DATETIME, SYSDATETIMEOFFSET() AT TIME ZONE p.pgsvalor)
+FROM parametros p
+WHERE UPPER(pgsclave) = 'TIMEZONE'
+
+RETURN ISNULL(@acuamaDate, GETDATE())
+
+END
+GO
+
+

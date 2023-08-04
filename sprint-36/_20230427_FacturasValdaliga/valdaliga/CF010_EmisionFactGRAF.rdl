@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Textbox Name="textbox2">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>   PROMEDIO DE CONSUMO</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Color>White</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>4.7858cm</Top>
+        <Left>0.01323cm</Left>
+        <Height>0.48536cm</Height>
+        <Width>9.4cm</Width>
+        <DataElementOutput>NoOutput</DataElementOutput>
+        <Style>
+          <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "#013e81")</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox1">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>4.37698cm</Top>
+        <Left>0.01323cm</Left>
+        <Height>0.4cm</Height>
+        <Width>9.4cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <BackgroundColor>White</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox3">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>= IIf(isnothing(Parameters!fecLecAnt.Value) or isnothing(Parameters!fecLecAct.Value),
+	"",
+	"Su consumo diario durante este periodo ha sido de " &amp; Round(Code.Divide(Parameters!consumo.Value, DateDiff("d",Parameters!fecLecAnt.Value,Parameters!fecLecAct.Value)), 3, System.MidpointRounding.AwayFromZero) &amp; " m3 y " &amp; 
+	"su gasto medio en el periodo ha sido de " &amp; round(Code.Divide(Last(Fields!factotal.Value, "dsEmisionFactGRAF"), DateDiff("d",Parameters!fecLecAnt.Value,Parameters!fecLecAct.Value)), 2, System.MidpointRounding.AwayFromZero) &amp; " €/día " &amp;
+	"de los cuales " &amp; round(Code.Divide(Last(Fields!factotalAgua.Value, "dsEmisionFactGRAF"), DateDiff("d",Parameters!fecLecAnt.Value,Parameters!fecLecAct.Value)), 2, System.MidpointRounding.AwayFromZero) &amp; " €/día corresponde a agua.")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>5.27116cm</Top>
+        <Left>0.01323cm</Left>
+        <Height>3.19931cm</Height>
+        <Width>9.4cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border />
+          <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox4">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>8.43519cm</Top>
+        <Left>0.01323cm</Left>
+        <Height>0.4cm</Height>
+        <Width>9.4cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <BackgroundColor>White</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>   LECTURA Y CONSUMO</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Color>White</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>8.84392cm</Top>
+        <Left>0.01323cm</Left>
+        <Height>0.5cm</Height>
+        <Width>9.4cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "#013e81")</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox6">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Anterior:</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>9.5cm</Top>
+        <Left>0.01323cm</Left>
+        <Height>0.375cm</Height>
+        <Width>3.11772cm</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border />
+          <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+          <PaddingLeft>1pt</PaddingLeft>
+          <PaddingRight>1pt</PaddingRight>
+          <PaddingTop>1pt</PaddingTop>
+          <PaddingBottom>1pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox7">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Actual:</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>9.875cm</Top>
+        <Left>0.01323cm</Left>
+        <Height>0.375cm</Height>
+        <Width>3.11772cm</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border />
+          <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+          <PaddingLeft>1pt</PaddingLeft>
+          <PaddingRight>1pt</PaddingRight>
+          <PaddingTop>1pt</PaddingTop>
+          <PaddingBottom>1pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox8">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Consumo:</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>10.28528cm</Top>
+        <Left>0.01645cm</Left>
+        <Height>0.375cm</Height>
+        <Width>3.1145cm</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border />
+          <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+          <PaddingLeft>1pt</PaddingLeft>
+          <PaddingRight>1pt</PaddingRight>
+          <PaddingTop>1pt</PaddingTop>
+          <PaddingBottom>1pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox9">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!fecLecAnt.Value</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <Format>d</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <Top>9.5cm</Top>
+        <Left>3.13095cm</Left>
+        <Height>0.375cm</Height>
+        <Width>3.13228cm</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border />
+          <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+          <PaddingLeft>1pt</PaddingLeft>
+          <PaddingRight>1pt</PaddingRight>
+          <PaddingTop>1pt</PaddingTop>
+          <PaddingBottom>1pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox10">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=iif(isnothing(Parameters!LecAnt.Value),"",FormatNumber(Parameters!LecAnt.Value,0) &amp; " m3")</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <Top>9.5cm</Top>
+        <Left>6.26323cm</Left>
+        <Height>0.375cm</Height>
+        <Width>3.15cm</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border />
+          <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+          <PaddingLeft>1pt</PaddingLeft>
+          <PaddingRight>1pt</PaddingRight>
+          <PaddingTop>1pt</PaddingTop>
+          <PaddingBottom>1pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox11">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!fecLecAct.Value</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <Format>d</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <Top>9.875cm</Top>
+        <Left>3.13095cm</Left>
+        <Height>0.375cm</Height>
+        <Width>3.13228cm</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border />
+          <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+          <PaddingLeft>1pt</PaddingLeft>
+          <PaddingRight>1pt</PaddingRight>
+          <PaddingTop>1pt</PaddingTop>
+          <PaddingBottom>1pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox12">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=iif(isnothing(Parameters!LecAct.Value),"",FormatNumber(Parameters!LecAct.Value,0) &amp; " m3")</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <Top>9.875cm</Top>
+        <Left>6.26323cm</Left>
+        <Height>0.375cm</Height>
+        <Width>3.15cm</Width>
+        <ZIndex>11</ZIndex>
+        <Style>
+          <Border />
+          <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+          <PaddingLeft>1pt</PaddingLeft>
+          <PaddingRight>1pt</PaddingRight>
+          <PaddingTop>1pt</PaddingTop>
+          <PaddingBottom>1pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox13">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!consumo.Value &amp; " m3"</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <Top>10.28528cm</Top>
+        <Left>3.13095cm</Left>
+        <Height>0.375cm</Height>
+        <Width>3.13228cm</Width>
+        <ZIndex>12</ZIndex>
+        <Style>
+          <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+          <PaddingLeft>1pt</PaddingLeft>
+          <PaddingRight>1pt</PaddingRight>
+          <PaddingTop>1pt</PaddingTop>
+          <PaddingBottom>1pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox14">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=IIF(Parameters!lecturaEstimada.Value=true, "*", "")</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <LeftIndent>0cm</LeftIndent>
+            <HangingIndent>0cm</HangingIndent>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <Top>10.25cm</Top>
+        <Left>6.26323cm</Left>
+        <Height>0.41028cm</Height>
+        <Width>3.15cm</Width>
+        <ZIndex>13</ZIndex>
+        <Style>
+          <Border />
+          <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox15">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>9.35274cm</Top>
+        <Left>0.01323cm</Left>
+        <Height>0.14726cm</Height>
+        <Width>9.4cm</Width>
+        <ZIndex>14</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Rectangle Name="Rectangle5">
+        <ReportItems>
+          <Rectangle Name="Rectangle2">
+            <ReportItems>
+              <Chart Name="chart1">
+                <ChartCategoryHierarchy>
+                  <ChartMembers>
+                    <ChartMember>
+                      <Group Name="Periodo">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!percod.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Group>
+                      <SortExpressions>
+                        <SortExpression>
+                          <Value>=Fields!percod.Value</Value>
+                        </SortExpression>
+                      </SortExpressions>
+                      <Label>=Fields!percod.Value</Label>
+                      <DataElementOutput>Output</DataElementOutput>
+                    </ChartMember>
+                  </ChartMembers>
+                </ChartCategoryHierarchy>
+                <ChartSeriesHierarchy>
+                  <ChartMembers>
+                    <ChartMember>
+                      <Label>fac Consumo Factura</Label>
+                    </ChartMember>
+                    <ChartMember>
+                      <Label />
+                    </ChartMember>
+                  </ChartMembers>
+                </ChartSeriesHierarchy>
+                <ChartData>
+                  <ChartSeriesCollection>
+                    <ChartSeries Name="Series1">
+                      <ChartDataPoints>
+                        <ChartDataPoint>
+                          <ChartDataPointValues>
+                            <Y>=Fields!facConsumoFactura.Value</Y>
+                          </ChartDataPointValues>
+                          <ChartDataLabel>
+                            <Style />
+                            <Position>Center</Position>
+                          </ChartDataLabel>
+                          <Style>
+                            <Border>
+                              <Color>#000040</Color>
+                              <Width>0.376pt</Width>
+                            </Border>
+                            <Color>#013e81</Color>
+                            <BackgroundGradientType>VerticalCenter</BackgroundGradientType>
+                            <BackgroundGradientEndColor>SteelBlue</BackgroundGradientEndColor>
+                          </Style>
+                          <ChartMarker>
+                            <Size>6pt</Size>
+                            <Style />
+                          </ChartMarker>
+                        </ChartDataPoint>
+                      </ChartDataPoints>
+                      <Style />
+                      <ChartEmptyPoints>
+                        <Style />
+                        <ChartMarker>
+                          <Style />
+                        </ChartMarker>
+                        <ChartDataLabel>
+                          <Style />
+                        </ChartDataLabel>
+                      </ChartEmptyPoints>
+                      <CustomProperties>
+                        <CustomProperty>
+                          <Name>PointWidth</Name>
+                          <Value>0.6</Value>
+                        </CustomProperty>
+                      </CustomProperties>
+                      <ValueAxisName>Primary</ValueAxisName>
+                      <CategoryAxisName>Primary</CategoryAxisName>
+                      <ChartSmartLabel>
+                        <CalloutLineColor>Black</CalloutLineColor>
+                        <MinMovingDistance>0pt</MinMovingDistance>
+                      </ChartSmartLabel>
+                    </ChartSeries>
+                    <ChartSeries Name="Series2">
+                      <ChartDataPoints>
+                        <ChartDataPoint>
+                          <ChartDataPointValues>
+                            <Y>=10</Y>
+                          </ChartDataPointValues>
+                          <ChartDataLabel>
+                            <Style />
+                          </ChartDataLabel>
+                          <Style>
+                            <Border>
+                              <Style>Dashed</Style>
+                              <Width>0.376pt</Width>
+                            </Border>
+                            <Color>Black</Color>
+                          </Style>
+                          <ChartMarker>
+                            <Size>6pt</Size>
+                            <Style />
+                          </ChartMarker>
+                        </ChartDataPoint>
+                      </ChartDataPoints>
+                      <Type>Line</Type>
+                      <Style />
+                      <ChartEmptyPoints>
+                        <Style />
+                        <ChartMarker>
+                          <Style />
+                        </ChartMarker>
+                        <ChartDataLabel>
+                          <Style />
+                        </ChartDataLabel>
+                      </ChartEmptyPoints>
+                      <CustomProperties>
+                        <CustomProperty>
+                          <Name>PointWidth</Name>
+                          <Value>0.6</Value>
+                        </CustomProperty>
+                      </CustomProperties>
+                      <ValueAxisName>Primary</ValueAxisName>
+                      <CategoryAxisName>Primary</CategoryAxisName>
+                      <ChartSmartLabel>
+                        <CalloutLineColor>Black</CalloutLineColor>
+                        <MinMovingDistance>0pt</MinMovingDistance>
+                      </ChartSmartLabel>
+                    </ChartSeries>
+                  </ChartSeriesCollection>
+                </ChartData>
+                <ChartAreas>
+                  <ChartArea Name="Default">
+                    <ChartCategoryAxes>
+                      <ChartAxis Name="Primary">
+                        <Style>
+                          <Border>
+                            <Style>None</Style>
+                            <Width>0.75pt</Width>
+                          </Border>
+                          <FontFamily>Verdana</FontFamily>
+                          <FontSize>3.5pt</FontSize>
+                        </Style>
+                        <ChartAxisTitle>
+                          <Caption />
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </ChartAxisTitle>
+                        <Margin>False</Margin>
+                        <Interval>1</Interval>
+                        <ChartMajorGridLines>
+                          <Enabled>False</Enabled>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </Border>
+                          </Style>
+                          <Interval>NaN</Interval>
+                        </ChartMajorGridLines>
+                        <ChartMinorGridLines>
+                          <Enabled>False</Enabled>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </Border>
+                          </Style>
+                          <Interval>NaN</Interval>
+                          <IntervalOffset>-1</IntervalOffset>
+                        </ChartMinorGridLines>
+                        <ChartMajorTickMarks>
+                          <Enabled>True</Enabled>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </Border>
+                          </Style>
+                          <Interval>NaN</Interval>
+                        </ChartMajorTickMarks>
+                        <ChartMinorTickMarks>
+                          <Type>None</Type>
+                        </ChartMinorTickMarks>
+                        <Minimum>NaN</Minimum>
+                        <Maximum>NaN</Maximum>
+                        <PreventFontShrink>true</PreventFontShrink>
+                        <PreventFontGrow>true</PreventFontGrow>
+                        <IncludeZero>false</IncludeZero>
+                        <ChartAxisScaleBreak>
+                          <Style />
+                        </ChartAxisScaleBreak>
+                      </ChartAxis>
+                      <ChartAxis Name="Secondary">
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                        <ChartAxisTitle>
+                          <Caption />
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </ChartAxisTitle>
+                        <CrossAt>NaN</CrossAt>
+                        <Location>Opposite</Location>
+                        <Minimum>NaN</Minimum>
+                        <Maximum>NaN</Maximum>
+                        <ChartAxisScaleBreak>
+                          <Style />
+                        </ChartAxisScaleBreak>
+                      </ChartAxis>
+                    </ChartCategoryAxes>
+                    <ChartValueAxes>
+                      <ChartAxis Name="Primary">
+                        <Style>
+                          <Border>
+                            <Style>None</Style>
+                            <Width>0.75pt</Width>
+                          </Border>
+                          <FontFamily>Verdana</FontFamily>
+                          <FontSize>3.5pt</FontSize>
+                        </Style>
+                        <ChartAxisTitle>
+                          <Caption />
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </ChartAxisTitle>
+                        <Margin>False</Margin>
+                        <ChartMajorGridLines>
+                          <Enabled>False</Enabled>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </Border>
+                          </Style>
+                          <Interval>NaN</Interval>
+                        </ChartMajorGridLines>
+                        <ChartMinorGridLines>
+                          <Enabled>False</Enabled>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </Border>
+                          </Style>
+                          <Interval>NaN</Interval>
+                        </ChartMinorGridLines>
+                        <ChartMajorTickMarks>
+                          <Enabled>True</Enabled>
+                          <Type>Inside</Type>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </Border>
+                          </Style>
+                          <Interval>NaN</Interval>
+                        </ChartMajorTickMarks>
+                        <ChartMinorTickMarks>
+                          <Type>None</Type>
+                        </ChartMinorTickMarks>
+                        <Scalar>true</Scalar>
+                        <Minimum>0</Minimum>
+                        <PreventFontShrink>true</PreventFontShrink>
+                        <PreventFontGrow>true</PreventFontGrow>
+                        <IncludeZero>false</IncludeZero>
+                        <ChartAxisScaleBreak>
+                          <Style />
+                        </ChartAxisScaleBreak>
+                      </ChartAxis>
+                      <ChartAxis Name="Secondary">
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                        <ChartAxisTitle>
+                          <Caption />
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </ChartAxisTitle>
+                        <CrossAt>NaN</CrossAt>
+                        <Location>Opposite</Location>
+                        <Minimum>NaN</Minimum>
+                        <Maximum>NaN</Maximum>
+                        <ChartAxisScaleBreak>
+                          <Style />
+                        </ChartAxisScaleBreak>
+                      </ChartAxis>
+                    </ChartValueAxes>
+                    <ChartThreeDProperties>
+                      <ProjectionMode>Perspective</ProjectionMode>
+                      <Rotation>0</Rotation>
+                      <Shading>Simple</Shading>
+                      <WallThickness>15</WallThickness>
+                      <Clustered>true</Clustered>
+                    </ChartThreeDProperties>
+                    <Style>
+                      <Border>
+                        <Width>0.75pt</Width>
+                      </Border>
+                      <BackgroundGradientType>HorizontalCenter</BackgroundGradientType>
+                      <BackgroundGradientEndColor>White</BackgroundGradientEndColor>
+                    </Style>
+                  </ChartArea>
+                </ChartAreas>
+                <ChartLegends>
+                  <ChartLegend Name="Default">
+                    <Hidden>true</Hidden>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.75pt</Width>
+                      </Border>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                    <Position>RightCenter</Position>
+                    <Layout>Column</Layout>
+                    <ChartLegendTitle>
+                      <Caption />
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <TextAlign>Center</TextAlign>
+                      </Style>
+                    </ChartLegendTitle>
+                    <AutoFitTextDisabled>true</AutoFitTextDisabled>
+                  </ChartLegend>
+                </ChartLegends>
+                <Palette>Excel</Palette>
+                <ChartBorderSkin>
+                  <Style>
+                    <BackgroundColor>Gray</BackgroundColor>
+                    <BackgroundGradientType>None</BackgroundGradientType>
+                    <Color>White</Color>
+                  </Style>
+                </ChartBorderSkin>
+                <ChartNoDataMessage Name="NoDataMessage">
+                  <Caption>Sin datos disponibles</Caption>
+                  <Style>
+                    <BackgroundGradientType>None</BackgroundGradientType>
+                    <TextAlign>General</TextAlign>
+                    <VerticalAlign>Top</VerticalAlign>
+                  </Style>
+                </ChartNoDataMessage>
+                <DataSetName>dsEmisionFactGRAF</DataSetName>
+                <Top>0.49212cm</Top>
+                <Left>1.02658cm</Left>
+                <Height>2.5cm</Height>
+                <Width>5.25cm</Width>
+                <CustomProperties>
+                  <CustomProperty>
+                    <Name>__Upgraded2005__</Name>
+                    <Value>__Upgraded2005__</Value>
+                  </CustomProperty>
+                </CustomProperties>
+                <Style>
+                  <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>7pt</FontSize>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Chart>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>0.47418cm</Top>
+            <Left>0.92013cm</Left>
+            <Height>3.34667cm</Height>
+            <Width>7.4725cm</Width>
+            <Style>
+              <Border>
+                <Color>#013e81</Color>
+                <Style>Solid</Style>
+                <Width>1.2pt</Width>
+              </Border>
+            </Style>
+          </Rectangle>
+        </ReportItems>
+        <KeepTogether>true</KeepTogether>
+        <Height>4.2381cm</Height>
+        <Width>9.42646cm</Width>
+        <ZIndex>15</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+        </Style>
+      </Rectangle>
+      <Textbox Name="textbox16">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Microsoft.VisualBasic.Interaction.IIF(Parameters!lecturaEstimada.Value = True, "* Consumo estimado", "")</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>5pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>10.66028cm</Top>
+        <Left>0.02968cm</Left>
+        <Height>0.375cm</Height>
+        <Width>9.39678cm</Width>
+        <ZIndex>16</ZIndex>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>11.03528cm</Height>
+    <Style>
+      <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+    </Style>
+  </Body>
+  <Width>9.42646cm</Width>
+  <Page>
+    <PageHeight>11cm</PageHeight>
+    <PageWidth>9.4cm</PageWidth>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <Style>
+      <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+    </Style>
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="ConexionBD">
+      <DataSourceReference>ConexionBD</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>ab34c660-6e1b-4bcd-b103-5148865a39da</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dsEmisionFactGRAF">
+      <Query>
+        <DataSourceName>ConexionBD</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@contrato">
+            <Value>=Parameters!contrato.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@periodo">
+            <Value>=Parameters!periodo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@fecha">
+            <Value>=Parameters!fecha.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@version">
+            <Value>=Parameters!version.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@codigo">
+            <Value>=Parameters!codigo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@fechaHasta">
+            <Value>=Parameters!fechaHasta.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>[Informe_VALDALIGA_CF010_EmisionFactGRAF] @contrato,@periodo,@version,@codigo,@fechaHasta,@fecha</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="facConsumoFactura">
+          <DataField>facConsumoFactura</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="percod">
+          <DataField>percod</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="factotal">
+          <DataField>factotal</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="factotalAgua">
+          <DataField>factotalAgua</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="codigo">
+      <DataType>Integer</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>codigo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="periodo">
+      <DataType>String</DataType>
+      <Prompt>periodo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="contrato">
+      <DataType>String</DataType>
+      <Prompt>contrato</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fecha">
+      <DataType>DateTime</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <Prompt>fecha</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="consumo">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value>0</Value>
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Consumo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fecLecAnt">
+      <DataType>DateTime</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Fecha Lectura Anterior</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fecLecAct">
+      <DataType>DateTime</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Fecha Lectura Actual</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LecAnt">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value>0</Value>
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Lectura Anterior</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LecAct">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value>0</Value>
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Lectura Actual</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="version">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>1</Value>
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Version</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="preimpreso">
+      <DataType>Boolean</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value>False</Value>
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>preimpreso</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fechaHasta">
+      <DataType>DateTime</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>fechaHasta</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="lecturaEstimada">
+      <DataType>Boolean</DataType>
+      <Prompt>lecturaEstimada</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function Divide(ByVal first As Double, ByVal second As Double) As Double
+        If second = 0 Then
+            Return 0
+        Else
+            Return first / second
+        End If
+    End Function</Code>
+  <Language>es-ES</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>3851b493-6bee-4c9f-a260-a0f3c84890a4</rd:ReportID>
+</Report>

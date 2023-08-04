@@ -1,0 +1,228 @@
+﻿
+.facfila{
+    width:100%;
+    height:31px;
+    position:relative; /*fila es un contenedor*/
+}
+
+.faccolumna{
+    position:absolute;
+    top:0px;
+    white-space:nowrap;
+}
+
+/**************************************/
+/*ESTILOS PARA LAS CABECERA DE FACTURA*/
+/**************************************/
+
+.fCabDivContenedor
+{
+	width:700px;
+}
+
+.fCabfila
+{
+    width:100%;
+    height:22px;
+    position:relative;
+}
+
+.fCabFilaPeq{ height:6px;}
+.fCabFilaPeq2{ height:3px;}
+
+
+.fCabcolumna{
+    position:absolute;
+    top:0px;
+    white-space:nowrap;
+}
+
+.fCabCabecera
+{
+	position:relative;
+	float: left;	
+	width:725px;
+}
+.fCabSaltoLinea
+{
+	white-space:normal !important;
+	height:50px;
+	text-align:left;
+}
+
+.fCabDatosContrato
+{
+	float: left;	
+	width:525px;
+}
+
+.fCabDatosLecturas
+{
+	position:relative;
+	float:left;
+	margin-right:5px;
+	width:435px;
+}
+
+.fCabDatosLineas
+{
+	position:relative;
+	float:	left;	
+	width:270px;
+}
+
+.fCabDatosGrid{overflow-y:auto; overflow-x:hidden;}
+
+.fCabDatosCobros{ width:100%;}
+.fCabDatosConsumos{height:25px; width:100%;}
+
+.fCabDetalleContenedor
+{
+	position:relative; 
+	width:710px; 
+	left:25px;
+}
+/********CABECERA ***********/
+.fCabc01{left:30px;}
+.fCabc02{left:90px;}
+.fCabc02b{left:200px;}
+.fCabc03{left:245px;}
+.fCabc03b{left:240px;}
+.fCabc04{left:300px;}
+.fCabc04b{left:380px;}
+.fCabc05{left:400px;}
+.fCabc06{left:455px;}
+.fCabc06a{left:500px;}
+.fCabc07{left:525px;}
+.fCabc08{left:555px;}
+.fCabc09{left:605px;}
+.fCabc09b{left:610px;}
+.fCabc10{left:660px;}
+.fCabc11{left:690px;}
+
+
+/******COLUMNAS DE CONTRATO******************/
+.fCabCtrc01{left:30px;}
+.fCabCtrc02{left:120px;}
+.fCabCtrc02_2{left:180px;}
+.fCabCtrc03{left:145px;}
+.fCabCtrc04{left:220px;}
+.fCabCtrc05{left:285px;}
+
+
+/******COLUMNAS DE LECTURAS******************/
+.fCabLecc01{left:5px;}
+.fCabLecc02{left:110px;}
+.fCabLecc03{left:200px;}
+.fCabLecc04{left:230px;}
+.fCabLecc05{left:325px;}
+.fCabLecc06{left:350px;}
+.fCabLecc07{left:412px;}
+
+
+/************************************/
+/*ESTILOS PARA LAS LINEAS DE FACTURA*/
+/************************************/
+
+.fLinDivContenedor
+{
+width:500px;
+}
+
+/*ESTILOS DE LOS CAMPOS Y LABELS DEL CONTROL DE USUARIO*/
+.fLinfila{
+    width:100%;
+    height:24px;
+    position:relative;
+}
+
+.fLincolumna{
+    position:absolute;
+    top:0px;
+    white-space:nowrap;
+}
+
+.fLinFilaPeque{height:10px;}
+/*ESTILOS PARA LAS COLUMNAS DE LAS ESCALAS, PRECIOS Y UNIDADES DE 1 A 9*/
+.fLinc01{left:10px;}
+.fLinc02{left:30px;}
+.fLinc03{left:130px;}
+.fLinc04{left:230px;}
+.fLinc05{left:300px;}
+
+.fLinCabecera{font-size:medium;}
+
+.fLinLineaNifty{margin-left:10px; margin-right:10px; width:400px;}
+
+.fLin1c02{left:90px;}
+.fLin1c02Esp{left:150px;}
+.fLin1c03{left:160px;}
+.fLin1c04{left:190px;}
+.fLin1c04Esp{left:210px;}
+.fLin1c05{left:280px;}
+.fLin1c06{left:310px;}
+.fLin1c07{left:205px;}
+.fLin1c08{left:250px;}
+
+.fLinTop{margin-top:5px;}
+
+/************************************/
+/**** ESTILOS PARA CONTROL PRINT****/
+/************************************/
+
+.facPrintC01{left:10px;}
+.facPrintC02{left:125px;}
+.facPrintC02b{left:150px;}
+.facPrintC03{left:165px;}
+.facPrintC04{left:185px;}
+.facPrintC05{left:240px;}
+.facPrintC06{left:325px;}
+
+
+.facPrintFila{height:30px;}
+.facPrintFilaCabecera{height:20px;}
+
+.facPrintContenedor{width:400px;overflow:visible}
+
+/************************************/
+/*** ESTILOS PARA CONTROL FINDCab ***/
+/************************************/
+
+.facFilaFind{height:24px;}
+.facFindc01{left:10px;}
+.facFindc02{left:120px;}
+.facFindc03{left:210px;}
+.facFindc04{left:300px;}
+.facFindc05{left:390px;}
+.facFindc06{left:480px;}
+
+.facFindContenedor{width:560px;}
+
+/**************************************/
+/************** TOTALES ***************/
+/**************************************/
+
+/******COLUMNAS DE TOTALES ******************/
+.fCabTotc01{left:5px;margin-top:5px;}
+.fCabTotc02{left:110px;margin-top:5px;}
+
+.fCabDatosTotales
+{
+	float:right;
+	width:200px;
+	margin-top:10px;
+	margin-left:5px;
+	margin-bottom:5px;
+	margin-right:15px;
+}
+
+.colorFondoTotales{background-color:Red;}
+
+.rbItemList {
+	display: block;
+	float: left;
+	width: 115px;
+	border-style: none;
+	padding-right: 20px;
+	text-align: left;
+}

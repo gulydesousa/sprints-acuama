@@ -1,0 +1,4549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="abril" xml:space="preserve">
+    <value>April</value>
+  </data>
+  <data name="abrir" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="accion" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="accionesFrecuentes" xml:space="preserve">
+    <value>Frequent Actions</value>
+  </data>
+  <data name="aceptar" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="aCobrar" xml:space="preserve">
+    <value>To Charge</value>
+  </data>
+  <data name="activarParaTodosLosContratos" xml:space="preserve">
+    <value>Set for every agreement</value>
+  </data>
+  <data name="activas" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="activo" xml:space="preserve">
+    <value>Asset - Check Context</value>
+  </data>
+  <data name="activoNoContabilizado" xml:space="preserve">
+    <value>The asset @activo del mes @mes/@anyo has NOT been accounted</value>
+  </data>
+  <data name="activos" xml:space="preserve">
+    <value>Assets - Check Context</value>
+  </data>
+  <data name="activosContabilizados" xml:space="preserve">
+    <value>Assets accounted</value>
+  </data>
+  <data name="actual" xml:space="preserve">
+    <value>current</value>
+  </data>
+  <data name="actualizado" xml:space="preserve">
+    <value>updated</value>
+  </data>
+  <data name="actualizar" xml:space="preserve">
+    <value>update</value>
+  </data>
+  <data name="actualizarCliente" xml:space="preserve">
+    <value>update client</value>
+  </data>
+  <data name="actualizarDatosCliente" xml:space="preserve">
+    <value>Do you really want to update client data ?</value>
+  </data>
+  <data name="actualizarDireccionInmueble" xml:space="preserve">
+    <value>The adress of @numero buildings in @item street has been updated</value>
+  </data>
+  <data name="actualizarFichaCliente" xml:space="preserve">
+    <value>Update client data</value>
+  </data>
+  <data name="actualizarLineasFacturas" xml:space="preserve">
+    <value>Update Invoice Lines</value>
+  </data>
+  <data name="actualizarLineasFacturasAbv" xml:space="preserve">
+    <value>UDT Inv. Lines</value>
+  </data>
+  <data name="actualizarVersionContratoEnFactura" xml:space="preserve">
+    <value>Update agreement version in invoice</value>
+  </data>
+  <data name="actualizarVersionCtr" xml:space="preserve">
+    <value>Update Agreement Version</value>
+  </data>
+  <data name="aCuentaAbv" xml:space="preserve">
+    <value>A.CTA.</value>
+    <comment>"A Cuenta" abreviado CHECK</comment>
+  </data>
+  <data name="adjuntos" xml:space="preserve">
+    <value>attached</value>
+  </data>
+  <data name="admCont" xml:space="preserve">
+    <value>Accounts Administrator</value>
+  </data>
+  <data name="admin" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="advEnviarInfoPaginaExterna" xml:space="preserve">
+    <value>You are about sending information to an external site. Do you want to proceed?</value>
+  </data>
+  <data name="advertencia" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="advertenciaMunicipioVacio" xml:space="preserve">
+    <value>The field "City" is empty</value>
+  </data>
+  <data name="advEscala999999" xml:space="preserve">
+    <value>Value of last block has been changed to 999999.</value>
+  </data>
+  <data name="advPeriodoVacio" xml:space="preserve">
+    <value>There is no associated term to the zone</value>
+    <comment>CHECK term</comment>
+  </data>
+  <data name="afecha" xml:space="preserve">
+    <value>To Date</value>
+  </data>
+  <data name="agosto" xml:space="preserve">
+    <value>August</value>
+  </data>
+  <data name="agrupar" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="agruparPorAlmacenes" xml:space="preserve">
+    <value>Group by warehouses</value>
+  </data>
+  <data name="ahora" xml:space="preserve">
+    <value>Now</value>
+  </data>
+  <data name="ajaxUploader_extension_not_allowed" xml:space="preserve">
+    <value>File type is not correct. File extensions allowed are: @extensions</value>
+    <comment>El tipo de fichero no es correcto, las extensiones soportadas son: @extensions</comment>
+  </data>
+  <data name="ajaxUploader_in_progress" xml:space="preserve">
+    <value>Please, wait until file upload is finished</value>
+    <comment>Espere a que finalice la subida del fichero</comment>
+  </data>
+  <data name="ajaxUploader_max_size_exceeded" xml:space="preserve">
+    <value>File size is bigger than maximum allowed (@MB Mb)</value>
+    <comment>El tamaño del fichero es superior al máximo permitido. El máximo son @MB MB</comment>
+  </data>
+  <data name="ajustarImporte" xml:space="preserve">
+    <value>Fit Amount</value>
+  </data>
+  <data name="ajuste" xml:space="preserve">
+    <value>Fit</value>
+  </data>
+  <data name="alfanumerico" xml:space="preserve">
+    <value>Alphanumeric</value>
+  </data>
+  <data name="almacen" xml:space="preserve">
+    <value>Warehouse</value>
+  </data>
+  <data name="almacenAbv" xml:space="preserve">
+    <value>WH</value>
+  </data>
+  <data name="almacenes" xml:space="preserve">
+    <value>Warehouses</value>
+  </data>
+  <data name="alta" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="altaAutomatica" xml:space="preserve">
+    <value>Automatic Generation</value>
+  </data>
+  <data name="altaContrato" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="altaMasivaServiciosEnContratos" xml:space="preserve">
+    <value>Contract Services Massive Sign Up</value>
+  </data>
+  <data name="alternativoAbv" xml:space="preserve">
+    <value>Alt.</value>
+  </data>
+  <data name="altitud" xml:space="preserve">
+    <value>Altitude</value>
+  </data>
+  <data name="alto" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="altoSigla" xml:space="preserve">
+    <value>H</value>
+  </data>
+  <data name="amortAcumEjerAnt" xml:space="preserve">
+    <value>Accumulated Depreciation past years</value>
+  </data>
+  <data name="amortAcumFinEjer" xml:space="preserve">
+    <value>Accumulated Depreciation FY</value>
+  </data>
+  <data name="amortEjercicio" xml:space="preserve">
+    <value>Depreciation</value>
+  </data>
+  <data name="amortizacion" xml:space="preserve">
+    <value>Depreciation</value>
+  </data>
+  <data name="amortTotalAcum" xml:space="preserve">
+    <value>Total Accumulated Depreciation</value>
+  </data>
+  <data name="ampliacionDeApertura" xml:space="preserve">
+    <value>Opening Enlargement</value>
+  </data>
+  <data name="ampliado" xml:space="preserve">
+    <value>extended</value>
+  </data>
+  <data name="analisis" xml:space="preserve">
+    <value>Analisys</value>
+  </data>
+  <data name="anterior" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="antigua" xml:space="preserve">
+    <value>outdated</value>
+  </data>
+  <data name="anual" xml:space="preserve">
+    <value>annual</value>
+  </data>
+  <data name="anulada" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="anuladas" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="anyadirCuenta" xml:space="preserve">
+    <value>Add account</value>
+  </data>
+  <data name="anyadirFormula" xml:space="preserve">
+    <value>Add formula</value>
+  </data>
+  <data name="anyadirSubelemento" xml:space="preserve">
+    <value>Add subelement</value>
+  </data>
+  <data name="añadir" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="añadirNuevoApunte" xml:space="preserve">
+    <value>Add new entry</value>
+  </data>
+  <data name="año" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="apartado" xml:space="preserve">
+    <value>Section</value>
+  </data>
+  <data name="apartados" xml:space="preserve">
+    <value>Sections</value>
+  </data>
+  <data name="apartadoTieneCapitulos" xml:space="preserve">
+    <value>@item section has areas</value>
+  </data>
+  <data name="apertura" xml:space="preserve">
+    <value>Opening</value>
+  </data>
+  <data name="aperturaFacturacion" xml:space="preserve">
+    <value>Invoicing Opening</value>
+  </data>
+  <data name="aperturaFacturacionYaRealizada" xml:space="preserve">
+    <value>The opening has been already done for this zone and term</value>
+    <comment>La apertura ya se ha realizado para esta zona y periodo</comment>
+  </data>
+  <data name="aplazamiento" xml:space="preserve">
+    <value>Deferment Days</value>
+  </data>
+  <data name="aplicacion" xml:space="preserve">
+    <value>Applyment</value>
+    <comment>No de "programa", sino del verbo "aplicar"</comment>
+  </data>
+  <data name="aplicacionDeDiferidos" xml:space="preserve">
+    <value>Deferred Payments Application</value>
+  </data>
+  <data name="aprobacionPedidos" xml:space="preserve">
+    <value>Order Endorsements</value>
+  </data>
+  <data name="arbol" xml:space="preserve">
+    <value>Tree</value>
+  </data>
+  <data name="archivos" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="archivosRecibidos" xml:space="preserve">
+    <value>Received files</value>
+  </data>
+  <data name="area" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="areas" xml:space="preserve">
+    <value>Areas</value>
+  </data>
+  <data name="arrastreLectura" xml:space="preserve">
+    <value>Pulled meter reading</value>
+    <comment>CHECK</comment>
+  </data>
+  <data name="arriba" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="asiento" xml:space="preserve">
+    <value>Entry</value>
+  </data>
+  <data name="asignacionConsumoSeleccioneProceso" xml:space="preserve">
+    <value>You must select any kind of process for assigning consumption</value>
+  </data>
+  <data name="asignacionConsumosNoProcesada" xml:space="preserve">
+    <value>Consumption assignment has NOT been correctly processed</value>
+  </data>
+  <data name="asignacionConsumosProcesada" xml:space="preserve">
+    <value>Consumption assignment has been correctly processed</value>
+  </data>
+  <data name="asignarConsumos" xml:space="preserve">
+    <value>Consumption Assignment</value>
+  </data>
+  <data name="asistente_cobros" xml:space="preserve">
+    <value>Payment wizard</value>
+  </data>
+  <data name="asunto" xml:space="preserve">
+    <value>Issue</value>
+  </data>
+  <data name="atencionCliente" xml:space="preserve">
+    <value>Customer Support</value>
+  </data>
+  <data name="autorizada" xml:space="preserve">
+    <value>Authorized</value>
+  </data>
+  <data name="autorizadaAbv" xml:space="preserve">
+    <value>Aut.</value>
+  </data>
+  <data name="autorizadas" xml:space="preserve">
+    <value>Authorized</value>
+  </data>
+  <data name="autorizado" xml:space="preserve">
+    <value>Authorized</value>
+  </data>
+  <data name="autorizar" xml:space="preserve">
+    <value>Authorize</value>
+  </data>
+  <data name="auxiliares" xml:space="preserve">
+    <value>Auxiliary</value>
+  </data>
+  <data name="aviso" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="avisoDiferenciaConsumo" xml:space="preserve">
+    <value>Consumption is not a result of metering difference. Do you want to go on?</value>
+    <comment>El consumo no es el resultado de la diferencia de las lecturas, ¿desea continuar?</comment>
+  </data>
+  <data name="avisoLector" xml:space="preserve">
+    <value>Reader warning</value>
+  </data>
+  <data name="avisoMasDeUnContadorPorNumSerie" xml:space="preserve">
+    <value>There is more than one meter with the same serial number. Please, try again</value>
+    <comment>Existe más de un contador con ese número de serie, seleccione de nuevo la búsqueda</comment>
+  </data>
+  <data name="avisoRealizado" xml:space="preserve">
+    <value>Warning done</value>
+  </data>
+  <data name="avisosCierre" xml:space="preserve">
+    <value>Closing warnings</value>
+  </data>
+  <data name="ayuda" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="ayudaDelArea" xml:space="preserve">
+    <value>Area Help</value>
+  </data>
+  <data name="ayudaDelModulo" xml:space="preserve">
+    <value>Module Help</value>
+  </data>
+  <data name="baja" xml:space="preserve">
+    <value>Drop Out</value>
+  </data>
+  <data name="bajaMasivaServiciosEnContrator" xml:space="preserve">
+    <value>Contract Services Massive Discharge</value>
+  </data>
+  <data name="bajar" xml:space="preserve">
+    <value>Fall - Check context</value>
+  </data>
+  <data name="bajo" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="bajoSigla" xml:space="preserve">
+    <value>L</value>
+  </data>
+  <data name="balance" xml:space="preserve">
+    <value>Balance</value>
+  </data>
+  <data name="balancesDefinibles" xml:space="preserve">
+    <value>Definable Balances</value>
+  </data>
+  <data name="balanceSumasSaldos" xml:space="preserve">
+    <value>Trial Banlance</value>
+  </data>
+  <data name="balanceSumasSaldosAbv" xml:space="preserve">
+    <value>Trial Balance</value>
+  </data>
+  <data name="bancario" xml:space="preserve">
+    <value>banking</value>
+    <comment>CHECK</comment>
+  </data>
+  <data name="banco" xml:space="preserve">
+    <value>Bank</value>
+  </data>
+  <data name="bancoCaja" xml:space="preserve">
+    <value>Bank/Savings Bank</value>
+  </data>
+  <data name="bancoCajaAhorros" xml:space="preserve">
+    <value>Banco/Savings Bank</value>
+  </data>
+  <data name="bancos" xml:space="preserve">
+    <value>Banks</value>
+  </data>
+  <data name="baseImponible" xml:space="preserve">
+    <value>Taxable Base</value>
+    <comment>CHECK</comment>
+  </data>
+  <data name="baseImponible_abv" xml:space="preserve">
+    <value>Base</value>
+  </data>
+  <data name="baseImponibleAbv" xml:space="preserve">
+    <value>Base</value>
+  </data>
+  <data name="bien" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="bimestral" xml:space="preserve">
+    <value>Bimonthly</value>
+  </data>
+  <data name="bloque" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="borradoDeAsientos" xml:space="preserve">
+    <value>Entries Erasure</value>
+  </data>
+  <data name="borrar" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="borrar_marcados" xml:space="preserve">
+    <value>Delete Checked items</value>
+  </data>
+  <data name="borrarCompletados" xml:space="preserve">
+    <value>Delete Finished Items</value>
+  </data>
+  <data name="borrarSeleccionados" xml:space="preserve">
+    <value>Delete Selected Items</value>
+  </data>
+  <data name="botellas" xml:space="preserve">
+    <value>Bottles</value>
+  </data>
+  <data name="buscar" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="buscarClientes" xml:space="preserve">
+    <value>Search clients</value>
+  </data>
+  <data name="buscarContratos" xml:space="preserve">
+    <value>Search contracts</value>
+  </data>
+  <data name="busquedaAvanzada" xml:space="preserve">
+    <value>Advanced Search</value>
+  </data>
+  <data name="busquedaDeDescuadres" xml:space="preserve">
+    <value>Search "Out Of Balances"</value>
+  </data>
+  <data name="caja" xml:space="preserve">
+    <value>Cash Desk</value>
+    <comment>CHECK</comment>
+  </data>
+  <data name="cajas" xml:space="preserve">
+    <value>Cash Desks</value>
+  </data>
+  <data name="cajasCobroPago" xml:space="preserve">
+    <value>Payment/Collecting Cashes</value>
+    <comment>CHECK</comment>
+  </data>
+  <data name="calcAmortEjer" xml:space="preserve">
+    <value>Calculate Year Depreciation</value>
+  </data>
+  <data name="calcularEImprimirArrastresYNumerosApuntes" xml:space="preserve">
+    <value>Calculate &amp; Print arrastres iniciales y números de apuntes</value>
+  </data>
+  <data name="calle" xml:space="preserve">
+    <value>Street</value>
+  </data>
+  <data name="callejero" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="calleNoExiste" xml:space="preserve">
+    <value>The street does not exist. Do you want to register it?</value>
+  </data>
+  <data name="calles" xml:space="preserve">
+    <value>Streets</value>
+  </data>
+  <data name="cambiarContraseña" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="cambiarExtension" xml:space="preserve">
+    <value>Change extension</value>
+  </data>
+  <data name="cambiarExtensionAviso" xml:space="preserve">
+    <value>When changing extension, the file may be unuseful</value>
+  </data>
+  <data name="cambiarNombre" xml:space="preserve">
+    <value>Change name</value>
+  </data>
+  <data name="cambio" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="cambioContador" xml:space="preserve">
+    <value>Meter change</value>
+  </data>
+  <data name="cambioDeImpuestoEnFacturas" xml:space="preserve">
+    <value>Tax changes on invoices</value>
+  </data>
+  <data name="cambioDeTipoDeImpuesto" xml:space="preserve">
+    <value>Type of tax change</value>
+  </data>
+  <data name="cambioMasivoDeTarifasEnServicios" xml:space="preserve">
+    <value>Rates Massive Change</value>
+  </data>
+  <data name="cambioTitular" xml:space="preserve">
+    <value>Holder change</value>
+    <comment>CHECK</comment>
+  </data>
+  <data name="cambioTitularCorrecto" xml:space="preserve">
+    <value>Change of holder has been correctly done. The new agreement code is @item</value>
+  </data>
+  <data name="cancelado" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="cancelando" xml:space="preserve">
+    <value>Canceling...</value>
+  </data>
+  <data name="cancelar" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="cantidad" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="cantidadAbv" xml:space="preserve">
+    <value>Amnt.</value>
+    <comment>Abreviación de "cantidad"</comment>
+  </data>
+  <data name="capitulo" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="capitulos" xml:space="preserve">
+    <value>Areas</value>
+  </data>
+  <data name="capituloTienePartidas" xml:space="preserve">
+    <value>@item area has items</value>
+  </data>
+  <data name="caractCompo" xml:space="preserve">
+    <value>Component features</value>
+  </data>
+  <data name="caracteristica" xml:space="preserve">
+    <value>Feature</value>
+  </data>
+  <data name="caracteristicas" xml:space="preserve">
+    <value>Features</value>
+  </data>
+  <data name="cargaDeDevolucionesC19" xml:space="preserve">
+    <value>C19 Refunds Loading</value>
+  </data>
+  <data name="cargaDeLecturas" xml:space="preserve">
+    <value>Meter reading loading</value>
+  </data>
+  <data name="cargando" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="cargos" xml:space="preserve">
+    <value>Charges</value>
+  </data>
+  <data name="carpetaComponenteXNoExiste" xml:space="preserve">
+    <value>@item component folder does not exist</value>
+  </data>
+  <data name="carpetaComun" xml:space="preserve">
+    <value>Common Folder</value>
+  </data>
+  <data name="carpetaContratoXNoExiste" xml:space="preserve">
+    <value>@item agreement folder does not exist</value>
+  </data>
+  <data name="carpetaFacturaXNoExiste" xml:space="preserve">
+    <value>@item invoice folder does not exist</value>
+  </data>
+  <data name="carpetaPersonal" xml:space="preserve">
+    <value>Personal Folder</value>
+  </data>
+  <data name="carpetaYaExiste" xml:space="preserve">
+    <value>Folder '@folder' already exists</value>
+  </data>
+  <data name="carta" xml:space="preserve">
+    <value>Letter</value>
+  </data>
+  <data name="cartasProveedor" xml:space="preserve">
+    <value>Letters to supplier</value>
+  </data>
+  <data name="cartera" xml:space="preserve">
+    <value>Portfolio</value>
+    <comment>CHECK</comment>
+  </data>
+  <data name="catastro" xml:space="preserve">
+    <value>Cadastre</value>
+  </data>
+  <data name="ceroSigla" xml:space="preserve">
+    <value>Z</value>
+  </data>
+  <data name="certificadoNoValido" xml:space="preserve">
+    <value>Certificate NOT valid</value>
+  </data>
+  <data name="cierre" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="cierreContable" xml:space="preserve">
+    <value>Year end</value>
+  </data>
+  <data name="cierreExpediente" xml:space="preserve">
+    <value>S.O.S. File Closing</value>
+  </data>
+  <data name="cierreFacturacion" xml:space="preserve">
+    <value>Invoicing Close</value>
+  </data>
+  <data name="cierreOrdenTrabajo" xml:space="preserve">
+    <value>Work Order @ordenTrabajo has been closed</value>
+  </data>
+  <data name="cif" xml:space="preserve">
+    <value>Tax ID Code</value>
+  </data>
+  <data name="cifDeLaSociedad" xml:space="preserve">
+    <value>Company Tax ID Code</value>
+  </data>
+  <data name="clase" xml:space="preserve">
+    <value>class</value>
+  </data>
+  <data name="clasecon" xml:space="preserve">
+    <value>Meter Type</value>
+  </data>
+  <data name="clases" xml:space="preserve">
+    <value>Classes</value>
+  </data>
+  <data name="clasificacion" xml:space="preserve">
+    <value>Classification</value>
+  </data>
+  <data name="clasifot" xml:space="preserve">
+    <value>W.O. Type</value>
+  </data>
+  <data name="clausula" xml:space="preserve">
+    <value>clause</value>
+  </data>
+  <data name="clave" xml:space="preserve">
+    <value>Key</value>
+  </data>
+  <data name="cliente" xml:space="preserve">
+    <value>client</value>
+  </data>
+  <data name="clientes" xml:space="preserve">
+    <value>clients</value>
+  </data>
+  <data name="clientesDuplicados" xml:space="preserve">
+    <value>duplicated client keys</value>
+  </data>
+  <data name="cnsAcumuladoContadorRetirado" xml:space="preserve">
+    <value>Removed Meter Consumption</value>
+  </data>
+  <data name="cobrado" xml:space="preserve">
+    <value>charged</value>
+  </data>
+  <data name="cobrar" xml:space="preserve">
+    <value>Collect</value>
+    <comment>CHECK</comment>
+  </data>
+  <data name="cobro" xml:space="preserve">
+    <value>collection</value>
+  </data>
+  <data name="cobros" xml:space="preserve">
+    <value>collections</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="codigo_cuenta_cliente" xml:space="preserve">
+    <value>Checking account code</value>
+  </data>
+  <data name="codigo_cuenta_cliente_Abv" xml:space="preserve">
+    <value>C.A.C.</value>
+  </data>
+  <data name="codigo_verificacion" xml:space="preserve">
+    <value>Test Code</value>
+  </data>
+  <data name="codigoAlt" xml:space="preserve">
+    <value>Alternative Code</value>
+  </data>
+  <data name="codigoImputacion" xml:space="preserve">
+    <value>Allocation Code</value>
+  </data>
+  <data name="codigoOficial" xml:space="preserve">
+    <value>Official Code</value>
+  </data>
+  <data name="codigoproveedor" xml:space="preserve">
+    <value>Supplier Code</value>
+  </data>
+  <data name="codigousuario" xml:space="preserve">
+    <value>User Code</value>
+  </data>
+  <data name="color" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="columna" xml:space="preserve">
+    <value>Column</value>
+  </data>
+  <data name="comoDeseaEjecutarElProceso" xml:space="preserve">
+    <value>Which way do you want to execute yhe process?</value>
+  </data>
+  <data name="compañia" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="complemento" xml:space="preserve">
+    <value>Complement</value>
+  </data>
+  <data name="componente" xml:space="preserve">
+    <value>Component</value>
+  </data>
+  <data name="componentes" xml:space="preserve">
+    <value>Components</value>
+  </data>
+  <data name="comportamiento" xml:space="preserve">
+    <value>Performance</value>
+  </data>
+  <data name="compra" xml:space="preserve">
+    <value>Procurement</value>
+    <comment>CHECK</comment>
+  </data>
+  <data name="compras" xml:space="preserve">
+    <value>Procurements</value>
+    <comment>CHECK</comment>
+  </data>
+  <data name="comprimirAZIP" xml:space="preserve">
+    <value>Compress to ZIP</value>
+  </data>
+  <data name="concepto" xml:space="preserve">
+    <value>Concept</value>
+  </data>
+  <data name="conceptoContable" xml:space="preserve">
+    <value>Account Concept</value>
+  </data>
+  <data name="conceptosContables" xml:space="preserve">
+    <value>Account Concepts</value>
+  </data>
+  <data name="condicion" xml:space="preserve">
+    <value>Condition</value>
+  </data>
+  <data name="condiciones" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="condicionesContrato" xml:space="preserve">
+    <value>Conditions per agreement</value>
+  </data>
+  <data name="condicionesServicio" xml:space="preserve">
+    <value>Conditions per service</value>
+  </data>
+  <data name="condicionesServicios" xml:space="preserve">
+    <value>Condiciones por servicios</value>
+  </data>
+  <data name="condicionesTarifa" xml:space="preserve">
+    <value>Conditions per rate</value>
+  </data>
+  <data name="condicionesTarifas" xml:space="preserve">
+    <value>Condiciones por tarifas</value>
+  </data>
+  <data name="confActualizarOCrearVersion" xml:space="preserve">
+    <value>Press OK to UPDATE. Press CANCEL to create new version</value>
+    <comment>Pulse ACEPTAR para 'Solo actualizar'. Pulse CANCELAR para 'Crear nueva versión'?</comment>
+  </data>
+  <data name="confActualizarVersionCtr" xml:space="preserve">
+    <value>Are you sure you want the version agreement to be updated?</value>
+  </data>
+  <data name="confborrado" xml:space="preserve">
+    <value>Are you sure you want the record '@item' to be deleted?</value>
+  </data>
+  <data name="confBorradoArchivo" xml:space="preserve">
+    <value>Are you sure you want the file '@file' to be deleted?</value>
+  </data>
+  <data name="confBorradoArchivoSinNombre" xml:space="preserve">
+    <value>Are you sure you want to delete the file?</value>
+  </data>
+  <data name="confBorradoCarpeta" xml:space="preserve">
+    <value>Are you sure you want the folder '@folder' to be deleted?</value>
+  </data>
+  <data name="confborradoitemsrelacionados" xml:space="preserve">
+    <value>Related records @item will be deleted</value>
+  </data>
+  <data name="confborradoMasNivelesInferiores" xml:space="preserve">
+    <value>Are you sure you want to delete the record '@item' and its dependants?</value>
+  </data>
+  <data name="confBorradoSel" xml:space="preserve">
+    <value>Are you sure you want to permanently delete the selected records? </value>
+  </data>
+  <data name="confBorrarRegistroYLineas" xml:space="preserve">
+    <value>If the record has lines, they will be deleted. Do you want to cotinue?</value>
+  </data>
+  <data name="confBorrarTarea" xml:space="preserve">
+    <value>Are you sure you want to permanently delete the scheduled task for @date at @time?</value>
+  </data>
+  <data name="confBorrarTareasCompletadas" xml:space="preserve">
+    <value>Finished tasks wil be deleted. Do you want to continue?</value>
+  </data>
+  <data name="confBorrarXElementosSeleccionados" xml:space="preserve">
+    <value>¿Desea borrar @numElementos elementos seleccionados?</value>
+  </data>
+  <data name="confCambioIdioma" xml:space="preserve">
+    <value>Not saved changes in this page will be lost if changing the language</value>
+  </data>
+  <data name="confCancelar" xml:space="preserve">
+    <value>Are you sure you want to cancel?</value>
+  </data>
+  <data name="confCancelarTarea" xml:space="preserve">
+    <value>Are you sure you want to cancel the schedule task for @date at @time?</value>
+  </data>
+  <data name="confcontrato" xml:space="preserve">
+    <value>The contract with code @code and version @version has been correctly saved</value>
+  </data>
+  <data name="confContratosConServiciosRepetidos" xml:space="preserve">
+    <value>The following agreements has duplicated measured services: @contratos. Do you want to preceed?</value>
+  </data>
+  <data name="confDarDeBaja" xml:space="preserve">
+    <value>Are you sure do you want to delete the record '@item'?</value>
+  </data>
+  <data name="confDesconectar" xml:space="preserve">
+    <value>Are you sure you want to log out?</value>
+  </data>
+  <data name="confHayDiferidosSinAplicar" xml:space="preserve">
+    <value>There are some deferred payments not applied; do you want to proceed WITHOUT applying them?</value>
+  </data>
+  <data name="confHayDiferidosSinAplicarZonaX" xml:space="preserve">
+    <value>There are several not applied deferred payments for the zone @zona; do you want to proceed without applying?</value>
+  </data>
+  <data name="confirm_pass" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="confirmacionDePedidos" xml:space="preserve">
+    <value>Orders Endorsement</value>
+  </data>
+  <data name="confirmar" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="confirmarElementoRepetido" xml:space="preserve">
+    <value>The element '@item' already exists in the database. ¿Do you want to proceed?</value>
+  </data>
+  <data name="confirmarProcesoRecuento" xml:space="preserve">
+    <value>El recount process has been correctly completed for the recount @recuento</value>
+  </data>
+  <data name="confirmCierresinCierreOT" xml:space="preserve">
+    <value>The WO for the S.O.S file @item is not close. Do you want to close the file anyway?</value>
+  </data>
+  <data name="confirmContFacPro" xml:space="preserve">
+    <value>ALL the invoices from the supplier are going to be recorded</value>
+  </data>
+  <data name="confirmGenerarRectificativa" xml:space="preserve">
+    <value>A correcting invoice is going to be raised. Do you want to proceed?</value>
+  </data>
+  <data name="confirmGenerarVencimientos" xml:space="preserve">
+    <value>ALL the due dates showed on this page are going to be recorded. Do you want to proceed?</value>
+  </data>
+  <data name="confirmInsertarCuenta" xml:space="preserve">
+    <value>Do you want to insert the @item account, its upper levels (if don't exist) with the following description?</value>
+  </data>
+  <data name="confirmInsertarExpedienteCorteSinDeudaPendiente" xml:space="preserve">
+    <value>You are about recording a S.O.S. file for the contract @item, which DOES NOT have pending debt. Do you want to proceed?</value>
+  </data>
+  <data name="confNuevaVersionContrato" xml:space="preserve">
+    <value>A new version of the agreement is being generated, ¿Are you sure?</value>
+  </data>
+  <data name="conformadas" xml:space="preserve">
+    <value>Conformadas - Check context</value>
+  </data>
+  <data name="conformar" xml:space="preserve">
+    <value>Conformar - Check context</value>
+  </data>
+  <data name="conforme" xml:space="preserve">
+    <value>in accordance</value>
+  </data>
+  <data name="ConformeAbv" xml:space="preserve">
+    <value>In acc.</value>
+  </data>
+  <data name="conformeAFacturar" xml:space="preserve">
+    <value>In order to invoice</value>
+  </data>
+  <data name="confVaciarTabla" xml:space="preserve">
+    <value>ALL the records of this table are going to be deleted. Do you want to proceed?</value>
+  </data>
+  <data name="conjuntoDeAnalisis" xml:space="preserve">
+    <value>Analysis set</value>
+  </data>
+  <data name="conjuntoDeAnalisisAbv" xml:space="preserve">
+    <value>Analysis set</value>
+    <comment>Abreviación de "Conjunto de análisis"</comment>
+  </data>
+  <data name="ConPorRuta" xml:space="preserve">
+    <value>Contracts per route</value>
+  </data>
+  <data name="consolidadoPorZonas" xml:space="preserve">
+    <value>Summary per zones</value>
+  </data>
+  <data name="consultar" xml:space="preserve">
+    <value>Look up</value>
+  </data>
+  <data name="consultarParametros" xml:space="preserve">
+    <value>Consultar parámetros</value>
+  </data>
+  <data name="consumo" xml:space="preserve">
+    <value>Consumption</value>
+  </data>
+  <data name="consumo_factura" xml:space="preserve">
+    <value>Invoice consumption</value>
+  </data>
+  <data name="consumoAbv" xml:space="preserve">
+    <value>Cns</value>
+    <comment>Consumo abreviado</comment>
+  </data>
+  <data name="consumoAFacturar" xml:space="preserve">
+    <value>Consumption to invoice</value>
+  </data>
+  <data name="consumoAlto" xml:space="preserve">
+    <value>High consumption</value>
+  </data>
+  <data name="consumoBajo" xml:space="preserve">
+    <value>Low consumption</value>
+  </data>
+  <data name="consumoEsAlto" xml:space="preserve">
+    <value>Consumption is high</value>
+  </data>
+  <data name="consumoEsBajo" xml:space="preserve">
+    <value>Consumption is low</value>
+  </data>
+  <data name="consumoEsCero" xml:space="preserve">
+    <value>Consumption is zero</value>
+  </data>
+  <data name="consumoEsNegativo" xml:space="preserve">
+    <value>Consumption is negative</value>
+  </data>
+  <data name="consumoPadron" xml:space="preserve">
+    <value>Consumption to Census</value>
+  </data>
+  <data name="consumoReal" xml:space="preserve">
+    <value>Actual consumption</value>
+  </data>
+  <data name="contabilidad" xml:space="preserve">
+    <value>Accounts</value>
+  </data>
+  <data name="contabilidadAbv" xml:space="preserve">
+    <value>Acc.</value>
+  </data>
+  <data name="contabilidadComprasAbv" xml:space="preserve">
+    <value>Procurement Accounting</value>
+  </data>
+  <data name="contabilidadVencimientosAbv" xml:space="preserve">
+    <value>Due dates Accounting</value>
+  </data>
+  <data name="contabilizacionActivos" xml:space="preserve">
+    <value>Assets Accounting</value>
+  </data>
+  <data name="contabilizacionActivosAbv" xml:space="preserve">
+    <value>Assets Acc.</value>
+  </data>
+  <data name="contabilizaciones" xml:space="preserve">
+    <value>Accountings</value>
+  </data>
+  <data name="contabilizacionesVentasAbv" xml:space="preserve">
+    <value>Sales accounting</value>
+  </data>
+  <data name="contabilizacionPagosAbv" xml:space="preserve">
+    <value>Payment Accounting</value>
+  </data>
+  <data name="contabilizacionVtosNoRealizados" xml:space="preserve">
+    <value>Due dates accounting has not been finished</value>
+  </data>
+  <data name="contabilizada" xml:space="preserve">
+    <value>counted</value>
+  </data>
+  <data name="contabilizadas" xml:space="preserve">
+    <value>counted</value>
+  </data>
+  <data name="contabilizado" xml:space="preserve">
+    <value>counted</value>
+  </data>
+  <data name="contabilizadoPagoAbv" xml:space="preserve">
+    <value>Payment account</value>
+  </data>
+  <data name="contabilizarAbv" xml:space="preserve">
+    <value>Acc.</value>
+  </data>
+  <data name="contabilizarCompras" xml:space="preserve">
+    <value>Procurement accounting</value>
+  </data>
+  <data name="contabilizarFacturas" xml:space="preserve">
+    <value>Invoices accounting</value>
+  </data>
+  <data name="contabilizarPagos" xml:space="preserve">
+    <value>Payment accounting</value>
+  </data>
+  <data name="contabilizarVencimientos" xml:space="preserve">
+    <value>Due dates accounting</value>
+  </data>
+  <data name="contabilizarVentas" xml:space="preserve">
+    <value>Sales accounting</value>
+  </data>
+  <data name="contacto" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="contado" xml:space="preserve">
+    <value>Cash</value>
+  </data>
+  <data name="contador" xml:space="preserve">
+    <value>Water meter</value>
+  </data>
+  <data name="contadorApuntesContables" xml:space="preserve">
+    <value>Entries counter</value>
+  </data>
+  <data name="contadores" xml:space="preserve">
+    <value>Water meter</value>
+  </data>
+  <data name="contadoresContrato" xml:space="preserve">
+    <value>Water meters per contract</value>
+  </data>
+  <data name="contComprasNoRealizados" xml:space="preserve">
+    <value>Procurement accounting has not been done</value>
+  </data>
+  <data name="contratista" xml:space="preserve">
+    <value>Contractor</value>
+  </data>
+  <data name="contratistas" xml:space="preserve">
+    <value>Contractors</value>
+  </data>
+  <data name="contrato" xml:space="preserve">
+    <value>Contract</value>
+  </data>
+  <data name="contratoAnuladoBaja" xml:space="preserve">
+    <value>The contract @contrato is cancelled o unregistered</value>
+  </data>
+  <data name="contratoAnuladoYBaja" xml:space="preserve">
+    <value>The S.O.S. file on contract @contrato cannot be done because the contrac is cancelled or unregistered</value>
+  </data>
+  <data name="contratoComunitario" xml:space="preserve">
+    <value>Communal contract</value>
+  </data>
+  <data name="contratoComunitarioAbv" xml:space="preserve">
+    <value>Communal ctr.</value>
+  </data>
+  <data name="contratoConExpCorteNoCerrado" xml:space="preserve">
+    <value>The contract @contrato has already a S.O.S. file without closing</value>
+  </data>
+  <data name="contratoNoTieneContador" xml:space="preserve">
+    <value>The contract @contrato has no water meter</value>
+  </data>
+  <data name="contratos" xml:space="preserve">
+    <value>Contracts</value>
+  </data>
+  <data name="contratoServicios" xml:space="preserve">
+    <value>Services per contract</value>
+  </data>
+  <data name="contratoXNoTieneElServicioY" xml:space="preserve">
+    <value>The service @servicio has not been assigned to the the contract @contrato </value>
+  </data>
+  <data name="contratoXTieneServicioYDadoDeAltaVariasVeces" xml:space="preserve">
+    <value>The service @servicio has been assigned to the contract @contrato several times</value>
+  </data>
+  <data name="contratoXYaTieneServicioXConTarifaZ" xml:space="preserve">
+    <value>The service @servicio with the rate @tarifa has been already assigned to the contract @contrato</value>
+  </data>
+  <data name="copiar" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="copiarEstosMenusAOtroPerfil" xml:space="preserve">
+    <value>Copy this menu settings to other profile</value>
+  </data>
+  <data name="copiarHijosAlArrastrar" xml:space="preserve">
+    <value>Copy child nodes when dragging</value>
+  </data>
+  <data name="correosElectronicos" xml:space="preserve">
+    <value>E-mails</value>
+  </data>
+  <data name="cortar" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="coste" xml:space="preserve">
+    <value>Cost</value>
+  </data>
+  <data name="cpost" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="cpostAbv" xml:space="preserve">
+    <value>P.C.</value>
+  </data>
+  <data name="creacion" xml:space="preserve">
+    <value>Creation</value>
+  </data>
+  <data name="crearCarpeta" xml:space="preserve">
+    <value>New folder</value>
+  </data>
+  <data name="crearNuevaVersion" xml:space="preserve">
+    <value>New version</value>
+  </data>
+  <data name="cuadreMantenimientoDiario" xml:space="preserve">
+    <value>Daily manteinance tally</value>
+  </data>
+  <data name="cuadreMttoDiario" xml:space="preserve">
+    <value>Daily mant. tally</value>
+  </data>
+  <data name="cuales" xml:space="preserve">
+    <value>Whiches</value>
+  </data>
+  <data name="cuatrimestral" xml:space="preserve">
+    <value>Four-monthly</value>
+  </data>
+  <data name="cuatro" xml:space="preserve">
+    <value>Four</value>
+  </data>
+  <data name="cuenta" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="cuentaAmortizacionAbv" xml:space="preserve">
+    <value>Depreciation Account</value>
+  </data>
+  <data name="cuentaBancariaNoEsValida" xml:space="preserve">
+    <value>The account is not valid</value>
+  </data>
+  <data name="cuentaBancoDelVtoVacioOIncorrecta" xml:space="preserve">
+    <value>The bank account for the due date @vto of the invoice @sociedad/@serie/@numero is not valid or is empty</value>
+  </data>
+  <data name="cuentaCierre" xml:space="preserve">
+    <value>Close account</value>
+  </data>
+  <data name="cuentaCierreAbv" xml:space="preserve">
+    <value>Close Account</value>
+  </data>
+  <data name="cuentaContable" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="cuentaContableAbv" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="cuentaDetalleAbv" xml:space="preserve">
+    <value>Detailed Acount</value>
+  </data>
+  <data name="cuentaDotacionAbv" xml:space="preserve">
+    <value>Provision Account</value>
+  </data>
+  <data name="cuentaGastos" xml:space="preserve">
+    <value>Costs Account</value>
+  </data>
+  <data name="cuentaInmovilizadoAbv" xml:space="preserve">
+    <value>Fixed assets account</value>
+  </data>
+  <data name="cuentaNoExiste" xml:space="preserve">
+    <value>The account @cuenta for the company @sociedad does not exists</value>
+  </data>
+  <data name="cuentaRegularizacion" xml:space="preserve">
+    <value>Regularization Account</value>
+  </data>
+  <data name="cuentaRegularizacionAbv" xml:space="preserve">
+    <value>Reg. Acc.</value>
+  </data>
+  <data name="cuentaResultados" xml:space="preserve">
+    <value>Profit&amp;Loss Account</value>
+  </data>
+  <data name="cuentas" xml:space="preserve">
+    <value>Accounts</value>
+  </data>
+  <data name="cuota" xml:space="preserve">
+    <value>Standing charge</value>
+  </data>
+  <data name="darDeBaja" xml:space="preserve">
+    <value>Deregister</value>
+  </data>
+  <data name="datos" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="datosActualizadosDesdeAplicacionDuranteLectura" xml:space="preserve">
+    <value>@item data has beed updated from application while the reading with handhelk device</value>
+  </data>
+  <data name="datosAntiguos" xml:space="preserve">
+    <value>Old data</value>
+  </data>
+  <data name="datosAviso" xml:space="preserve">
+    <value>Warning data</value>
+  </data>
+  <data name="datosCalle" xml:space="preserve">
+    <value>Street data</value>
+  </data>
+  <data name="datosCliente" xml:space="preserve">
+    <value>Customer data</value>
+  </data>
+  <data name="datosContrato" xml:space="preserve">
+    <value>Contract data</value>
+  </data>
+  <data name="datosCorresp" xml:space="preserve">
+    <value>Adress data</value>
+  </data>
+  <data name="datosCorrespondenciaPagador" xml:space="preserve">
+    <value>Datos correspondencia pagador</value>
+  </data>
+  <data name="datosEmplazamiento" xml:space="preserve">
+    <value>Datos emplazamiento</value>
+  </data>
+  <data name="datosFechas" xml:space="preserve">
+    <value>Datos fechas</value>
+  </data>
+  <data name="datosInmueble" xml:space="preserve">
+    <value>Building data</value>
+  </data>
+  <data name="datosInstalacion" xml:space="preserve">
+    <value>Instalation data</value>
+  </data>
+  <data name="datosNuevos" xml:space="preserve">
+    <value>New data</value>
+  </data>
+  <data name="datosPagador" xml:space="preserve">
+    <value>Datos pagador</value>
+  </data>
+  <data name="datosProveedor" xml:space="preserve">
+    <value>Supplier data</value>
+  </data>
+  <data name="datosRealizacion" xml:space="preserve">
+    <value>Datos realización</value>
+  </data>
+  <data name="datosRevision" xml:space="preserve">
+    <value>Datos revisión</value>
+  </data>
+  <data name="datosZona" xml:space="preserve">
+    <value>Datos zona</value>
+  </data>
+  <data name="de" xml:space="preserve">
+    <value>De</value>
+  </data>
+  <data name="debeExistirSerieRelacionada" xml:space="preserve">
+    <value>Debe existir una serie relacionada</value>
+  </data>
+  <data name="debeSeleccionarAlgunElemento" xml:space="preserve">
+    <value>Debe seleccionar algún elemento</value>
+  </data>
+  <data name="debeSeleccionarFaltasExcedentes" xml:space="preserve">
+    <value>Debe seleccionar los elementos que desea mostrar</value>
+  </data>
+  <data name="debeSeleccionarUnPeriodo" xml:space="preserve">
+    <value>You must select a term</value>
+  </data>
+  <data name="debido" xml:space="preserve">
+    <value>Debido</value>
+  </data>
+  <data name="decimal_" xml:space="preserve">
+    <value>Decimal</value>
+  </data>
+  <data name="departamento" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="departamentos" xml:space="preserve">
+    <value>Departments</value>
+  </data>
+  <data name="desc_amp" xml:space="preserve">
+    <value>Descripción ampliada</value>
+  </data>
+  <data name="descargarArchivo" xml:space="preserve">
+    <value>Download file</value>
+  </data>
+  <data name="descEnCarpeta" xml:space="preserve">
+    <value>Desc. en carpeta</value>
+    <comment>Descomprimir en carpeta abreviado</comment>
+  </data>
+  <data name="descomprimidoElContenidoDelArchivoXEnLaCarpetaY" xml:space="preserve">
+    <value>File "@file" has been unzipped in folder "@folder"</value>
+  </data>
+  <data name="descomprimir" xml:space="preserve">
+    <value>Unzip</value>
+  </data>
+  <data name="descomprimirEnCarpeta" xml:space="preserve">
+    <value>Unzip to folder</value>
+  </data>
+  <data name="desconexion" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="descripcion" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="descripcionAbr" xml:space="preserve">
+    <value>Des. Abrev.</value>
+  </data>
+  <data name="descripcionDato" xml:space="preserve">
+    <value>Descripción dato</value>
+  </data>
+  <data name="descripcionmodif" xml:space="preserve">
+    <value>Descripción modificable</value>
+  </data>
+  <data name="descripcionModifAbv" xml:space="preserve">
+    <value>Desc. modificable</value>
+  </data>
+  <data name="descripcionSolicitud" xml:space="preserve">
+    <value>Descripción solicitud</value>
+  </data>
+  <data name="descuento" xml:space="preserve">
+    <value>Discount</value>
+  </data>
+  <data name="desde" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="deseaQuitarElIcono" xml:space="preserve">
+    <value>Do you want the icon to be removed?</value>
+  </data>
+  <data name="desmarcar" xml:space="preserve">
+    <value>Uncheck</value>
+  </data>
+  <data name="desmarcarTodos" xml:space="preserve">
+    <value>Uncheck all</value>
+  </data>
+  <data name="detallado" xml:space="preserve">
+    <value>Detailed</value>
+  </data>
+  <data name="detalle" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="detalleUnidades" xml:space="preserve">
+    <value>Detalle de unidades</value>
+  </data>
+  <data name="deuda" xml:space="preserve">
+    <value>Debt</value>
+  </data>
+  <data name="deudas" xml:space="preserve">
+    <value>Debts</value>
+  </data>
+  <data name="devolucion" xml:space="preserve">
+    <value>Refund</value>
+  </data>
+  <data name="devolucion_bancaria" xml:space="preserve">
+    <value>Bank refund</value>
+  </data>
+  <data name="diametro" xml:space="preserve">
+    <value>Diameter</value>
+  </data>
+  <data name="diario" xml:space="preserve">
+    <value>Daily</value>
+  </data>
+  <data name="dias" xml:space="preserve">
+    <value>Days</value>
+  </data>
+  <data name="dias_r" xml:space="preserve">
+    <value>Días R.</value>
+  </data>
+  <data name="diasreaprov" xml:space="preserve">
+    <value>Días de reaprovisionamiento</value>
+  </data>
+  <data name="diferencial" xml:space="preserve">
+    <value>Diferencial</value>
+  </data>
+  <data name="diferenciaRecuento" xml:space="preserve">
+    <value>Diferencia recuento</value>
+  </data>
+  <data name="diferido" xml:space="preserve">
+    <value>Diferido</value>
+  </data>
+  <data name="diferidos" xml:space="preserve">
+    <value>Diferidos</value>
+  </data>
+  <data name="direccion" xml:space="preserve">
+    <value>Adress</value>
+  </data>
+  <data name="direccionesElectronicas" xml:space="preserve">
+    <value>Electronic adresses</value>
+  </data>
+  <data name="direccionNoExistente_ValidarInmueble" xml:space="preserve">
+    <value>La dirección introducida no existe, es necesario completar todos los datos del inmueble y pulsar en "validar inmueble"</value>
+  </data>
+  <data name="direccionSuministro" xml:space="preserve">
+    <value>Dirección suministro</value>
+  </data>
+  <data name="dni" xml:space="preserve">
+    <value>DNI</value>
+  </data>
+  <data name="dociden" xml:space="preserve">
+    <value>Doc.iden</value>
+  </data>
+  <data name="docsidentificacion" xml:space="preserve">
+    <value>Docs. identificación</value>
+  </data>
+  <data name="documento" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="documentos" xml:space="preserve">
+    <value>Documentos</value>
+  </data>
+  <data name="documentosIdentidad" xml:space="preserve">
+    <value>Documentos de identidad</value>
+  </data>
+  <data name="dos" xml:space="preserve">
+    <value>Two</value>
+  </data>
+  <data name="dto" xml:space="preserve">
+    <value>Dto</value>
+  </data>
+  <data name="duplicar" xml:space="preserve">
+    <value>Duplicar</value>
+  </data>
+  <data name="ECartaTiposEtiquetas_ccc" xml:space="preserve">
+    <value>Codigo cuenta cliente</value>
+  </data>
+  <data name="ECartaTiposEtiquetas_fecCorte" xml:space="preserve">
+    <value>Fecha corte</value>
+  </data>
+  <data name="ECartaTiposEtiquetas_impDeuda" xml:space="preserve">
+    <value>Importe deuda</value>
+  </data>
+  <data name="ECartaTiposEtiquetas_nomCli" xml:space="preserve">
+    <value>Nombre cliente</value>
+  </data>
+  <data name="ECartaTiposEtiquetas_nomInq" xml:space="preserve">
+    <value>Nombre inquilino</value>
+  </data>
+  <data name="ECartaTiposEtiquetas_numPer" xml:space="preserve">
+    <value>Numero periodos deuda</value>
+  </data>
+  <data name="ECartaTiposEtiquetas_ultFec" xml:space="preserve">
+    <value>Fecha último pago</value>
+  </data>
+  <data name="edificio" xml:space="preserve">
+    <value>Building</value>
+  </data>
+  <data name="editar" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="editarCliente" xml:space="preserve">
+    <value>Edit client</value>
+  </data>
+  <data name="efactura" xml:space="preserve">
+    <value>E-Invoice</value>
+    <comment>Factura electrónica</comment>
+  </data>
+  <data name="efectosARemesar" xml:space="preserve">
+    <value>Efectos a remesar</value>
+  </data>
+  <data name="ejecutando" xml:space="preserve">
+    <value>Ejecutando</value>
+  </data>
+  <data name="ejecutarAhora" xml:space="preserve">
+    <value>Ejecutar ahora</value>
+  </data>
+  <data name="elComponenteYOperacionEs" xml:space="preserve">
+    <value>El componente es: @componenteCodigo - @componenteDescripcion y la operación es: @operacionCodigo - @operacionDescripcion</value>
+  </data>
+  <data name="elementoInsertado" xml:space="preserve">
+    <value>@item insertado</value>
+  </data>
+  <data name="elExpedienteDeCorteEs" xml:space="preserve">
+    <value>El expediente de corte es: @numeroExpediente</value>
+  </data>
+  <data name="elIconoEstaSiendoUsado" xml:space="preserve">
+    <value>The selected icon is being used</value>
+  </data>
+  <data name="elijaUnaAccion" xml:space="preserve">
+    <value>Choose an action, please</value>
+  </data>
+  <data name="elInmuebleYaEstaValidado" xml:space="preserve">
+    <value>El inmueble ya está validado</value>
+  </data>
+  <data name="elNumeroDeSerieEs" xml:space="preserve">
+    <value>El número de serie es: @numeroSerie</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="emisionCarta" xml:space="preserve">
+    <value>Emisión carta</value>
+  </data>
+  <data name="emisionCartas" xml:space="preserve">
+    <value>Emisión cartas</value>
+  </data>
+  <data name="emisionDelBalanceDeSumasYSaldos" xml:space="preserve">
+    <value>Emisión del balance de sumas y saldos</value>
+  </data>
+  <data name="emisionHojasInspeccion" xml:space="preserve">
+    <value>Emisión de hojas de inspección</value>
+  </data>
+  <data name="emisionHojasLec" xml:space="preserve">
+    <value>Emisión de hojas de lectura</value>
+  </data>
+  <data name="emisionHojasRec" xml:space="preserve">
+    <value>Emisión hojas recuento</value>
+  </data>
+  <data name="emitido" xml:space="preserve">
+    <value>Emitido</value>
+  </data>
+  <data name="emplazamiento" xml:space="preserve">
+    <value>Emplazamiento</value>
+  </data>
+  <data name="emplazamientoscon" xml:space="preserve">
+    <value>Emplazamientos de contadores</value>
+  </data>
+  <data name="emplazaNoExiste" xml:space="preserve">
+    <value>El emplazamiento no existe, ¿desea darlo de alta?</value>
+  </data>
+  <data name="empleado" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="empleados" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="entidad" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="entidadesCP" xml:space="preserve">
+    <value>Entidades de cobro/pago</value>
+  </data>
+  <data name="entrada" xml:space="preserve">
+    <value>Entry</value>
+  </data>
+  <data name="entrada_inspecciones" xml:space="preserve">
+    <value>Entrada de inspecciones</value>
+  </data>
+  <data name="entrada_lecturas" xml:space="preserve">
+    <value>Entrada de lecturas </value>
+  </data>
+  <data name="entrada_mercancias" xml:space="preserve">
+    <value>Entrada mercancías</value>
+  </data>
+  <data name="entradaApuntes" xml:space="preserve">
+    <value>Entrada de apuntes</value>
+  </data>
+  <data name="entradaFacturada" xml:space="preserve">
+    <value>La entrada '@item' está facturada</value>
+  </data>
+  <data name="entradamercancia" xml:space="preserve">
+    <value>Entradas de mercancias</value>
+  </data>
+  <data name="entradaRecuento" xml:space="preserve">
+    <value>Entrada recuento</value>
+  </data>
+  <data name="entradaresultrec" xml:space="preserve">
+    <value>Entrada resultados recuento</value>
+  </data>
+  <data name="entradas" xml:space="preserve">
+    <value>Entradas</value>
+  </data>
+  <data name="enviados" xml:space="preserve">
+    <value>Sent</value>
+  </data>
+  <data name="enviar" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="envio" xml:space="preserve">
+    <value>Envio</value>
+  </data>
+  <data name="errDebeExistirElCodigo" xml:space="preserve">
+    <value>Debe existir el código '@item'</value>
+  </data>
+  <data name="errIncidenciaNoValida" xml:space="preserve">
+    <value>Incidencia no válida</value>
+  </data>
+  <data name="errObtenerMaxAsiento" xml:space="preserve">
+    <value>Error al obtener el máximo asiento del diario @item</value>
+  </data>
+  <data name="error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="errorActualizarLineasFactura" xml:space="preserve">
+    <value>No se han actualizado las líneas de facturas</value>
+  </data>
+  <data name="errorActualizarVarios" xml:space="preserve">
+    <value>Se ha producido un error ejecutando la actualización</value>
+  </data>
+  <data name="errorAlCambiarEstadoRec" xml:space="preserve">
+    <value>Error al cambiar el estado del recuento.</value>
+  </data>
+  <data name="errorArchivoXNoExiste" xml:space="preserve">
+    <value>File '@file' does not exists</value>
+  </data>
+  <data name="errorCodigoContratoIncorrecto" xml:space="preserve">
+    <value>Código de contrato incorrecto</value>
+  </data>
+  <data name="errorComprobandoElEstadoDeLaTarea" xml:space="preserve">
+    <value>No se ha podido comprobar el estado de la tarea</value>
+  </data>
+  <data name="errorComprobandoSiExistenElementos" xml:space="preserve">
+    <value>Error comprobando si existen elementos</value>
+  </data>
+  <data name="errorComprobandoSiExsiteElElementoX" xml:space="preserve">
+    <value>Error comprobando si existe el elemento '@item'</value>
+  </data>
+  <data name="errorContratoNoDadoDeBaja" xml:space="preserve">
+    <value>El contrato no ha sido dado de baja</value>
+  </data>
+  <data name="errorDebeSeleccionarSerie" xml:space="preserve">
+    <value>Debe seleccionar una serie</value>
+  </data>
+  <data name="errorDebeSeleccionarZona" xml:space="preserve">
+    <value>You must select a zone</value>
+  </data>
+  <data name="errorDigitosCuenta" xml:space="preserve">
+    <value>La cantidad de dígitos de la cuenta no son los correctos</value>
+  </data>
+  <data name="errorElContratoXNoTieneCodigoDeCuentaAsociada" xml:space="preserve">
+    <value>El contrato @codigo, versión @version, no tiene código de cuenta asociada</value>
+  </data>
+  <data name="errorEmisionNoGenerada" xml:space="preserve">
+    <value>Emisión no generada</value>
+  </data>
+  <data name="errorEscalaAscendente" xml:space="preserve">
+    <value>La escala debe ir en orden ascendente</value>
+  </data>
+  <data name="errorExisteCodigoAlternativo" xml:space="preserve">
+    <value>El código alternativo @item ya existe.</value>
+  </data>
+  <data name="errorfacturaDeBajaNoGenerada" xml:space="preserve">
+    <value>Factura de baja NO generada</value>
+  </data>
+  <data name="errorFacturaNoAnulada" xml:space="preserve">
+    <value>La factura no ha sido anulada</value>
+  </data>
+  <data name="errorFacturaNoDuplicada" xml:space="preserve">
+    <value>La factura no ha sido duplicada</value>
+  </data>
+  <data name="errorFaturaNoDadaDeBaja" xml:space="preserve">
+    <value>La factura no ha sido dada de baja</value>
+  </data>
+  <data name="errorFicheroNoBorrado" xml:space="preserve">
+    <value>No se ha podido borrar el fichero '@file'</value>
+  </data>
+  <data name="errorFicheroNoGuardado" xml:space="preserve">
+    <value>No se ha podido guardar el fichero '@file'</value>
+  </data>
+  <data name="errorFicheroNoSubido" xml:space="preserve">
+    <value>Se ha producido un ERROR intentando subir el fichero</value>
+  </data>
+  <data name="errorFormatoFicheroNoValido" xml:space="preserve">
+    <value>The file format is not correct</value>
+  </data>
+  <data name="errorInsertarExiste" xml:space="preserve">
+    <value>El elemento '@item' ya existe</value>
+  </data>
+  <data name="errorLineasFacturaNoBorradas" xml:space="preserve">
+    <value>No se ha podido borrar las líneas de la factura @item</value>
+  </data>
+  <data name="errorLineasNoInsertadas" xml:space="preserve">
+    <value>Las líneas no han sido insertadas</value>
+  </data>
+  <data name="errorNoActualizado" xml:space="preserve">
+    <value>El elemento '@item' no se ha podido actualizar</value>
+  </data>
+  <data name="errorNoAjustarRecuentoExiste" xml:space="preserve">
+    <value>El recuento ya ha sido actualizado anteriormente</value>
+  </data>
+  <data name="errorNoAjustarRecuentoLineas" xml:space="preserve">
+    <value>El recuento no se puede actualizar todavía, existen líneas sin recontar</value>
+  </data>
+  <data name="errorNoBorrado" xml:space="preserve">
+    <value>El elemento '@item' no se ha podido borrar</value>
+  </data>
+  <data name="errorNoBorradoCausas" xml:space="preserve">
+    <value>Posibles causas: No existe el elemento o tiene datos asociados</value>
+  </data>
+  <data name="errorNoBorrarRecuentoAjustado" xml:space="preserve">
+    <value>El recuento no se puede borrar al estar ya actualizado</value>
+  </data>
+  <data name="errorNoBorrarVarios" xml:space="preserve">
+    <value>No ha sido posible eliminar los registros</value>
+  </data>
+  <data name="errorNoDisponible" xml:space="preserve">
+    <value>El contador '@item' no está disponible</value>
+  </data>
+  <data name="errorNoEmitidoRecuento" xml:space="preserve">
+    <value>El recuento no ha sido emitido</value>
+  </data>
+  <data name="errorNoEmitirRecuentoAjustado" xml:space="preserve">
+    <value>El recuento no se puede emitir al estar ya actualizado</value>
+  </data>
+  <data name="errorNoExiste" xml:space="preserve">
+    <value>El elemento '@item' no existe</value>
+  </data>
+  <data name="errorNoExisteCuentaAsociada" xml:space="preserve">
+    <value>No existe la cuenta asociada</value>
+  </data>
+  <data name="errorNoInsertado" xml:space="preserve">
+    <value>El elemento '@item' no se ha podido insertar</value>
+  </data>
+  <data name="errorNoInsertadoVarios" xml:space="preserve">
+    <value>No ha sido posible insertar los registros</value>
+  </data>
+  <data name="errorNombreFicheroNoCambiado" xml:space="preserve">
+    <value>No se puede cambiar el nombre del fichero '@file'</value>
+  </data>
+  <data name="errorNoObtener" xml:space="preserve">
+    <value>No se ha obtenido el elemento</value>
+  </data>
+  <data name="errorNoObtenerVarios" xml:space="preserve">
+    <value>No se han podido obtener los elementos</value>
+  </data>
+  <data name="errorNoSeHaPodidoActualizarElTotalDelCobroX" xml:space="preserve">
+    <value>No se ha podido actualizar el total del cobro Sociedad: @sociedad, punto de pago: @ppago, número: @numero</value>
+  </data>
+  <data name="errorNoSeHaPodidoActualizarSituacionPedido" xml:space="preserve">
+    <value>No se ha podido actualizar la situación del pedido número @numero, serie @serie, sociedad @sociedad</value>
+  </data>
+  <data name="errorObtenerUnElemento" xml:space="preserve">
+    <value>No ha sido posible obtener el elemento '@item'</value>
+  </data>
+  <data name="errorObtenidosVariosRegistros" xml:space="preserve">
+    <value>La consulta ha devuelto más de un registro cuando sólo se esperaba uno</value>
+  </data>
+  <data name="errorParametroNoExiste" xml:space="preserve">
+    <value>El parámetro '@item' no existe.</value>
+  </data>
+  <data name="errorParametroNoTieneValor" xml:space="preserve">
+    <value>El parámetro '@item' no tiene valor.</value>
+  </data>
+  <data name="errorParametroNoTieneValorAdecuadoParaTipo" xml:space="preserve">
+    <value>El parámetro @item no tiene un valor adecuado para su tipo de datos</value>
+  </data>
+  <data name="errorPasosDeTareaNoEstablecidos" xml:space="preserve">
+    <value>No se ha podido establecer el número de pasos de la tarea</value>
+  </data>
+  <data name="errorPasosDeTareaNoIncrementado" xml:space="preserve">
+    <value>No se ha podido incrementar el número de pasos de la tarea</value>
+  </data>
+  <data name="errorPassDiferentes" xml:space="preserve">
+    <value>Debe introducir una contraseña diferente a las utilizadas anteriormente</value>
+  </data>
+  <data name="errorProducidoError" xml:space="preserve">
+    <value>Se ha producido un error</value>
+  </data>
+  <data name="errorRecuentoNoAjustado" xml:space="preserve">
+    <value>El recuento no se ha actualizado</value>
+  </data>
+  <data name="errorRecYaAjustado" xml:space="preserve">
+    <value>El recuento ya ha sido ajustado</value>
+  </data>
+  <data name="errorRegsFichAnteriorNoBorrados" xml:space="preserve">
+    <value>No se han borrado los registos del anterior fichero</value>
+  </data>
+  <data name="errorServiciosPorContratoNoDadosDeBaja" xml:space="preserve">
+    <value>Los servicios por contrato no han sido dados de baja</value>
+  </data>
+  <data name="errorSoloSeHanDadoDeBajaAlgunosServiciosPorContrato" xml:space="preserve">
+    <value>Solo se han dado de baja algunos servicios por contrato</value>
+  </data>
+  <data name="errorSoloSeHanInsertadoAlgunasLineas" xml:space="preserve">
+    <value>Sólo han sido insertadas algunas líneas</value>
+  </data>
+  <data name="errorTamañoFichero" xml:space="preserve">
+    <value>File size must be less than @size MB</value>
+  </data>
+  <data name="errorTareaRepetida" xml:space="preserve">
+    <value>La tarea que intenta insertar está programada por el usuario @user para el día @date a las @time</value>
+  </data>
+  <data name="errorTipoFichero" xml:space="preserve">
+    <value>El fichero debe ser del tipo '@type'</value>
+  </data>
+  <data name="errorValorNoValidoParaElCampo" xml:space="preserve">
+    <value>El valor @value no es válido para el campo @field</value>
+  </data>
+  <data name="escalado" xml:space="preserve">
+    <value>Escalado</value>
+  </data>
+  <data name="escalas" xml:space="preserve">
+    <value>Escalas</value>
+  </data>
+  <data name="esContador" xml:space="preserve">
+    <value>Es contador</value>
+  </data>
+  <data name="español" xml:space="preserve">
+    <value>Spanish</value>
+  </data>
+  <data name="espere" xml:space="preserve">
+    <value>Wait a moment</value>
+  </data>
+  <data name="estado" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>Estimated</value>
+  </data>
+  <data name="estimadoPeriodoAbv" xml:space="preserve">
+    <value>E.Periodo</value>
+  </data>
+  <data name="ETaskStatus_Cancelled" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="ETaskStatus_Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ETaskStatus_Executing" xml:space="preserve">
+    <value>Working...</value>
+  </data>
+  <data name="ETaskStatus_Finished" xml:space="preserve">
+    <value>Finished</value>
+  </data>
+  <data name="ETaskStatus_Stopped" xml:space="preserve">
+    <value>Stopped</value>
+  </data>
+  <data name="ETaskType_ActualizacionLecturaFactura" xml:space="preserve">
+    <value>Actualización Lectura Factura</value>
+  </data>
+  <data name="ETaskType_AmpliacionApertura" xml:space="preserve">
+    <value>Ampliación de apertura</value>
+  </data>
+  <data name="ETaskType_AperturaFacturacion" xml:space="preserve">
+    <value>Apertura de facturación</value>
+  </data>
+  <data name="ETaskType_AplicacionDiferidos" xml:space="preserve">
+    <value>Aplicación de diferidos</value>
+  </data>
+  <data name="ETaskType_GeneracionInforme" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="ETaskType_GenerarInformeExcel" xml:space="preserve">
+    <value>Excel Report</value>
+  </data>
+  <data name="ETaskType_GeneracionOTMtto" xml:space="preserve">
+    <value>Generación OT Mtto.</value>
+  </data>
+  <data name="ETaskType_Remesas_Generacion" xml:space="preserve">
+    <value>Generación de remesas</value>
+  </data>
+  <data name="ETaskType_Remesas_SeleccionEfectos" xml:space="preserve">
+    <value>Selección de efectos a remesar</value>
+  </data>
+  <data name="euroSimbolo" xml:space="preserve">
+    <value>&amp;euro;</value>
+  </data>
+  <data name="examinar" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="existeCampoItem" xml:space="preserve">
+    <value>@campo '@item' ya existe</value>
+  </data>
+  <data name="existencia" xml:space="preserve">
+    <value>Existencia</value>
+  </data>
+  <data name="existenLineasAsociadas" xml:space="preserve">
+    <value>No se puede borrar, existen lineas asociadas</value>
+  </data>
+  <data name="expedienteCorteAbv" xml:space="preserve">
+    <value>Water Cut Dossier</value>
+    <comment>Abreviación de "Expediente de corte"</comment>
+  </data>
+  <data name="expedientesCorte" xml:space="preserve">
+    <value>Water Cuts</value>
+  </data>
+  <data name="exploradorDeArchivos" xml:space="preserve">
+    <value>File Explorer</value>
+  </data>
+  <data name="explotacion" xml:space="preserve">
+    <value>Explotacion</value>
+  </data>
+  <data name="externo" xml:space="preserve">
+    <value>Externo</value>
+  </data>
+  <data name="extracto" xml:space="preserve">
+    <value>Extracto</value>
+  </data>
+  <data name="extractoMayorContable" xml:space="preserve">
+    <value>Extracto Mayor Contable</value>
+  </data>
+  <data name="f_avisoCliente" xml:space="preserve">
+    <value>F. aviso cliente</value>
+  </data>
+  <data name="f_reclamacion" xml:space="preserve">
+    <value>F. reclamación</value>
+  </data>
+  <data name="f_solucion" xml:space="preserve">
+    <value>F. solución</value>
+  </data>
+  <data name="f_vencimiento" xml:space="preserve">
+    <value>F. vencimiento</value>
+  </data>
+  <data name="factor" xml:space="preserve">
+    <value>Factor</value>
+  </data>
+  <data name="factura" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="factura_compra" xml:space="preserve">
+    <value>Factura compra</value>
+  </data>
+  <data name="factura_venta" xml:space="preserve">
+    <value>Factura venta</value>
+  </data>
+  <data name="facturacion" xml:space="preserve">
+    <value>Billing</value>
+  </data>
+  <data name="facturado" xml:space="preserve">
+    <value>Facturado</value>
+  </data>
+  <data name="facturaNoEnEstadoApertura" xml:space="preserve">
+    <value>La factura del contrato @contrato, periodo @periodo no está en estado de apertura</value>
+  </data>
+  <data name="facturaNoEstaCobrada" xml:space="preserve">
+    <value>La factura no está cobrada</value>
+  </data>
+  <data name="facturaNoExiste" xml:space="preserve">
+    <value>La factura del contrato @contrato, periodo @periodo no existe</value>
+  </data>
+  <data name="facturarBaja" xml:space="preserve">
+    <value>Facturar baja</value>
+  </data>
+  <data name="facturas" xml:space="preserve">
+    <value>Invoices</value>
+  </data>
+  <data name="facturasProveedor" xml:space="preserve">
+    <value>Facturas proveedor</value>
+  </data>
+  <data name="facturaTieneDatosLectura" xml:space="preserve">
+    <value>La factura del contrato @contrato, periodo @periodo ya tiene datos de lectura (@lectura)</value>
+  </data>
+  <data name="faltasExcedentes" xml:space="preserve">
+    <value>Faltas y excedentes</value>
+  </data>
+  <data name="familia" xml:space="preserve">
+    <value>Family</value>
+  </data>
+  <data name="familias" xml:space="preserve">
+    <value>Families</value>
+  </data>
+  <data name="fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="faxes" xml:space="preserve">
+    <value>Faxes</value>
+  </data>
+  <data name="fcambiopass" xml:space="preserve">
+    <value>Last password change</value>
+  </data>
+  <data name="fecha" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="fecha_alta" xml:space="preserve">
+    <value>Fecha de alta</value>
+  </data>
+  <data name="fecha_baja" xml:space="preserve">
+    <value>Fecha de baja</value>
+  </data>
+  <data name="fecha_cierre" xml:space="preserve">
+    <value>F. cierre</value>
+  </data>
+  <data name="fecha_contrato" xml:space="preserve">
+    <value>Fecha contrato</value>
+  </data>
+  <data name="fecha_contratoAbv" xml:space="preserve">
+    <value>F. contrato</value>
+  </data>
+  <data name="fecha_factura" xml:space="preserve">
+    <value>Fecha factura</value>
+  </data>
+  <data name="fecha_fin" xml:space="preserve">
+    <value>Fecha fin</value>
+  </data>
+  <data name="fecha_grabacion" xml:space="preserve">
+    <value>Fecha grabación</value>
+  </data>
+  <data name="fecha_grabacionAbv" xml:space="preserve">
+    <value>F. grabación</value>
+  </data>
+  <data name="fecha_inicio" xml:space="preserve">
+    <value>Fecha inicio</value>
+  </data>
+  <data name="fecha_inicioAbv" xml:space="preserve">
+    <value>Init date</value>
+  </data>
+  <data name="fecha_lectura" xml:space="preserve">
+    <value>Reading Date</value>
+  </data>
+  <data name="fecha_lectura_actual" xml:space="preserve">
+    <value>Fecha lectura actual</value>
+  </data>
+  <data name="fecha_lectura_anterior" xml:space="preserve">
+    <value>Fecha lectura anterior</value>
+  </data>
+  <data name="fecha_lectura_factura" xml:space="preserve">
+    <value>Fecha lectura factura</value>
+  </data>
+  <data name="fecha_lectura_inspeccion" xml:space="preserve">
+    <value>Fecha lectura inspección</value>
+  </data>
+  <data name="fecha_mantenimientoAbv" xml:space="preserve">
+    <value>F. mantenimiento</value>
+  </data>
+  <data name="fecha_periodo" xml:space="preserve">
+    <value>Fecha periodo</value>
+  </data>
+  <data name="fecha_realizacion" xml:space="preserve">
+    <value>F. realización</value>
+  </data>
+  <data name="fecha_rectificativa" xml:space="preserve">
+    <value>Fecha rectificativa</value>
+  </data>
+  <data name="fecha_recuento" xml:space="preserve">
+    <value>Fecha recuento</value>
+  </data>
+  <data name="fecha_remesa" xml:space="preserve">
+    <value>Fecha remesa</value>
+  </data>
+  <data name="fecha_solicitud" xml:space="preserve">
+    <value>F. solicitud</value>
+  </data>
+  <data name="fecha_ultimo" xml:space="preserve">
+    <value>Fecha último</value>
+  </data>
+  <data name="fechaApertura" xml:space="preserve">
+    <value>Fecha de apertura</value>
+  </data>
+  <data name="fechaCambioAbv" xml:space="preserve">
+    <value>F. cambio</value>
+  </data>
+  <data name="fechaCarta" xml:space="preserve">
+    <value>Fecha carta</value>
+  </data>
+  <data name="fechaCierre" xml:space="preserve">
+    <value>Fecha de cierre</value>
+  </data>
+  <data name="fechaCobro" xml:space="preserve">
+    <value>Fecha de cobro</value>
+  </data>
+  <data name="fechaCompra" xml:space="preserve">
+    <value>Fecha compra</value>
+  </data>
+  <data name="fechaCorte" xml:space="preserve">
+    <value>Fecha corte</value>
+  </data>
+  <data name="fechaDeFin" xml:space="preserve">
+    <value>Fecha de fin</value>
+  </data>
+  <data name="fechaDeInicio" xml:space="preserve">
+    <value>Fecha de inicio</value>
+  </data>
+  <data name="fechaDeLaTarea" xml:space="preserve">
+    <value>Fecha de la tarea</value>
+  </data>
+  <data name="fechaFinIncorrecta" xml:space="preserve">
+    <value>La fecha fin es incorrecta.</value>
+  </data>
+  <data name="fechaHomologacion" xml:space="preserve">
+    <value>Fecha homologación</value>
+  </data>
+  <data name="fechaImpresion" xml:space="preserve">
+    <value>Printing Date</value>
+  </data>
+  <data name="fechaNacim" xml:space="preserve">
+    <value>Fecha de nacimiento</value>
+  </data>
+  <data name="fechaOperacion" xml:space="preserve">
+    <value>Fecha de operación</value>
+  </data>
+  <data name="fechaOT" xml:space="preserve">
+    <value>Fecha OT</value>
+  </data>
+  <data name="fechaPresentacion" xml:space="preserve">
+    <value>Fecha presentación</value>
+  </data>
+  <data name="fechaPrevision" xml:space="preserve">
+    <value>Fecha Previsión</value>
+  </data>
+  <data name="fechaRecogida" xml:space="preserve">
+    <value>Fecha recogida</value>
+  </data>
+  <data name="fechaReg_Abv" xml:space="preserve">
+    <value>F. registro</value>
+  </data>
+  <data name="fechaRegistro" xml:space="preserve">
+    <value>Fecha de registro</value>
+  </data>
+  <data name="fechaUltimoAcceso" xml:space="preserve">
+    <value>Ult. acceso</value>
+  </data>
+  <data name="fechaVencimiento" xml:space="preserve">
+    <value>Fecha vencimiento</value>
+  </data>
+  <data name="fichero" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="ficheroGuardadoOk" xml:space="preserve">
+    <value>The file has been correctly saved </value>
+  </data>
+  <data name="ficheroXCreado" xml:space="preserve">
+    <value>Se ha creado el archivo "@file"</value>
+  </data>
+  <data name="fila" xml:space="preserve">
+    <value>Row</value>
+  </data>
+  <data name="fin" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="finalizado" xml:space="preserve">
+    <value>Finished</value>
+  </data>
+  <data name="finca" xml:space="preserve">
+    <value>Finca</value>
+  </data>
+  <data name="formaDePago" xml:space="preserve">
+    <value>Forma de pago</value>
+  </data>
+  <data name="formaDePagoAbv" xml:space="preserve">
+    <value>F. pago</value>
+  </data>
+  <data name="formasDePago" xml:space="preserve">
+    <value>Formas de pago</value>
+  </data>
+  <data name="foto" xml:space="preserve">
+    <value>Picture</value>
+  </data>
+  <data name="generacionDeMuestrasPorConjuntoAnalisis" xml:space="preserve">
+    <value>Generación de muestras por conjunto de análisis</value>
+  </data>
+  <data name="generacionDeOTMantenimiento" xml:space="preserve">
+    <value>Generación de O.T. de mantenimiento</value>
+  </data>
+  <data name="generacionDeOTPorCambioDeContador" xml:space="preserve">
+    <value>Generación de O.T. por cambio de contador</value>
+  </data>
+  <data name="generados" xml:space="preserve">
+    <value>Generados</value>
+  </data>
+  <data name="generar" xml:space="preserve">
+    <value>Generar</value>
+  </data>
+  <data name="generarAvisos" xml:space="preserve">
+    <value>Generar avisos</value>
+  </data>
+  <data name="generarExpedienteDeCorte" xml:space="preserve">
+    <value>Generar expediente de corte</value>
+  </data>
+  <data name="generarExpedientesDeCorte" xml:space="preserve">
+    <value>Generar expedientes de corte</value>
+  </data>
+  <data name="generarFactura" xml:space="preserve">
+    <value>Generar factura</value>
+  </data>
+  <data name="generarOT" xml:space="preserve">
+    <value>Generar orden de trabajo</value>
+  </data>
+  <data name="generarVencimientos" xml:space="preserve">
+    <value>Generar vencimientos</value>
+  </data>
+  <data name="gestorDocumental" xml:space="preserve">
+    <value>Documentary manager</value>
+  </data>
+  <data name="grupo" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="gruposReclamaciones" xml:space="preserve">
+    <value>Claim groups</value>
+  </data>
+  <data name="hasta" xml:space="preserve">
+    <value>Hasta</value>
+  </data>
+  <data name="hayMensajesSinLeer" xml:space="preserve">
+    <value>Hay mensajes sin leer</value>
+  </data>
+  <data name="historico" xml:space="preserve">
+    <value>Histórico</value>
+  </data>
+  <data name="historicoConsumo" xml:space="preserve">
+    <value>Histórico de consumo</value>
+  </data>
+  <data name="historicoDelProveedor" xml:space="preserve">
+    <value>Histórico del proveedor</value>
+  </data>
+  <data name="hora" xml:space="preserve">
+    <value>Hour</value>
+  </data>
+  <data name="hoy" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="icono" xml:space="preserve">
+    <value>Icon</value>
+  </data>
+  <data name="iconos" xml:space="preserve">
+    <value>Icons</value>
+  </data>
+  <data name="idioma" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="impagadas" xml:space="preserve">
+    <value>Impagadas</value>
+  </data>
+  <data name="impCuota" xml:space="preserve">
+    <value>Imp. cuota</value>
+  </data>
+  <data name="importe" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="importe_portes" xml:space="preserve">
+    <value>Importe portes</value>
+  </data>
+  <data name="importeArchivoDistintoAFactura" xml:space="preserve">
+    <value>El importe especificado en el archivo es distinto al importe de la factura</value>
+  </data>
+  <data name="importeDeuda" xml:space="preserve">
+    <value>Importe deuda</value>
+  </data>
+  <data name="importeDeudaAbv" xml:space="preserve">
+    <value>Imp. deuda</value>
+  </data>
+  <data name="importeImpuesto" xml:space="preserve">
+    <value>Importe impuesto</value>
+  </data>
+  <data name="impresora" xml:space="preserve">
+    <value>Printer</value>
+  </data>
+  <data name="impresoTipo" xml:space="preserve">
+    <value>T. Impreso</value>
+    <comment>Tipo de Impreso (Consumo / Contado)</comment>
+  </data>
+  <data name="imprimir" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="imprimirContrapartida" xml:space="preserve">
+    <value>Imprimir contrapartida</value>
+  </data>
+  <data name="imprimirContrapartidaAbr" xml:space="preserve">
+    <value>Imp. Contrapartida</value>
+  </data>
+  <data name="imprimirDetalleDeuda" xml:space="preserve">
+    <value>Imprimir detalle deuda</value>
+  </data>
+  <data name="imprimirSubfamilias" xml:space="preserve">
+    <value>Print Subfamilies</value>
+  </data>
+  <data name="imprimirSubtotales" xml:space="preserve">
+    <value>Imprimir subtotales</value>
+  </data>
+  <data name="imprimirValores" xml:space="preserve">
+    <value>Imprimir Valores</value>
+  </data>
+  <data name="imprimirValoresAbr" xml:space="preserve">
+    <value>Imp. Valores</value>
+  </data>
+  <data name="impuesto" xml:space="preserve">
+    <value>Tax</value>
+  </data>
+  <data name="impuestoAbv" xml:space="preserve">
+    <value>Tax</value>
+  </data>
+  <data name="imputacion" xml:space="preserve">
+    <value>Imputación</value>
+  </data>
+  <data name="imputaciones" xml:space="preserve">
+    <value>Imputaciones</value>
+  </data>
+  <data name="inactivo" xml:space="preserve">
+    <value>Inactivo</value>
+  </data>
+  <data name="inactivos" xml:space="preserve">
+    <value>Inactivos</value>
+  </data>
+  <data name="incidencia" xml:space="preserve">
+    <value>Incidencia</value>
+  </data>
+  <data name="incidenciaDelInspector" xml:space="preserve">
+    <value>Incidencia del inspector</value>
+  </data>
+  <data name="incidenciaDelLector" xml:space="preserve">
+    <value>Incidencia del lector</value>
+  </data>
+  <data name="incidenciasLectura" xml:space="preserve">
+    <value>Incidencias de lecturas</value>
+  </data>
+  <data name="indiferente" xml:space="preserve">
+    <value>Indiferente</value>
+  </data>
+  <data name="infImpNoIgualSumaImpLineas" xml:space="preserve">
+    <value>El importe no es igual a la suma del importe de sus lineas</value>
+  </data>
+  <data name="info" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="infoActualizadasLineasFacturas" xml:space="preserve">
+    <value>Todas las líneas de facturas se han actualizado correctamente</value>
+  </data>
+  <data name="infoConsumoElevado" xml:space="preserve">
+    <value>El consumo supera el máximo facturable</value>
+  </data>
+  <data name="infoContratoDadoDeBaja" xml:space="preserve">
+    <value>El contrato ha sido dado de baja</value>
+  </data>
+  <data name="infoContratoNoPerteneceALaZona" xml:space="preserve">
+    <value>El contrato @itemCtr no pertenece a la zona @itemZona</value>
+  </data>
+  <data name="infoContratoTieneUltimaVersión" xml:space="preserve">
+    <value>El contrato @item ya tiene la última versión</value>
+  </data>
+  <data name="infoDebeSeleccionarCtr" xml:space="preserve">
+    <value>Debe seleccionar un contrato</value>
+  </data>
+  <data name="infoDireccionUnicoInmueble" xml:space="preserve">
+    <value>Existe un único inmueble con esa dirección, los datos del inmueble se han rellenado automáticamente</value>
+  </data>
+  <data name="infoDireccionVariosInmuebles" xml:space="preserve">
+    <value>There are several buildings with that adress. Please, select one of th group will be shown now</value>
+  </data>
+  <data name="infoDocIdenNombreNoConcuerdan" xml:space="preserve">
+    <value>El documento de identificación y el nombre NO concuerdan, ¿desea continuar?</value>
+  </data>
+  <data name="infoDocIdenNombreNoConcuerdanInsertarCli" xml:space="preserve">
+    <value>El documento de identificación y el nombre NO concuerdan, se insertará un nuevo cliente, ¿desea continuar?</value>
+  </data>
+  <data name="infoDocIdenUnicoCliente" xml:space="preserve">
+    <value>Existe un único cliente con ese documento de identificación, los datos del cliente se han rellenado automáticamente</value>
+  </data>
+  <data name="infoDocIdenVariosClientes" xml:space="preserve">
+    <value>Existe más de un cliente con ese documento de identificación, seleccione uno de todos los que se visualizarán a continuación</value>
+  </data>
+  <data name="infoEmitirHojasRecuento" xml:space="preserve">
+    <value>El recuento ya ha sido emitido con anterioridad. Si lo genera de nuevo se pueden producir cambios. ¿Desea continuar?</value>
+  </data>
+  <data name="infoEstadoRecuento" xml:space="preserve">
+    <value>Estado del recueto: @item</value>
+  </data>
+  <data name="infoExistenDatosInquilino" xml:space="preserve">
+    <value>There are data from the TENANT. Do you want to import them?</value>
+  </data>
+  <data name="infoExistenDatosPropietario" xml:space="preserve">
+    <value>There are data from the OWNER. Do you want to import them?</value>
+  </data>
+  <data name="infoExpedientesCorteGenerados" xml:space="preserve">
+    <value>Se han generado correctamente @item expedientes de corte</value>
+  </data>
+  <data name="infoFacturaAnulada" xml:space="preserve">
+    <value>La factura ha sido anulada.</value>
+  </data>
+  <data name="infoGeneradoNuevoNumFacX" xml:space="preserve">
+    <value>Se ha generado un nuevo número de factura: @num</value>
+  </data>
+  <data name="infoImpACobrarDebeSerMayorOIgual" xml:space="preserve">
+    <value>El importe a cobrar debe ser mayor o igual al introducido.</value>
+  </data>
+  <data name="infoImpDebeSerMenorOIgualQueImpPdt" xml:space="preserve">
+    <value>El importe debe ser menor o igual que lo pendiente</value>
+  </data>
+  <data name="infoLineaRecontada" xml:space="preserve">
+    <value> Esta línea ya ha sido recontada.</value>
+  </data>
+  <data name="infoNoAdmiteMasLineas" xml:space="preserve">
+    <value>No admite más líneas</value>
+  </data>
+  <data name="infoNoCargadosTodosLosRegsDelFich" xml:space="preserve">
+    <value>No se han cargado todos los registros del fichero</value>
+  </data>
+  <data name="infoNoExistenFacturasParaContrato" xml:space="preserve">
+    <value>No existen facturas para el contrato @item</value>
+  </data>
+  <data name="infoNoExistenFacturasProveedor" xml:space="preserve">
+    <value>No existen facturas a proveedor para generar los vencimientos</value>
+  </data>
+  <data name="infoNoFactPdteDeCtr" xml:space="preserve">
+    <value>No hay facturas pendientes para este contrato.</value>
+  </data>
+  <data name="infoNoHayCambios" xml:space="preserve">
+    <value>No se ha modificado ningún dato.</value>
+  </data>
+  <data name="infoNoHayRegParaEmision" xml:space="preserve">
+    <value>No hay registros para la emisión</value>
+  </data>
+  <data name="infoNombreUnicoCliente" xml:space="preserve">
+    <value>Existe un único cliente con ese nombre, los datos del cliente se han rellenado automáticamente</value>
+  </data>
+  <data name="infoNombreVariosClientes" xml:space="preserve">
+    <value>Existe más de un cliente con ese nombre, seleccione uno de todos los que se visualizarán a continuación</value>
+  </data>
+  <data name="infoNoPuedeBorrarElementoTieneSubcomponentes" xml:space="preserve">
+    <value>El elemento '@item'  tiene subcomponentes y no se puede borrar.</value>
+  </data>
+  <data name="infoNoTieneSerie" xml:space="preserve">
+    <value>No tiene serie</value>
+  </data>
+  <data name="infoPedidoEntradasRelacionadas" xml:space="preserve">
+    <value>El pedido @item no es posible borrarlo, tiene entradas asociadas</value>
+  </data>
+  <data name="infoPeriodoNoCerrado" xml:space="preserve">
+    <value>The term is not closed</value>
+  </data>
+  <data name="informe" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="informeDifRec" xml:space="preserve">
+    <value>Informe de diferencias del recuento</value>
+  </data>
+  <data name="informeentrada" xml:space="preserve">
+    <value>Informe de Entrada</value>
+  </data>
+  <data name="informeSituacion" xml:space="preserve">
+    <value>Informe de Situación</value>
+  </data>
+  <data name="infoVencimientosGeneradosCorrectamente" xml:space="preserve">
+    <value>Los vencimientos se han generado correctamente</value>
+  </data>
+  <data name="inicio" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="inmueble" xml:space="preserve">
+    <value>Building</value>
+  </data>
+  <data name="inmuebles" xml:space="preserve">
+    <value>Buildings</value>
+  </data>
+  <data name="inquilino" xml:space="preserve">
+    <value>Inquilino</value>
+  </data>
+  <data name="insercionNuevoInmueble" xml:space="preserve">
+    <value>El inmueble no existe, se insertará un nuevo inmueble al pulsar en el botón de "aceptar" del formulario</value>
+  </data>
+  <data name="insertando" xml:space="preserve">
+    <value>Inserting</value>
+  </data>
+  <data name="insertar" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="inspeccion" xml:space="preserve">
+    <value>Inspección</value>
+  </data>
+  <data name="inspeccionAbv" xml:space="preserve">
+    <value>Ins.</value>
+  </data>
+  <data name="inspeccionActual" xml:space="preserve">
+    <value>Inspección actual</value>
+  </data>
+  <data name="inspecciones" xml:space="preserve">
+    <value>Inspecciones</value>
+  </data>
+  <data name="inspeccionFinal" xml:space="preserve">
+    <value>Inspección final</value>
+  </data>
+  <data name="inspeccionInicial" xml:space="preserve">
+    <value>Inspección inicial</value>
+  </data>
+  <data name="inspector" xml:space="preserve">
+    <value>Inspector</value>
+  </data>
+  <data name="instalacion" xml:space="preserve">
+    <value>Instalación</value>
+  </data>
+  <data name="interno" xml:space="preserve">
+    <value>Interno</value>
+  </data>
+  <data name="inventario" xml:space="preserve">
+    <value>Inventario</value>
+  </data>
+  <data name="ir_a" xml:space="preserve">
+    <value>Go To</value>
+  </data>
+  <data name="laboratorio" xml:space="preserve">
+    <value>Laboratory</value>
+  </data>
+  <data name="laboratorios" xml:space="preserve">
+    <value>Laboratories</value>
+  </data>
+  <data name="laCuentaExiste" xml:space="preserve">
+    <value>La cuenta ya existe</value>
+  </data>
+  <data name="laIncidenciaSeleccionadaNoEsValida" xml:space="preserve">
+    <value>La incidencia seleccionada no es valida</value>
+  </data>
+  <data name="laTareaNoSePuedeCancelarDuranteEjecucion" xml:space="preserve">
+    <value>La tarea no se puede cancelar durante su ejecución</value>
+  </data>
+  <data name="latitud" xml:space="preserve">
+    <value>Latitude</value>
+  </data>
+  <data name="lector" xml:space="preserve">
+    <value>Reader</value>
+  </data>
+  <data name="lectura" xml:space="preserve">
+    <value>Reading</value>
+  </data>
+  <data name="lectura_factura" xml:space="preserve">
+    <value>Lectura factura</value>
+  </data>
+  <data name="lectura_inspeccion" xml:space="preserve">
+    <value>Lectura inspección</value>
+  </data>
+  <data name="lecturaAbv" xml:space="preserve">
+    <value>Rdng.</value>
+  </data>
+  <data name="lecturaActual" xml:space="preserve">
+    <value>Lectura actual</value>
+  </data>
+  <data name="lecturaActualAbv" xml:space="preserve">
+    <value>L. Actual</value>
+  </data>
+  <data name="lecturaAnterior" xml:space="preserve">
+    <value>Lectura anterior</value>
+  </data>
+  <data name="lecturaAnteriorAbv" xml:space="preserve">
+    <value>L. anterior</value>
+  </data>
+  <data name="lecturaContadorAbv" xml:space="preserve">
+    <value>Lect. contador</value>
+  </data>
+  <data name="lecturaFacturaAbv" xml:space="preserve">
+    <value>L. factura</value>
+  </data>
+  <data name="lecturaFinal" xml:space="preserve">
+    <value>Lectura final</value>
+  </data>
+  <data name="lecturaInicial" xml:space="preserve">
+    <value>Lectura inicial</value>
+  </data>
+  <data name="lecturaInspectorAbv" xml:space="preserve">
+    <value>L. inspector</value>
+  </data>
+  <data name="lecturaInspectorActual" xml:space="preserve">
+    <value>Lec. insp. actual</value>
+  </data>
+  <data name="lecturaInstalacionAbv" xml:space="preserve">
+    <value>L. instalación</value>
+  </data>
+  <data name="lecturaLectorActual" xml:space="preserve">
+    <value>Lectura lector actual</value>
+  </data>
+  <data name="lecturaRetiradaAbv" xml:space="preserve">
+    <value>L. retirada</value>
+  </data>
+  <data name="lecturas" xml:space="preserve">
+    <value>Lecturas</value>
+  </data>
+  <data name="limiteCompras" xml:space="preserve">
+    <value>Límite compras</value>
+  </data>
+  <data name="limiteescala" xml:space="preserve">
+    <value>Límite de escala</value>
+  </data>
+  <data name="linea" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="lineas" xml:space="preserve">
+    <value>Lines</value>
+  </data>
+  <data name="lineas_recuento" xml:space="preserve">
+    <value>Líneas de recuento</value>
+  </data>
+  <data name="listado" xml:space="preserve">
+    <value>Linsting</value>
+  </data>
+  <data name="listadoCarta" xml:space="preserve">
+    <value>Listado carta</value>
+  </data>
+  <data name="listadoCobros" xml:space="preserve">
+    <value>Listado de cobros</value>
+  </data>
+  <data name="listadoConsumoPadron" xml:space="preserve">
+    <value>Listado consumo Padrón</value>
+  </data>
+  <data name="listadoDeCartas" xml:space="preserve">
+    <value>Letters Listing</value>
+  </data>
+  <data name="listadoDeSaldosDeCliente" xml:space="preserve">
+    <value>Listado de saldos de cliente</value>
+  </data>
+  <data name="listadoDeudas" xml:space="preserve">
+    <value>Listado de deudas</value>
+  </data>
+  <data name="listadoEmisionCartas" xml:space="preserve">
+    <value>Listado emisión cartas</value>
+  </data>
+  <data name="listadoEmisionFacturacion" xml:space="preserve">
+    <value>Listado emisión facturación</value>
+  </data>
+  <data name="listadoFacturacionPadron" xml:space="preserve">
+    <value>Listado facturación padrón</value>
+  </data>
+  <data name="listadoSituacion" xml:space="preserve">
+    <value>Listado de situación</value>
+  </data>
+  <data name="loncta" xml:space="preserve">
+    <value>Longitud de la cuenta de detalle</value>
+  </data>
+  <data name="longitud" xml:space="preserve">
+    <value>Longitud</value>
+  </data>
+  <data name="lote" xml:space="preserve">
+    <value>Lote</value>
+  </data>
+  <data name="lotes" xml:space="preserve">
+    <value>Lotes</value>
+  </data>
+  <data name="lotesPeriodosZonas" xml:space="preserve">
+    <value>Lotes de periodos por zonas</value>
+  </data>
+  <data name="lotesrecalm" xml:space="preserve">
+    <value>Lotes de recuento de almacén</value>
+  </data>
+  <data name="mantenerContador" xml:space="preserve">
+    <value>Mantener contador</value>
+  </data>
+  <data name="mantenimiento" xml:space="preserve">
+    <value>Maintenance</value>
+  </data>
+  <data name="manual" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="marca" xml:space="preserve">
+    <value>Marca</value>
+  </data>
+  <data name="marcaCambioContadorEnIncidencia" xml:space="preserve">
+    <value>Añadir también los que tengan la marca 'cambio de contador' en la incidencia</value>
+  </data>
+  <data name="marcar" xml:space="preserve">
+    <value>Marcar</value>
+  </data>
+  <data name="marcarTodos" xml:space="preserve">
+    <value>Marcar todos</value>
+  </data>
+  <data name="marcasContadores" xml:space="preserve">
+    <value>Marcas de contadores</value>
+  </data>
+  <data name="mas_datos" xml:space="preserve">
+    <value>More data</value>
+  </data>
+  <data name="material" xml:space="preserve">
+    <value>Material</value>
+  </data>
+  <data name="materiales" xml:space="preserve">
+    <value>Materiales</value>
+  </data>
+  <data name="max" xml:space="preserve">
+    <value>Max</value>
+    <comment>Abreviación de "máximo"</comment>
+  </data>
+  <data name="medida" xml:space="preserve">
+    <value>Medida</value>
+  </data>
+  <data name="medido" xml:space="preserve">
+    <value>Medido</value>
+  </data>
+  <data name="medioPagoAbv" xml:space="preserve">
+    <value>M.Pago</value>
+  </data>
+  <data name="mediosCobroPago" xml:space="preserve">
+    <value>Medios de cobro/pago</value>
+  </data>
+  <data name="mediosPresentacion" xml:space="preserve">
+    <value>Medios de presentación</value>
+  </data>
+  <data name="mensaje" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="mensajeEnviadoCorrectamente" xml:space="preserve">
+    <value>Message has been correctly sent</value>
+  </data>
+  <data name="mensajes" xml:space="preserve">
+    <value>Messages</value>
+  </data>
+  <data name="mensual" xml:space="preserve">
+    <value>Monthly</value>
+  </data>
+  <data name="menu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="menuContenedor" xml:space="preserve">
+    <value>Container Menu</value>
+  </data>
+  <data name="menuExistente" xml:space="preserve">
+    <value>Existing Menu</value>
+  </data>
+  <data name="menusDePerfiles" xml:space="preserve">
+    <value>Menús de perfiles</value>
+  </data>
+  <data name="menusHanSidoCopiadosAlPerfilX" xml:space="preserve">
+    <value>Los menus han sido copiados al perfil '@perfil'</value>
+  </data>
+  <data name="metrosCubicosAbv" xml:space="preserve">
+    <value>m3</value>
+    <comment>Abreviación de metros cúbicos</comment>
+  </data>
+  <data name="min" xml:space="preserve">
+    <value>Min</value>
+    <comment>Abreviación de "mínimo"</comment>
+  </data>
+  <data name="minimoNumeroDePeriodosConDeuda" xml:space="preserve">
+    <value>Mínimo número de periodos con deuda</value>
+  </data>
+  <data name="minutos" xml:space="preserve">
+    <value>Minutes</value>
+  </data>
+  <data name="mismosDatosCliente" xml:space="preserve">
+    <value>Mismos datos cliente</value>
+  </data>
+  <data name="mismosDatosCorrespondencia" xml:space="preserve">
+    <value>Mismos datos correspondencia</value>
+  </data>
+  <data name="mmpcod" xml:space="preserve">
+    <value>Cod. movimiento</value>
+  </data>
+  <data name="modificable" xml:space="preserve">
+    <value>Modificable</value>
+  </data>
+  <data name="modificar" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="modoCalculo" xml:space="preserve">
+    <value>Modo de cálculo</value>
+  </data>
+  <data name="modoCalculoAbv" xml:space="preserve">
+    <value>M. cálculo</value>
+  </data>
+  <data name="mostrarExcedentes" xml:space="preserve">
+    <value>Mostrar excedentes</value>
+  </data>
+  <data name="mostrarFaltas" xml:space="preserve">
+    <value>Mostrar faltas</value>
+  </data>
+  <data name="mostrarMPSConStockCero" xml:space="preserve">
+    <value>Mostrar MPS con stock cero</value>
+  </data>
+  <data name="mostrarServicios" xml:space="preserve">
+    <value>Show Services</value>
+  </data>
+  <data name="mostrarSoloActivos" xml:space="preserve">
+    <value>Mostrar sólo activos</value>
+  </data>
+  <data name="mostrarSubgrupos" xml:space="preserve">
+    <value>Mostrar los subgrupos</value>
+  </data>
+  <data name="mostrarTodos" xml:space="preserve">
+    <value>Show All</value>
+  </data>
+  <data name="motivo" xml:space="preserve">
+    <value>Motivo</value>
+  </data>
+  <data name="motivo_tipo" xml:space="preserve">
+    <value>Motivo/Tipo</value>
+  </data>
+  <data name="motivoCierre" xml:space="preserve">
+    <value>Motivo cierre</value>
+  </data>
+  <data name="mover" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="movil" xml:space="preserve">
+    <value>Cell Number</value>
+  </data>
+  <data name="movimientos" xml:space="preserve">
+    <value>Movimientos</value>
+  </data>
+  <data name="movimientosContables" xml:space="preserve">
+    <value>Movimientos contables</value>
+  </data>
+  <data name="mpi" xml:space="preserve">
+    <value>Mpi</value>
+  </data>
+  <data name="mps" xml:space="preserve">
+    <value>Mps</value>
+  </data>
+  <data name="mpscod" xml:space="preserve">
+    <value>MPS Code</value>
+  </data>
+  <data name="mpstip" xml:space="preserve">
+    <value>MPS Type</value>
+  </data>
+  <data name="muestras" xml:space="preserve">
+    <value>Muestras</value>
+  </data>
+  <data name="municipio" xml:space="preserve">
+    <value>Municipio</value>
+  </data>
+  <data name="municipios" xml:space="preserve">
+    <value>Municipios</value>
+  </data>
+  <data name="nacion" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="naciones" xml:space="preserve">
+    <value>Countries</value>
+  </data>
+  <data name="negativo" xml:space="preserve">
+    <value>Negativo</value>
+  </data>
+  <data name="negativoSigla" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="nif" xml:space="preserve">
+    <value>NIF</value>
+  </data>
+  <data name="ninguno" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="nivel" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="nivelCuenta" xml:space="preserve">
+    <value>Nivel de Cuenta</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="nobancario" xml:space="preserve">
+    <value>No bancario</value>
+  </data>
+  <data name="noCoincidenLosImportes" xml:space="preserve">
+    <value>No coinciden los importes</value>
+  </data>
+  <data name="noDatosSeleccion" xml:space="preserve">
+    <value>No hay datos en la selección</value>
+  </data>
+  <data name="noDetallado" xml:space="preserve">
+    <value>Not detailed</value>
+  </data>
+  <data name="noExisteCampoItem" xml:space="preserve">
+    <value>@campo '@item' no existe</value>
+  </data>
+  <data name="noExisteCobro" xml:space="preserve">
+    <value>El cobro no existe</value>
+  </data>
+  <data name="noExisteContratoAsignadoAOrdenTrabajo" xml:space="preserve">
+    <value>No existe un código de contrato asignado a esta orden de trabajo</value>
+  </data>
+  <data name="noExisteSerieDeSociedad" xml:space="preserve">
+    <value>No existen series</value>
+  </data>
+  <data name="noExisteSociedad" xml:space="preserve">
+    <value>This company does not exist</value>
+  </data>
+  <data name="noHayPerfiles" xml:space="preserve">
+    <value>There is no profile</value>
+  </data>
+  <data name="nohaySociedades" xml:space="preserve">
+    <value>There is no company</value>
+  </data>
+  <data name="nombre" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="nombre_comercial" xml:space="preserve">
+    <value>Nombre comercial</value>
+  </data>
+  <data name="nombreCliente" xml:space="preserve">
+    <value>Nombre cliente</value>
+  </data>
+  <data name="nombreDelArchivo" xml:space="preserve">
+    <value>Nombre del archivo</value>
+  </data>
+  <data name="noPuedeBorrarElItem" xml:space="preserve">
+    <value>You cannot delete '@item'</value>
+  </data>
+  <data name="noPuedeEditarElItem" xml:space="preserve">
+    <value>You cannot edit  '@item'</value>
+  </data>
+  <data name="noPuedeEditarEsteRegistro" xml:space="preserve">
+    <value>You cannot edit this record</value>
+  </data>
+  <data name="noPuedeEnviarseUnMensajeUstedMismo" xml:space="preserve">
+    <value>You cannot send a message to yourself</value>
+  </data>
+  <data name="NoPuedenEstarVacios" xml:space="preserve">
+    <value>El campo @item1 y @item2 no pueden estar vacios</value>
+  </data>
+  <data name="noPuedeSerMayorQLaCuenta" xml:space="preserve">
+    <value>No puede ser mayor que la longitud de la cuenta</value>
+  </data>
+  <data name="noSeHanBorradoSeleccionados" xml:space="preserve">
+    <value>No se han borrado todos los elementos seleccionados</value>
+  </data>
+  <data name="noSePuedeBorrar" xml:space="preserve">
+    <value>It cannot be deleted</value>
+  </data>
+  <data name="noSePuedeInsertar" xml:space="preserve">
+    <value>It cannot be inserted</value>
+  </data>
+  <data name="noTieneSuficientesPermisos" xml:space="preserve">
+    <value>No tiene suficientes permisos</value>
+  </data>
+  <data name="notificacion" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="notificaciones" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="nreg" xml:space="preserve">
+    <value>N. reg.</value>
+  </data>
+  <data name="nuevo" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="nuevoPdte" xml:space="preserve">
+    <value>Nuevo pdte</value>
+  </data>
+  <data name="nulo" xml:space="preserve">
+    <value>Null</value>
+  </data>
+  <data name="numBotellas" xml:space="preserve">
+    <value>Number of bottles</value>
+  </data>
+  <data name="numerador" xml:space="preserve">
+    <value>Numerador</value>
+  </data>
+  <data name="numerico" xml:space="preserve">
+    <value>Numeric</value>
+  </data>
+  <data name="numero" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="numero_lineas" xml:space="preserve">
+    <value>Number of lines</value>
+  </data>
+  <data name="numero_rectificativo" xml:space="preserve">
+    <value>Número rectificativo</value>
+  </data>
+  <data name="numero_remesa" xml:space="preserve">
+    <value>Número remesa</value>
+  </data>
+  <data name="numeroDeFacturasSeleccionadas" xml:space="preserve">
+    <value>Número de facturas seleccionadas</value>
+  </data>
+  <data name="numeroDePeriodosConDeuda" xml:space="preserve">
+    <value>Numero de periodos con deuda</value>
+  </data>
+  <data name="numeroDeRegistrosCuaderno19" xml:space="preserve">
+    <value>Número de registros cuaderno 19</value>
+  </data>
+  <data name="numeroDeSerie" xml:space="preserve">
+    <value>Serial Number</value>
+  </data>
+  <data name="numeroDeSerieAbv" xml:space="preserve">
+    <value>N.Serie</value>
+  </data>
+  <data name="numeroDeTareasNoFinalizadasDemasiadoAlto" xml:space="preserve">
+    <value>Existen @tareasNoFinalizadas tareas no finalizadas, sólo se pueden mostrar @tareasAMostrar</value>
+  </data>
+  <data name="numeroFacturas" xml:space="preserve">
+    <value>Nº facturas</value>
+  </data>
+  <data name="numfra" xml:space="preserve">
+    <value>Invoice Number</value>
+  </data>
+  <data name="numPer" xml:space="preserve">
+    <value>Number of Terms</value>
+  </data>
+  <data name="numRemesa" xml:space="preserve">
+    <value>Núm. remesa</value>
+  </data>
+  <data name="obs_inspeccionesAbv" xml:space="preserve">
+    <value>Obs. insp.</value>
+  </data>
+  <data name="obs_lectura" xml:space="preserve">
+    <value>Obs. lectura</value>
+  </data>
+  <data name="observaciones" xml:space="preserve">
+    <value>Remarks</value>
+  </data>
+  <data name="ObsLecturaEnLaUltimaFactura" xml:space="preserve">
+    <value>Obs. lectura en la última factura</value>
+  </data>
+  <data name="oficina" xml:space="preserve">
+    <value>Office</value>
+  </data>
+  <data name="oficinasCobroPago" xml:space="preserve">
+    <value>Oficinas de cobro/pago</value>
+  </data>
+  <data name="online" xml:space="preserve">
+    <value>Online</value>
+  </data>
+  <data name="opcionMenuNoEstaActiva" xml:space="preserve">
+    <value>La opción de menú no está activa</value>
+  </data>
+  <data name="opcionMenuNoExiste" xml:space="preserve">
+    <value>La opción de menú no existe</value>
+  </data>
+  <data name="operaActivi" xml:space="preserve">
+    <value>Operac/Activi</value>
+  </data>
+  <data name="operacion" xml:space="preserve">
+    <value>Operación</value>
+  </data>
+  <data name="operaciones" xml:space="preserve">
+    <value>Operations</value>
+  </data>
+  <data name="orden" xml:space="preserve">
+    <value>order</value>
+  </data>
+  <data name="ordenestrabajo" xml:space="preserve">
+    <value>Work Orders</value>
+  </data>
+  <data name="ordenFecha" xml:space="preserve">
+    <value>Order dated</value>
+  </data>
+  <data name="ordentrabajo" xml:space="preserve">
+    <value>Work Order</value>
+  </data>
+  <data name="ordenTrabajoConCambioContador" xml:space="preserve">
+    <value>The work order '@item' needs meter change</value>
+  </data>
+  <data name="ordsTrabajo" xml:space="preserve">
+    <value>Work Ords</value>
+  </data>
+  <data name="ordTrabajo" xml:space="preserve">
+    <value>Work Ord</value>
+  </data>
+  <data name="origen" xml:space="preserve">
+    <value>Origen</value>
+  </data>
+  <data name="origenDelRegistro" xml:space="preserve">
+    <value>Origen del registro</value>
+  </data>
+  <data name="origenLecturas" xml:space="preserve">
+    <value>Origen de lecturas</value>
+  </data>
+  <data name="origenLinea" xml:space="preserve">
+    <value>Línea de origen</value>
+  </data>
+  <data name="origenNumero" xml:space="preserve">
+    <value>Número de origen</value>
+  </data>
+  <data name="origenSerie" xml:space="preserve">
+    <value>Serie de origen</value>
+  </data>
+  <data name="origenSociedad" xml:space="preserve">
+    <value>Sociedad de origen</value>
+  </data>
+  <data name="origenYDestinoIguales" xml:space="preserve">
+    <value>El origen y el destino son iguales</value>
+  </data>
+  <data name="otpordepartamentos" xml:space="preserve">
+    <value>WO by Departments</value>
+  </data>
+  <data name="packServicios" xml:space="preserve">
+    <value>Pack of Services</value>
+  </data>
+  <data name="padre" xml:space="preserve">
+    <value>Father</value>
+  </data>
+  <data name="pagadas" xml:space="preserve">
+    <value>Paid</value>
+  </data>
+  <data name="pagado" xml:space="preserve">
+    <value>Paid</value>
+  </data>
+  <data name="pagos" xml:space="preserve">
+    <value>Pagos</value>
+  </data>
+  <data name="pais" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="para" xml:space="preserve">
+    <value>Para</value>
+  </data>
+  <data name="parado" xml:space="preserve">
+    <value>Stopped</value>
+  </data>
+  <data name="parametro" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="parametros" xml:space="preserve">
+    <value>Parameters</value>
+  </data>
+  <data name="parcial" xml:space="preserve">
+    <value>Parcial</value>
+  </data>
+  <data name="pasaporte" xml:space="preserve">
+    <value>Passport</value>
+  </data>
+  <data name="passcaduca" xml:space="preserve">
+    <value>The password expires in</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="pdteRecibir" xml:space="preserve">
+    <value>PdteRecibir</value>
+    <comment>Pendiente de recibir abreviado</comment>
+  </data>
+  <data name="pedido" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="pedido_proveedor" xml:space="preserve">
+    <value>Order to the supplier</value>
+  </data>
+  <data name="pedidoDuplicadoCorrectamente" xml:space="preserve">
+    <value>Duplicación realizada correctamente. El nuevo pedido es el @numero</value>
+  </data>
+  <data name="pedidos" xml:space="preserve">
+    <value>Orders</value>
+  </data>
+  <data name="pedidosAproveedor" xml:space="preserve">
+    <value>Orders to Supplier</value>
+  </data>
+  <data name="pedirValor" xml:space="preserve">
+    <value>Ask for a value</value>
+  </data>
+  <data name="pegar" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="pendiente" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="pendienteAutorizar" xml:space="preserve">
+    <value>Authorization Pending</value>
+  </data>
+  <data name="pendientes" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="pendientesCerrar" xml:space="preserve">
+    <value>Pending of Closing</value>
+  </data>
+  <data name="perfil" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="perfiles" xml:space="preserve">
+    <value>Profiles</value>
+  </data>
+  <data name="periodicidad" xml:space="preserve">
+    <value>TimeFrame</value>
+  </data>
+  <data name="periodo" xml:space="preserve">
+    <value>Term</value>
+  </data>
+  <data name="periodoAProcesar" xml:space="preserve">
+    <value>Term to process</value>
+  </data>
+  <data name="periodoDelDocumento" xml:space="preserve">
+    <value>Document Term</value>
+  </data>
+  <data name="periodoDeRegistro" xml:space="preserve">
+    <value>Periodo de registro</value>
+  </data>
+  <data name="periodoEstaPendienteDeCerrarParaLaZona" xml:space="preserve">
+    <value>The term @periodo is closing pending for the zone @zona</value>
+  </data>
+  <data name="periodos" xml:space="preserve">
+    <value>Terms</value>
+  </data>
+  <data name="periodosZonas" xml:space="preserve">
+    <value>Periodos de zonas</value>
+  </data>
+  <data name="periodoZona" xml:space="preserve">
+    <value>Periodo de zona</value>
+  </data>
+  <data name="permisos" xml:space="preserve">
+    <value>Permissions</value>
+  </data>
+  <data name="persona" xml:space="preserve">
+    <value>Person</value>
+  </data>
+  <data name="persona_contacto" xml:space="preserve">
+    <value>Contact person</value>
+  </data>
+  <data name="planDcuentas" xml:space="preserve">
+    <value>Set of accounts</value>
+  </data>
+  <data name="planta" xml:space="preserve">
+    <value>Floor</value>
+    <comment>Si es planta de piso, si no, especificar</comment>
+  </data>
+  <data name="poblacion" xml:space="preserve">
+    <value>Población</value>
+  </data>
+  <data name="por_mps" xml:space="preserve">
+    <value>Por MPS</value>
+  </data>
+  <data name="por_proveedor" xml:space="preserve">
+    <value>pero supplier</value>
+  </data>
+  <data name="portes_DP" xml:space="preserve">
+    <value>Freight Collect/Prepaid</value>
+  </data>
+  <data name="posibleOnLine" xml:space="preserve">
+    <value>Posible online</value>
+  </data>
+  <data name="precio" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="precio_medio_coste" xml:space="preserve">
+    <value>Cost Average Price</value>
+  </data>
+  <data name="precio_medio_coste_siglas" xml:space="preserve">
+    <value>PMC</value>
+  </data>
+  <data name="precios" xml:space="preserve">
+    <value>Prices</value>
+  </data>
+  <data name="precioVenta" xml:space="preserve">
+    <value>Price on sale</value>
+  </data>
+  <data name="precioVentaAlPublicoAbv" xml:space="preserve">
+    <value>SRP</value>
+    <comment>Suggested Retail Price</comment>
+  </data>
+  <data name="prefac" xml:space="preserve">
+    <value>PFI</value>
+    <comment>Pro-Forma Invoice</comment>
+  </data>
+  <data name="pregunta" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="prepararFirefox" xml:space="preserve">
+    <value>Prepare For Firefox</value>
+  </data>
+  <data name="prevista" xml:space="preserve">
+    <value>Expected</value>
+  </data>
+  <data name="procaleatorio" xml:space="preserve">
+    <value>Random processing</value>
+  </data>
+  <data name="procesar" xml:space="preserve">
+    <value>Process</value>
+  </data>
+  <data name="proceso" xml:space="preserve">
+    <value>process</value>
+  </data>
+  <data name="procesoFinalizadoCorrectamente" xml:space="preserve">
+    <value>The process has corectly finished</value>
+  </data>
+  <data name="producto" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="productos" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="programacion" xml:space="preserve">
+    <value>planning</value>
+  </data>
+  <data name="programar" xml:space="preserve">
+    <value>plan</value>
+  </data>
+  <data name="programarTarea" xml:space="preserve">
+    <value>Schedule task</value>
+  </data>
+  <data name="progreso" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="propiedades" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="propietario" xml:space="preserve">
+    <value>Owner</value>
+  </data>
+  <data name="propioDelPerfil" xml:space="preserve">
+    <value>According to th profile</value>
+    <comment>check</comment>
+  </data>
+  <data name="proveedor" xml:space="preserve">
+    <value>Supplier</value>
+  </data>
+  <data name="proveedorAbv" xml:space="preserve">
+    <value>SPL</value>
+  </data>
+  <data name="proveedorCompra" xml:space="preserve">
+    <value>Vendor</value>
+  </data>
+  <data name="proveedores" xml:space="preserve">
+    <value>Suppliers</value>
+  </data>
+  <data name="proveedorHomologacion" xml:space="preserve">
+    <value>Proveedor homologación</value>
+  </data>
+  <data name="provincia" xml:space="preserve">
+    <value>Province</value>
+  </data>
+  <data name="puedeDescargarElArchivoAqui" xml:space="preserve">
+    <value>You can download this file by clicking</value>
+  </data>
+  <data name="puerta" xml:space="preserve">
+    <value>Door</value>
+  </data>
+  <data name="puntoDeMuestreo" xml:space="preserve">
+    <value>Sampling place</value>
+  </data>
+  <data name="puntoDeMuestreoAbv" xml:space="preserve">
+    <value>Sampling Place</value>
+    <comment>Abreviación de "Punto de muestreo"</comment>
+  </data>
+  <data name="puntoDePago" xml:space="preserve">
+    <value>Punto de pago</value>
+  </data>
+  <data name="puntoDePagoAbv" xml:space="preserve">
+    <value>Payment Point</value>
+  </data>
+  <data name="puntosDeMuestreo" xml:space="preserve">
+    <value>Sampling Places</value>
+  </data>
+  <data name="quitarIcono" xml:space="preserve">
+    <value>Remove the icon</value>
+  </data>
+  <data name="raiz" xml:space="preserve">
+    <value>Root</value>
+    <comment>Referente a nodo RAÍZ</comment>
+  </data>
+  <data name="razonSocial" xml:space="preserve">
+    <value>Corporate Name</value>
+  </data>
+  <data name="real" xml:space="preserve">
+    <value>Real</value>
+  </data>
+  <data name="realDecreto" xml:space="preserve">
+    <value>Spanish Royal Decree</value>
+  </data>
+  <data name="realizacion" xml:space="preserve">
+    <value>Execution</value>
+    <comment>Ver sentido</comment>
+  </data>
+  <data name="realizadas" xml:space="preserve">
+    <value>Fullfilled</value>
+  </data>
+  <data name="recibido" xml:space="preserve">
+    <value>Received</value>
+  </data>
+  <data name="recibidos" xml:space="preserve">
+    <value>Received</value>
+  </data>
+  <data name="recibir" xml:space="preserve">
+    <value>Receive</value>
+  </data>
+  <data name="recibirAvisosDeCierre" xml:space="preserve">
+    <value>Receive closing warnings</value>
+  </data>
+  <data name="recibirAvisosOnline" xml:space="preserve">
+    <value>Receive warnings from office online</value>
+  </data>
+  <data name="reclamacion" xml:space="preserve">
+    <value>Claim</value>
+  </data>
+  <data name="reclamaciones" xml:space="preserve">
+    <value>Claims</value>
+  </data>
+  <data name="recontado" xml:space="preserve">
+    <value>Recounted</value>
+  </data>
+  <data name="recontado_parcial" xml:space="preserve">
+    <value>Partial Recount</value>
+  </data>
+  <data name="recontado_total" xml:space="preserve">
+    <value>Total Recount</value>
+  </data>
+  <data name="recontados" xml:space="preserve">
+    <value>Reconted</value>
+  </data>
+  <data name="recuento" xml:space="preserve">
+    <value>Recount</value>
+  </data>
+  <data name="recuentos" xml:space="preserve">
+    <value>Recounts</value>
+  </data>
+  <data name="refCatastral" xml:space="preserve">
+    <value>Assessor Parcel Number</value>
+  </data>
+  <data name="referencia" xml:space="preserve">
+    <value>Reference</value>
+  </data>
+  <data name="referencias" xml:space="preserve">
+    <value>References</value>
+  </data>
+  <data name="refFactura" xml:space="preserve">
+    <value>Invoice Ref.</value>
+  </data>
+  <data name="refGis" xml:space="preserve">
+    <value>GIS Reference</value>
+  </data>
+  <data name="RefHomologacion" xml:space="preserve">
+    <value>Endorsement Ref.</value>
+  </data>
+  <data name="registro" xml:space="preserve">
+    <value>Record</value>
+  </data>
+  <data name="registrosHanSidoBorrados" xml:space="preserve">
+    <value>@registros records have been deleted</value>
+  </data>
+  <data name="registrosProcesados" xml:space="preserve">
+    <value>Processed Records</value>
+  </data>
+  <data name="relacion" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="relaciondeinspecciones" xml:space="preserve">
+    <value>List of Inspections</value>
+  </data>
+  <data name="relacionFacturacion" xml:space="preserve">
+    <value>Invoicing List</value>
+  </data>
+  <data name="relacioninspecciones" xml:space="preserve">
+    <value>Inspections List</value>
+  </data>
+  <data name="rellenarPrimeroSociedad" xml:space="preserve">
+    <value>You must first fill in the company</value>
+  </data>
+  <data name="relleneCuentaYSociedadPrimero" xml:space="preserve">
+    <value>Please, fill in Company and Account first</value>
+  </data>
+  <data name="remesa" xml:space="preserve">
+    <value>Batch</value>
+  </data>
+  <data name="remesados" xml:space="preserve">
+    <value>batched</value>
+  </data>
+  <data name="remesar" xml:space="preserve">
+    <value>batch</value>
+  </data>
+  <data name="remesas" xml:space="preserve">
+    <value>batches</value>
+  </data>
+  <data name="remesaXGeneradaConIncidencias" xml:space="preserve">
+    <value>The batch @remesa has been generated with warnings.</value>
+  </data>
+  <data name="remesaXGeneradaCorrectamente" xml:space="preserve">
+    <value>The batch @remesa has been correctly generated</value>
+  </data>
+  <data name="renombrar" xml:space="preserve">
+    <value>Renoun</value>
+  </data>
+  <data name="representacion" xml:space="preserve">
+    <value>Representación</value>
+  </data>
+  <data name="resolucion" xml:space="preserve">
+    <value>Resolución</value>
+  </data>
+  <data name="restoImporte" xml:space="preserve">
+    <value>Resto importe</value>
+  </data>
+  <data name="resumendeCobros" xml:space="preserve">
+    <value>Resumen de cobros</value>
+  </data>
+  <data name="resumendeInspecciones" xml:space="preserve">
+    <value>Resumen de inspecciones</value>
+  </data>
+  <data name="resumenFacturacionConcep" xml:space="preserve">
+    <value>Resumen de facturación por conceptos</value>
+  </data>
+  <data name="revisadas" xml:space="preserve">
+    <value>Revisadas</value>
+  </data>
+  <data name="revisado" xml:space="preserve">
+    <value>Revisado</value>
+  </data>
+  <data name="revision" xml:space="preserve">
+    <value>Revisión</value>
+  </data>
+  <data name="ruta" xml:space="preserve">
+    <value>Route</value>
+  </data>
+  <data name="rutas" xml:space="preserve">
+    <value>Routes</value>
+  </data>
+  <data name="saldosDeClientes" xml:space="preserve">
+    <value>Saldos de clientes</value>
+  </data>
+  <data name="salida" xml:space="preserve">
+    <value>Salida</value>
+  </data>
+  <data name="salidas" xml:space="preserve">
+    <value>Salidas</value>
+  </data>
+  <data name="sectoresTecnicos" xml:space="preserve">
+    <value>Sectores técnicos</value>
+  </data>
+  <data name="seguridad" xml:space="preserve">
+    <value>Seguridad</value>
+  </data>
+  <data name="seHanAnyadidoXRegistros" xml:space="preserve">
+    <value>@registros records has been added</value>
+  </data>
+  <data name="seHanInsertadoXFacturas" xml:space="preserve">
+    <value>@facturas invoices has been inserted</value>
+  </data>
+  <data name="seHanProcesadoXFacturas" xml:space="preserve">
+    <value>Se han procesado @facturasProcesadas facturas de @facturasTotales</value>
+  </data>
+  <data name="seHanProcesadoXRegistros" xml:space="preserve">
+    <value>@registros records has been processed</value>
+  </data>
+  <data name="seleccion" xml:space="preserve">
+    <value>Selection</value>
+  </data>
+  <data name="seleccionado" xml:space="preserve">
+    <value>Selected</value>
+  </data>
+  <data name="seleccionar" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="seleccionarImagen" xml:space="preserve">
+    <value>Select picture</value>
+  </data>
+  <data name="seleccioneUnSoloElemento" xml:space="preserve">
+    <value>Select ONLY an element</value>
+  </data>
+  <data name="seleccionlotesrec" xml:space="preserve">
+    <value>Selección lotes recuento</value>
+  </data>
+  <data name="seleccionRecuento" xml:space="preserve">
+    <value>Selección recuento</value>
+  </data>
+  <data name="semestral" xml:space="preserve">
+    <value>Six-monthly</value>
+  </data>
+  <data name="separador" xml:space="preserve">
+    <value>Separator</value>
+  </data>
+  <data name="serie" xml:space="preserve">
+    <value>Serie</value>
+  </data>
+  <data name="serie_rectificativa" xml:space="preserve">
+    <value>Serie rectificativa</value>
+  </data>
+  <data name="serierelaccionada" xml:space="preserve">
+    <value>Serie relacionada</value>
+  </data>
+  <data name="series" xml:space="preserve">
+    <value>Series</value>
+  </data>
+  <data name="servicio" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="servicios" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="si" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="si_no" xml:space="preserve">
+    <value>Yes/No</value>
+  </data>
+  <data name="sin_datos" xml:space="preserve">
+    <value>Sin datos</value>
+  </data>
+  <data name="sinleer" xml:space="preserve">
+    <value>Sin leer</value>
+  </data>
+  <data name="sinMovimientos" xml:space="preserve">
+    <value>Sin Movimientos</value>
+  </data>
+  <data name="sinMovimientosAbr" xml:space="preserve">
+    <value>Sin Movim.</value>
+  </data>
+  <data name="sinZona" xml:space="preserve">
+    <value>Sin Zona</value>
+  </data>
+  <data name="sistemaDeInformacion" xml:space="preserve">
+    <value>Sistema de información</value>
+  </data>
+  <data name="situacion" xml:space="preserve">
+    <value>Situation</value>
+  </data>
+  <data name="sobreescribir" xml:space="preserve">
+    <value>Overwrite</value>
+  </data>
+  <data name="sociedad" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="sociedades" xml:space="preserve">
+    <value>Companies</value>
+  </data>
+  <data name="solicitud" xml:space="preserve">
+    <value>Request</value>
+  </data>
+  <data name="solicitudes" xml:space="preserve">
+    <value>Requests</value>
+  </data>
+  <data name="solicitudNuevaRecibida" xml:space="preserve">
+    <value>Ha recibido una nueva solicitud. Código de solicitud:  @codigo</value>
+  </data>
+  <data name="soloAdministradores_Menu" xml:space="preserve">
+    <value>Sólo los administradores pueden acceder a esta opción de menú</value>
+  </data>
+  <data name="soloExistencia" xml:space="preserve">
+    <value>Sólo Existencias</value>
+  </data>
+  <data name="soloNoAnuladas" xml:space="preserve">
+    <value>Sólo no anuladas</value>
+  </data>
+  <data name="stock" xml:space="preserve">
+    <value>Stock</value>
+  </data>
+  <data name="stock_recontado" xml:space="preserve">
+    <value>Stock recontado</value>
+  </data>
+  <data name="stockdeseguridad" xml:space="preserve">
+    <value>Stock  de seguridad</value>
+  </data>
+  <data name="stockPorAlmacen" xml:space="preserve">
+    <value>Stock por almacén</value>
+  </data>
+  <data name="stockSeguridadAbv" xml:space="preserve">
+    <value>Stock seg.</value>
+    <comment>Abreviación de "stock de seguridad"</comment>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="subclasifot" xml:space="preserve">
+    <value>Subclasif. OT</value>
+  </data>
+  <data name="subfamilia" xml:space="preserve">
+    <value>Subfamily</value>
+  </data>
+  <data name="subfamilias" xml:space="preserve">
+    <value>Subfamilies</value>
+  </data>
+  <data name="subgruposReclamaciones" xml:space="preserve">
+    <value>Subgrupos de reclamaciones</value>
+  </data>
+  <data name="subiendoFichero" xml:space="preserve">
+    <value>Uploading file...</value>
+  </data>
+  <data name="subir" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="subirFichero" xml:space="preserve">
+    <value>Upload File</value>
+  </data>
+  <data name="sufijoRemesa" xml:space="preserve">
+    <value>Sufijo remesa</value>
+  </data>
+  <data name="superior" xml:space="preserve">
+    <value>Superior</value>
+  </data>
+  <data name="tabla" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="tamanyo" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="tarea" xml:space="preserve">
+    <value>Task</value>
+  </data>
+  <data name="tareaConfirmarEjecutarAhora" xml:space="preserve">
+    <value>¿Desea ejecutar la tarea inmediatamente? Si acepta, la ejecución de la tarea comenzará en unos segundos</value>
+  </data>
+  <data name="tareaHaFinalizadoConERROR" xml:space="preserve">
+    <value>La tarea ha finalizado con ERROR</value>
+  </data>
+  <data name="tareaHaFinalizadoCorrectamente" xml:space="preserve">
+    <value>The task has correctly finished</value>
+  </data>
+  <data name="tareaHaSidoProgramada" xml:space="preserve">
+    <value>La tarea ha sido programada correctamente para el @date a las @time</value>
+  </data>
+  <data name="tareaProgramada" xml:space="preserve">
+    <value>Scheduled Task</value>
+  </data>
+  <data name="tareas" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="tareaSeEjecutaraInmediatamente" xml:space="preserve">
+    <value>La tarea se ejecutará inmediatamente</value>
+  </data>
+  <data name="tarifa" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="tarifas" xml:space="preserve">
+    <value>Rates</value>
+  </data>
+  <data name="tarval" xml:space="preserve">
+    <value>Rates values</value>
+  </data>
+  <data name="telefono" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="telefonos" xml:space="preserve">
+    <value>Telephones</value>
+  </data>
+  <data name="texto" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="textolegal" xml:space="preserve">
+    <value>Legal text</value>
+  </data>
+  <data name="textoLegalAbv" xml:space="preserve">
+    <value>Texto legal abv.</value>
+  </data>
+  <data name="ticket" xml:space="preserve">
+    <value>Ticket</value>
+  </data>
+  <data name="tiempoSesionHaFinalizado" xml:space="preserve">
+    <value>El tiempo de la sesión ha finalizado.</value>
+  </data>
+  <data name="tipo" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="tipo_dato" xml:space="preserve">
+    <value>Data type</value>
+  </data>
+  <data name="tipo_periodo" xml:space="preserve">
+    <value>Tipo periodo</value>
+  </data>
+  <data name="tipo_serie" xml:space="preserve">
+    <value>Tipo serie</value>
+  </data>
+  <data name="tipocalculo" xml:space="preserve">
+    <value>Tipo de cálculo</value>
+  </data>
+  <data name="tipoCarta" xml:space="preserve">
+    <value>Letter type</value>
+  </data>
+  <data name="tipoComponente" xml:space="preserve">
+    <value>Tipo componente</value>
+  </data>
+  <data name="tipoDeFichero" xml:space="preserve">
+    <value>File type</value>
+  </data>
+  <data name="tipodocumento" xml:space="preserve">
+    <value>Document type</value>
+  </data>
+  <data name="tipoimpu" xml:space="preserve">
+    <value>Tipo impu.</value>
+  </data>
+  <data name="tipoOT" xml:space="preserve">
+    <value>Tipo OT</value>
+  </data>
+  <data name="tiposCaracteristicas" xml:space="preserve">
+    <value>Tipos de características</value>
+  </data>
+  <data name="tiposCarta" xml:space="preserve">
+    <value>Tipos carta</value>
+  </data>
+  <data name="tiposComponentes" xml:space="preserve">
+    <value>Tipos de componentes</value>
+  </data>
+  <data name="TiposCondiciones" xml:space="preserve">
+    <value>Tipos condiciones</value>
+  </data>
+  <data name="tiposDiarios" xml:space="preserve">
+    <value>Tipos diarios</value>
+  </data>
+  <data name="tiposmov" xml:space="preserve">
+    <value>Tipos de movimientos</value>
+  </data>
+  <data name="tipoSolicitud" xml:space="preserve">
+    <value>Tipo de solicitud</value>
+  </data>
+  <data name="tiposOT" xml:space="preserve">
+    <value>Tipos OT</value>
+  </data>
+  <data name="tiposReclamaciones" xml:space="preserve">
+    <value>Tipos de reclamaciones</value>
+  </data>
+  <data name="tiposSolicitudes" xml:space="preserve">
+    <value>Tipos de solicitudes</value>
+  </data>
+  <data name="tipotarifa" xml:space="preserve">
+    <value>Tipo de tarifa</value>
+  </data>
+  <data name="titular" xml:space="preserve">
+    <value>Titular</value>
+  </data>
+  <data name="titularCuentaAbv" xml:space="preserve">
+    <value>Tit. cuenta</value>
+  </data>
+  <data name="titulo" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="tmv" xml:space="preserve">
+    <value>Tipo de mov.</value>
+  </data>
+  <data name="tmvcod" xml:space="preserve">
+    <value>Cod. movimiento</value>
+  </data>
+  <data name="todas" xml:space="preserve">
+    <value>Todas</value>
+  </data>
+  <data name="todasVersiones" xml:space="preserve">
+    <value>All versions</value>
+  </data>
+  <data name="todos" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="total_importe" xml:space="preserve">
+    <value>Total importe</value>
+  </data>
+  <data name="total_unidades" xml:space="preserve">
+    <value>Total unidades</value>
+  </data>
+  <data name="totalesMedioPago" xml:space="preserve">
+    <value>Totales medio pago</value>
+  </data>
+  <data name="totalFactura" xml:space="preserve">
+    <value>Total factura</value>
+  </data>
+  <data name="totalFacturado" xml:space="preserve">
+    <value>Total facturado</value>
+  </data>
+  <data name="totalGlobal" xml:space="preserve">
+    <value>Total global</value>
+  </data>
+  <data name="totalPorPagina" xml:space="preserve">
+    <value>Total por página</value>
+  </data>
+  <data name="totCobrado" xml:space="preserve">
+    <value>Tot. cobrado</value>
+  </data>
+  <data name="totConsumo" xml:space="preserve">
+    <value>Tot. consumo</value>
+  </data>
+  <data name="totFacturado" xml:space="preserve">
+    <value>Tot. facturado</value>
+  </data>
+  <data name="totPdte" xml:space="preserve">
+    <value>Tot. pdte</value>
+  </data>
+  <data name="tres" xml:space="preserve">
+    <value>Three</value>
+  </data>
+  <data name="trimestral" xml:space="preserve">
+    <value>Trimestral</value>
+  </data>
+  <data name="ultima" xml:space="preserve">
+    <value>Last</value>
+  </data>
+  <data name="ultimaModificacion" xml:space="preserve">
+    <value>Last modification</value>
+  </data>
+  <data name="ultimoAcceso" xml:space="preserve">
+    <value>Last access</value>
+  </data>
+  <data name="umedida" xml:space="preserve">
+    <value>U. medida</value>
+  </data>
+  <data name="unidades" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="unidadesAbv" xml:space="preserve">
+    <value>Uds</value>
+  </data>
+  <data name="unidadesmedida" xml:space="preserve">
+    <value>Unidades de medida</value>
+  </data>
+  <data name="unidadesPendientesRecibirAbv" xml:space="preserve">
+    <value>Uds ptes recibir</value>
+  </data>
+  <data name="unidadmedida" xml:space="preserve">
+    <value>Unidad de medida</value>
+  </data>
+  <data name="unitario" xml:space="preserve">
+    <value>Unitario</value>
+  </data>
+  <data name="uno" xml:space="preserve">
+    <value>One</value>
+  </data>
+  <data name="uploadFileProgressBarText" xml:space="preserve">
+    <value>Subiendo {transferred} bytes de {total} bytes ({percentage}%)</value>
+  </data>
+  <data name="uso" xml:space="preserve">
+    <value>Uso</value>
+  </data>
+  <data name="usos" xml:space="preserve">
+    <value>Usos</value>
+  </data>
+  <data name="usrcod" xml:space="preserve">
+    <value>User Code</value>
+  </data>
+  <data name="usuario" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="usuarioLeHaEnviadoLosSiguientesArchivos" xml:space="preserve">
+    <value>El usuario @user le ha enviado los siguientes archivos: @files</value>
+  </data>
+  <data name="usuarios" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="vaciarTabla" xml:space="preserve">
+    <value>Vaciar tabla</value>
+  </data>
+  <data name="val_alphanumeric" xml:space="preserve">
+    <value>El campo @field sólo acepta carácteres alfanuméricos</value>
+  </data>
+  <data name="val_bankAccountDigitControl" xml:space="preserve">
+    <value>El dígito de control del campo @field no es válido. El correcto es @dc</value>
+  </data>
+  <data name="val_betweenLength" xml:space="preserve">
+    <value>El campo @field debe tener como máximo @maxLength caracteres y como mínimo @minLength caracteres</value>
+  </data>
+  <data name="val_cif" xml:space="preserve">
+    <value>El campo @field debe tener formato de CIF</value>
+  </data>
+  <data name="val_dateFormat" xml:space="preserve">
+    <value>El campo @field debe ser una fecha correcta con el formato dd/mm/yyyy</value>
+  </data>
+  <data name="val_decimal" xml:space="preserve">
+    <value>@field must be a number</value>
+  </data>
+  <data name="val_decimalPrecision" xml:space="preserve">
+    <value>El campo @field acepta como mucho @integer cifras enteras y @decimal decimales</value>
+  </data>
+  <data name="val_dni" xml:space="preserve">
+    <value>El formato del campo @field debe ser 00000000X y la letra debe ser la correcta</value>
+  </data>
+  <data name="val_email" xml:space="preserve">
+    <value>El campo @field no es una dirección de correo electrónico válida</value>
+  </data>
+  <data name="val_equalFields" xml:space="preserve">
+    <value>Fields @field1 and @field2 don't match</value>
+  </data>
+  <data name="val_fechaAnterior" xml:space="preserve">
+    <value>@field2 no puede ser menor que @field1</value>
+  </data>
+  <data name="val_fileName" xml:space="preserve">
+    <value>El nombre del fichero especificado para el campo @field no es válido</value>
+  </data>
+  <data name="val_FormatoCodigoComponete" xml:space="preserve">
+    <value>El codigo de componente no tiene el formato correcto.</value>
+  </data>
+  <data name="val_integer" xml:space="preserve">
+    <value>@field must be an integer</value>
+  </data>
+  <data name="val_length" xml:space="preserve">
+    <value>El campo @field debe contener exactamente @length caracteres</value>
+  </data>
+  <data name="val_LessOrEqual" xml:space="preserve">
+    <value>@field1 debe ser menor o igual que @field2</value>
+  </data>
+  <data name="val_maxLength" xml:space="preserve">
+    <value>El campo @field debe tener como máximo @maxLength caracteres</value>
+  </data>
+  <data name="val_maxValue" xml:space="preserve">
+    <value>El valor del campo @field no puede ser mayor de @maxValue</value>
+  </data>
+  <data name="val_minLength" xml:space="preserve">
+    <value>El campo @field debe tener como mínimo @minLength caracteres</value>
+  </data>
+  <data name="val_minValue" xml:space="preserve">
+    <value>El valor del campo @field no puede ser menor de @minValue</value>
+  </data>
+  <data name="val_nie" xml:space="preserve">
+    <value>El campo @field debe tener formato de NIE</value>
+  </data>
+  <data name="val_numberBetweenValues" xml:space="preserve">
+    <value>El valor de @field debe estar entre @minValue y @maxValue</value>
+  </data>
+  <data name="val_pass_iguales" xml:space="preserve">
+    <value>El campo contraseña y confirmar contraseña tienen que ser iguales</value>
+  </data>
+  <data name="val_positiveDecimal" xml:space="preserve">
+    <value>@field debe ser un número mayor que cero</value>
+  </data>
+  <data name="val_positiveDecimalOrZero" xml:space="preserve">
+    <value>@field debe ser un número igual o mayor que cero</value>
+  </data>
+  <data name="val_positiveInteger" xml:space="preserve">
+    <value>El campo @field debe ser un número entero positivo</value>
+  </data>
+  <data name="val_positiveIntegerOrZero" xml:space="preserve">
+    <value>El campo @field debe ser un número entero igual o mayor que cero</value>
+  </data>
+  <data name="val_required" xml:space="preserve">
+    <value>El campo @field no puede estar vacío</value>
+  </data>
+  <data name="val_RequiredGroup" xml:space="preserve">
+    <value>Es necesario que al menos alguno de los siguientes campos tengan valor: @fields</value>
+  </data>
+  <data name="val_timeFormat" xml:space="preserve">
+    <value>El campo @field ha de ser una hora correcta con el formato HH:MM</value>
+  </data>
+  <data name="validarInmueble" xml:space="preserve">
+    <value>Validar inmueble</value>
+  </data>
+  <data name="valor" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="valorMaximo" xml:space="preserve">
+    <value>Maximum value</value>
+  </data>
+  <data name="valorMinimo" xml:space="preserve">
+    <value>Minimum value</value>
+  </data>
+  <data name="vencimiento" xml:space="preserve">
+    <value>Vencimiento</value>
+  </data>
+  <data name="venta" xml:space="preserve">
+    <value>Venta</value>
+  </data>
+  <data name="verCaracteristicas" xml:space="preserve">
+    <value>Ver caracter.</value>
+  </data>
+  <data name="verFoto" xml:space="preserve">
+    <value>Ver foto</value>
+  </data>
+  <data name="verMas" xml:space="preserve">
+    <value>Ver más ...</value>
+  </data>
+  <data name="verOperaciones" xml:space="preserve">
+    <value>Ver operac.</value>
+  </data>
+  <data name="version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="versionAbv" xml:space="preserve">
+    <value>V.</value>
+    <comment>Abreviación de "Versión"</comment>
+  </data>
+  <data name="versionDelContrato" xml:space="preserve">
+    <value>Versión del contrato</value>
+  </data>
+  <data name="verTodas" xml:space="preserve">
+    <value>Ver todas</value>
+  </data>
+  <data name="visible" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="volver" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="vtaBase" xml:space="preserve">
+    <value>Vta. Base</value>
+  </data>
+  <data name="vtaImpuesto" xml:space="preserve">
+    <value>Vta. Impuesto</value>
+  </data>
+  <data name="vtaPrecio" xml:space="preserve">
+    <value>Vta. Precio</value>
+  </data>
+  <data name="vtaTotal" xml:space="preserve">
+    <value>Vta. total</value>
+  </data>
+  <data name="vueltaContador" xml:space="preserve">
+    <value>Vuelta contador</value>
+  </data>
+  <data name="web" xml:space="preserve">
+    <value>Web</value>
+  </data>
+  <data name="yaExisteDesBreve" xml:space="preserve">
+    <value>Ya existe esa descripcion breve</value>
+  </data>
+  <data name="zona" xml:space="preserve">
+    <value>Zone</value>
+  </data>
+  <data name="zonaDeAbastecimiento" xml:space="preserve">
+    <value>Zona de abastecimiento</value>
+  </data>
+  <data name="zonaNoExiste" xml:space="preserve">
+    <value>La zona no existe, ¿desea darla de alta?</value>
+  </data>
+  <data name="zonas" xml:space="preserve">
+    <value>Zones</value>
+  </data>
+  <data name="zonasDeAbastecimiento" xml:space="preserve">
+    <value>Zonas de abastecimiento</value>
+  </data>
+  <data name="zonaXNoEstaEnEstadoDeApertura" xml:space="preserve">
+    <value>La zona @zona no está en estado de apertura</value>
+  </data>
+  <data name="contratosDomiciliados" xml:space="preserve">
+    <value>Domiciled contracts</value>
+  </data>
+  <data name="contratosDomiciliadosAbv" xml:space="preserve">
+    <value>Dom. contr.</value>
+  </data>
+  <data name="contratosNoAperturados" xml:space="preserve">
+    <value>Unopened contracts</value>
+  </data>
+  <data name="contratosNoAperturadosAbv" xml:space="preserve">
+    <value>Unop. cntr.</value>
+  </data>
+  <data name="aFechaCobro" xml:space="preserve">
+    <value>Unpaid invoices up to this date</value>
+  </data>
+  <data name="fechaFacturaDesde" xml:space="preserve">
+    <value>From invoice date</value>
+  </data>
+  <data name="fechaFacturaHasta" xml:space="preserve">
+    <value>Up to invoice date</value>
+  </data>
+  <data name="informeSituacionTarifa" xml:space="preserve">
+    <value>Situation report by rate</value>
+  </data>
+  <data name="situacionTarifa" xml:space="preserve">
+    <value>Situation rate</value>
+  </data>
+  <data name="bonifDuplicadas" xml:space="preserve">
+    <value>Duplicated bonuses</value>
+  </data>
+  <data name="listadoBonifDuplicadas" xml:space="preserve">
+    <value>Duplicated bonuses report</value>
+  </data>
+  <data name="fecha_finAbv" xml:space="preserve">
+    <value>End date</value>
+  </data>
+  <data name="protocolo" xml:space="preserve">
+    <value>Protocol</value>
+  </data>
+  <data name="rutaClavePrivada" xml:space="preserve">
+    <value>Private key path</value>
+  </data>
+  <data name="servicioDepuracion" xml:space="preserve">
+    <value>Purifying service</value>
+  </data>
+  <data name="listadoContratosDir" xml:space="preserve">
+    <value>Contracts and their addresses and rates</value>
+  </data>
+  <data name="listadoContratosDirAbv" xml:space="preserve">
+    <value>Contr. addr. rate</value>
+  </data>
+  <data name="informeContadorAbonados" xml:space="preserve">
+    <value>Counters and customers report</value>
+  </data>
+  <data name="val_passString" xml:space="preserve">
+    <value>@field debe conteneralmenos un número, una letra mayúscula, una letra minúscula</value>
+  </data>
+  <data name="codigoSAP" xml:space="preserve">
+    <value>SAP Code</value>
+  </data>
+  <data name="fechaVtoPartida" xml:space="preserve">
+    <value>Entries expiration date</value>
+  </data>
+  <data name="centroBeneficio" xml:space="preserve">
+    <value>Profit center</value>
+  </data>
+  <data name="generarCargaCobros" xml:space="preserve">
+    <value>Generate masive charges charge</value>
+  </data>
+  <data name="generarCargaCobrosAbv" xml:space="preserve">
+    <value>Generate charges</value>
+  </data>
+  <data name="cobrosSAP" xml:space="preserve">
+    <value>SAPCharges</value>
+  </data>
+  <data name="infoNoExistenCobrosSAP" xml:space="preserve">
+    <value>There is not any charge to export to SAP</value>
+  </data>
+  <data name="ETaskType_FicheroInterfazAcuamaSAP" xml:space="preserve">
+    <value>SAP charges file</value>
+  </data>
+  <data name="cobrosDevGeneradosEnElFichero" xml:space="preserve">
+    <value>Charges-refunds generated in the file</value>
+  </data>
+  <data name="warningDatosEnBlanco" xml:space="preserve">
+    <value>WARNING: Generated file contains these empty data:</value>
+  </data>
+  <data name="fecUltDiaMesCobro" xml:space="preserve">
+    <value>Charge date month last day</value>
+  </data>
+  <data name="ibanExplotacion" xml:space="preserve">
+    <value>Society IBAN</value>
+  </data>
+  <data name="sociedadSAP" xml:space="preserve">
+    <value>SAP society</value>
+  </data>
+  <data name="confborradoGen" xml:space="preserve">
+    <value>Are you sure you want the record to be deleted?</value>
+  </data>
+  <data name="errorNoBorradoGen" xml:space="preserve">
+    <value>The item cannot be deleted</value>
+  </data>
+  <data name="infoElementoBorradoGen" xml:space="preserve">
+    <value>The item has been deleted</value>
+  </data>
+  <data name="infoPeriodoPeriodico" xml:space="preserve">
+    <value>Final term should be periodical</value>
+  </data>
+  <data name="cuentaExplotacion" xml:space="preserve">
+    <value>Society account</value>
+  </data>
+  <data name="numeroDePeriodosConDeudaAbv" xml:space="preserve">
+    <value>Debt period count</value>
+  </data>
+  <data name="avisoDescuadre" xml:space="preserve">
+    <value>WARNING: Debit and Credit don't match</value>
+  </data>
+  <data name="impuestoDefecto" xml:space="preserve">
+    <value>Default tax</value>
+  </data>
+  <data name="impuestoDefectoAbv" xml:space="preserve">
+    <value>Def. tax</value>
+    <comment>Abreviación de "Impuesto por defecto"</comment>
+  </data>
+  <data name="EImpuestoTipo_IGIC" xml:space="preserve">
+    <value>IGIC</value>
+  </data>
+  <data name="EImpuestoTipo_IVA" xml:space="preserve">
+    <value>IVA</value>
+  </data>
+  <data name="EImpuestoTipo_IVADiferido" xml:space="preserve">
+    <value>Deferred IVA</value>
+  </data>
+  <data name="perteneceAGrupoSACYR" xml:space="preserve">
+    <value>Is it part of Grupo SACYR?</value>
+  </data>
+  <data name="plantillaAltaSAP" xml:space="preserve">
+    <value>New supplier SAP template</value>
+  </data>
+  <data name="proveedorCreadoEnSAP" xml:space="preserve">
+    <value>Does it exist in SAP?</value>
+  </data>
+  <data name="sociedadGL" xml:space="preserve">
+    <value>GL Society</value>
+  </data>
+  <data name="formaDePagoSAP" xml:space="preserve">
+    <value>SAP Pay method</value>
+  </data>
+  <data name="contratosSinServiciosActivosPorContrato" xml:space="preserve">
+    <value>Contracts without any active services</value>
+  </data>
+  <data name="contratosSinServiciosContratados" xml:space="preserve">
+    <value>Contracts without any service contracted</value>
+  </data>
+  <data name="contratosTodosServiciosAnulados" xml:space="preserve">
+    <value>Contracts with all their services cancelled</value>
+  </data>
+  <data name="contratosConServiciosActivos" xml:space="preserve">
+    <value>Contracts with active services</value>
+  </data>
+  <data name="facturaProveedorCB" xml:space="preserve">
+    <value>All invoice @item lines must impute to the same Benefit Center.</value>
+  </data>
+  <data name="rectificativaTipo" xml:space="preserve">
+    <value>Rectif. type</value>
+  </data>
+  <data name="ExcelSinFormato" xml:space="preserve">
+    <value>Excel no format</value>
+  </data>
+  <data name="estadoProceso" xml:space="preserve">
+    <value>Estado proceso</value>
+  </data>
+  <data name="estadoProcesoAbv" xml:space="preserve">
+    <value>Est. proc</value>
+  </data>
+  <data name="estadoRespuesta" xml:space="preserve">
+    <value>Estado respuesta</value>
+  </data>
+  <data name="estadoRespuestaAbv" xml:space="preserve">
+    <value>Est. resp.</value>
+  </data>
+  <data name="fechaEnvioSAP" xml:space="preserve">
+    <value>Fecha envío SAP</value>
+  </data>
+  <data name="fechaEnvioSAPAbv" xml:space="preserve">
+    <value>F. envío SAP</value>
+  </data>
+  <data name="fechaRespuesta" xml:space="preserve">
+    <value>Fecha respuesta</value>
+  </data>
+  <data name="fechaRespuestaAbv" xml:space="preserve">
+    <value>Fec. respuesta</value>
+  </data>
+  <data name="lineaInfo1" xml:space="preserve">
+    <value>Línea info 1</value>
+  </data>
+  <data name="lineaInfo2" xml:space="preserve">
+    <value>Línea info 2</value>
+  </data>
+  <data name="lineaInfo3" xml:space="preserve">
+    <value>Línea info 3</value>
+  </data>
+  <data name="loteSII" xml:space="preserve">
+    <value>Lote SII</value>
+  </data>
+  <data name="lotesSIITitulo" xml:space="preserve">
+    <value>Consulta y reenvío de lotes SII</value>
+  </data>
+  <data name="estadoCorrecto" xml:space="preserve">
+    <value>Correcto</value>
+  </data>
+  <data name="estadoErrorTecnico" xml:space="preserve">
+    <value>Error técnico</value>
+  </data>
+  <data name="estadoIncorrecto" xml:space="preserve">
+    <value>Incorrecto</value>
+  </data>
+  <data name="estadoParcialCorrecto" xml:space="preserve">
+    <value>Parcialmente correcto</value>
+  </data>
+  <data name="ETaskType_RecuperaEstadoSII" xml:space="preserve">
+    <value>Recuperar respuestas de facturas SII</value>
+  </data>
+  <data name="reenvioPreparadoCorrectamente" xml:space="preserve">
+    <value>Se ha preparado correctamente el reenvío de #buenas facturas erróneas del lote: </value>
+  </data>
+  <data name="reenvioPreparadoError" xml:space="preserve">
+    <value>Error en la preparación del reenvío de #malas facturas erróneas del lote:</value>
+  </data>
+  <data name="estadoLote" xml:space="preserve">
+    <value>Estado lote</value>
+  </data>
+  <data name="estadoLoteAbv" xml:space="preserve">
+    <value>Est. lote</value>
+  </data>
+  <data name="facturasAReenviar" xml:space="preserve">
+    <value>facturas a reenviar</value>
+  </data>
+  <data name="val_docIdenAEAT" xml:space="preserve">
+    <value>El documento @field no está validado en la AEAT</value>
+  </data>
+  <data name="estadoSII_E" xml:space="preserve">
+    <value>Con error en el envío al SII</value>
+  </data>
+  <data name="estadoSII_NoEnviada" xml:space="preserve">
+    <value>No enviada al SII</value>
+  </data>
+  <data name="estadoSII_S" xml:space="preserve">
+    <value>Se ha enviado correctamente al SII</value>
+  </data>
+  <data name="estadoSII_W" xml:space="preserve">
+    <value>Aceptada en el SII con errores</value>
+  </data>
+  <data name="estadoSII_X" xml:space="preserve">
+    <value>Pendiente de envío al SII o de recuperar la respuesta del envío</value>
+  </data>
+  <data name="NoAnularPorSII" xml:space="preserve">
+    <value>No se permite anular por encontrarse rechazado el envío al SII. Corregir doc. identif. en contrato y actualizar versión en factura</value>
+  </data>
+  <data name="NoRectificarPorSII" xml:space="preserve">
+    <value>No se permite rectificar por encontrarse rechazado el envío al SII. Corregir doc. identif. en contrato y actualizar versión en factura</value>
+  </data>
+  <data name="ETaskType_CalidadDatosIdentificativos" xml:space="preserve">
+    <value>Validación calidad datos identificativos AEAT</value>
+  </data>
+  <data name="pagadores" xml:space="preserve">
+    <value>Pagadores</value>
+  </data>
+  <data name="titulares" xml:space="preserve">
+    <value>Titulares</value>
+  </data>
+  <data name="llevaCala" xml:space="preserve">
+    <value>Lleva cala</value>
+  </data>
+  <data name="errorOTSinNumeroIncidencia" xml:space="preserve">
+    <value>Las siguientes solicitudes deben tener nº de incidencia asociado: @ordenes</value>
+  </data>
+  <data name="errorOTSinProvinciaPoblacion" xml:space="preserve">
+    <value>Las siguientes solicitudes deben tener provincia y población: @ordenes</value>
+  </data>
+  <data name="confCierreRectificativaCanal" xml:space="preserve">
+    <value>¿Desea cerrar la edición de factura y las facturas que se hubieran generado?</value>
+  </data>
+  <data name="cierreRectificativaCanalOK" xml:space="preserve">
+    <value>La/s facturas han sido cerrada/s correctamente</value>
+  </data>
+  <data name="errorRectificativaCanalDiferidos" xml:space="preserve">
+    <value>Error en el proceso de cierre</value>
+  </data>
+  <data name="confFechaBajaContrato" xml:space="preserve">
+    <value>¿Es correcta la fecha de baja @fechaBaja?</value>
+  </data>
+  <data name="confFechaInicioValTar" xml:space="preserve">
+    <value>¿Es correcta la fecha de inicio @fechaInicio?</value>
+  </data>
+  <data name="cobrosPorApremios" xml:space="preserve">
+    <value>Cobros por apremios</value>
+  </data>
+  <data name="recuerdeAplicarDiferidos" xml:space="preserve">
+    <value>Recuerde aplicar de nuevo diferidos en la zona y periodo origen y destino</value>
+  </data>
+  <data name="confirmBorradoDiferidos" xml:space="preserve">
+    <value>La OT tiene diferidos que se eliminarán. ¿Desea continuar?</value>
+  </data>
+  <data name="diferidosAplicadosOk" xml:space="preserve">
+    <value>Se han aplicado correctamente @diferidos diferidos a la factura</value>
+  </data>
+  <data name="soloServiciosActivos" xml:space="preserve">
+    <value>Only current services</value>
+  </data>
+  <data name="aplicarEscaladoMaximo" xml:space="preserve">
+    <value>Apply maximum scaling</value>
+  </data>
+  <data name="aplicarEscaladoMinimo" xml:space="preserve">
+    <value>Apply minimum scaling</value>
+  </data>
+  <data name="Error_OT_Cerrada" xml:space="preserve">
+    <value>The work order is closed. Closed: '{0}'.</value>
+  </data>
+  <data name="Error_OT_Facturas" xml:space="preserve">
+    <value>The work order is related to the invoice '{0}-{1}' of the contract '{2}' (period: {3}).</value>
+  </data>
+  <data name="Error_OT_ExpedienteCorte" xml:space="preserve">
+    <value>The work order is related to the cut file '{0}' of the contract '{1}'.</value>
+  </data>
+  <data name="Error_OT_Diferidos" xml:space="preserve">
+    <value>The work order is related to the deferred '{0}'.</value>
+  </data>
+  <data name="Error_OT_RegistroEntrada" xml:space="preserve">
+    <value>The work order is related to the check-in '{0}'.</value>
+  </data>
+  <data name="Info_OT_CambioContador" xml:space="preserve">
+    <value>The selected work order '{0}' corresponds to a counter change. The counters associated to the change ({1}) will be removed from the contract '{2}' with the work order. Are you sure you want to delete the work order '{0}'?</value>
+  </data>
+  <data name="fInforme" xml:space="preserve">
+    <value>Report date</value>
+  </data>
+  <data name="semana" xml:space="preserve">
+    <value>Week</value>
+  </data>
+  <data name="puestaCobro" xml:space="preserve">
+    <value>Puesta Cobro</value>
+  </data>
+  <data name="cartaCorte" xml:space="preserve">
+    <value>Carta Corte</value>
+  </data>
+  <data name="InformeExcel_Error" xml:space="preserve">
+    <value>An error has occurred generating the report.</value>
+  </data>
+  <data name="sugerirTarifas" xml:space="preserve">
+    <value>Suggest rates</value>
+    <comment>Sugerir rates</comment>
+  </data>
+  <data name="fechaFinalizacion" xml:space="preserve">
+    <value>End date</value>
+  </data>
+  <data name="errorNoSeHaPodidoRegistrarHistoricoPedido" xml:space="preserve">
+    <value>It was not possible to record the order history.</value>
+  </data>
+  <data name="NoAutorizado" xml:space="preserve">
+    <value>No Autorizado</value>
+  </data>
+  <data name="incluir" xml:space="preserve">
+    <value>Include</value>
+  </data>
+  <data name="incluirLiquidadas" xml:space="preserve">
+    <value>Incluir liquidated</value>
+  </data>
+  <data name="fechaRechazo" xml:space="preserve">
+    <value>Rejection date</value>
+  </data>
+  <data name="cargaOTsAbv" xml:space="preserve">
+    <value>Upload W.O.</value>
+  </data>
+  <data name="cargaOTs" xml:space="preserve">
+    <value>Bulk upload of working orders</value>
+  </data>
+  <data name="cargaProcesada_HTML" xml:space="preserve">
+    <value>They have been sent &lt;b&gt;{0:D3}&lt;/b&gt; records.&lt;br&gt;They have been loaded &lt;b&gt;{1:D3}&lt;/b&gt; &lt;i&gt;{2}&lt;/i&gt;.</value>
+  </data>
+  <data name="actualizacionLecturaFactura" xml:space="preserve">
+    <value>Update read Invoice</value>
+  </data>
+ <data name="ErrorRemesaFactura" xml:space="preserve">
+    <value>[@err]El efecto pendiente @codigo del periodo @periodo, contrato @contrato y código de factura @facCod no se ha podido incluir en la remesa.</value>
+  </data>
+  <data name="ErrorRemesa" xml:space="preserve">
+    <value>No se puede continuar con la remesa @remesa. El efecto pendiente @codigo del periodo @periodo, contrato @contrato y código de factura @facCod no se ha podido incluir en la remesa</value>
+  </data>
+
+
+  <data name="Edad" xml:space="preserve">
+    <value>Age</value>
+  </data>
+
+  <data name="ErrorConfiguracion" xml:space="preserve">
+    <value>Compruebe la configuración del parametro @param</value>
+  </data>
+	<data name="OT_CambioContador_Existe" xml:space="preserve">
+    <value>Ya existe una OT de cambio de contador registrada para el contrato: @ctrcod</value>
+  </data>
+
+  <data name="OT_CargaMasiva" xml:space="preserve">
+    <value>Generación de OT por carga masiva @fichero.</value>
+  </data>
+
+	<data name="cargaOT_CambioContador" xml:space="preserve">
+    <value>Carga masiva de órdenes de trabajo de cambio de contador</value>
+  </data>
+
+   <data name="cargaErrores" xml:space="preserve">
+    <value>Se han presentado errores en el proceso de carga</value>
+  </data>
+
+<data name="DeudaEstado" xml:space="preserve">
+    <value>Debt Status</value>
+</data>
+</root>

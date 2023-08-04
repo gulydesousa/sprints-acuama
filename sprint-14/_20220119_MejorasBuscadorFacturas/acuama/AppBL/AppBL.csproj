@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12E4D840-8567-478C-97BA-2F5014FFBF81}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BL</RootNamespace>
+    <AssemblyName>BL</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.93.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.93.1\lib\net46\ClosedXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EncrypterBL">
+      <HintPath>..\Lib\EncrypterBL.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.3.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="FastMember.Signed">
+      <HintPath>..\Lib\FastMember.Signed.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\Lib\Enterprise Library\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UrlRewritingNet.UrlRewriter">
+      <HintPath>..\Lib\UrlRewritingNet.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Almacen\cAlmacenBL.cs" />
+    <Compile Include="Almacen\cAnaConjuntoAnaBL.cs" />
+    <Compile Include="Almacen\cAnalisisBL.cs" />
+    <Compile Include="Almacen\cAnalisisBotellasBL.cs" />
+    <Compile Include="Almacen\cAnalisisMuestrasBL.cs" />
+    <Compile Include="Almacen\cAnalisisResultadosBL.cs" />
+    <Compile Include="Almacen\cAnaParamBL.cs" />
+    <Compile Include="Almacen\cAreasBL.cs" />
+    <Compile Include="Almacen\cBotellasBL.cs" />
+    <Compile Include="Almacen\cCaracteristicaCompTiposBL.cs" />
+    <Compile Include="Almacen\cCaracteristicasBL.cs" />
+    <Compile Include="Almacen\cCaracteristicasTiposBL.cs" />
+    <Compile Include="Almacen\cMaterialesBL.cs" />
+    <Compile Include="Almacen\cComCarBL.cs" />
+    <Compile Include="Almacen\cComOpeBL.cs" />
+    <Compile Include="Almacen\cComponentesBL.cs" />
+    <Compile Include="Almacen\cConjuntoAnaBL.cs" />
+    <Compile Include="Almacen\cDepartamentosBL.cs" />
+    <Compile Include="Almacen\cEntradaBL.cs" />
+    <Compile Include="Almacen\cFamiliaBL.cs" />
+    <Compile Include="Almacen\cGeneracionOTCambioContadorBL.cs" />
+    <Compile Include="Almacen\cGeneracionMuestrasPorConjuntoAnalisisBL.cs" />
+    <Compile Include="Almacen\cLaboratoriosBL.cs" />
+    <Compile Include="Almacen\cMotCierreBL.cs" />
+    <Compile Include="Almacen\cMovmpsBL.cs" />
+    <Compile Include="Almacen\cMpiBL.cs" />
+    <Compile Include="Almacen\cMpsBL.cs" />
+    <Compile Include="Almacen\cMpsDetalleBL.cs" />
+    <Compile Include="Almacen\cMpsTarifasBL.cs" />
+    <Compile Include="Almacen\cMuestrasBL.cs" />
+    <Compile Include="Almacen\cOperacionesActBL.cs" />
+    <Compile Include="Almacen\cOperacionesBL.cs" />
+    <Compile Include="Almacen\cOperacionesCompTiposBL.cs" />
+    <Compile Include="Almacen\cOrdenTrabajoTrabBL.cs" />
+    <Compile Include="Almacen\cOtCategoriasBL.cs" />
+    <Compile Include="Almacen\cOtDatosBL.cs" />
+    <Compile Include="Almacen\cOtManOpeActBL.cs" />
+    <Compile Include="Almacen\cOtTiposCategoriasBL.cs" />
+    <Compile Include="Almacen\cOtTiposDatosBL.cs" />
+    <Compile Include="Almacen\cOtDatosValorBL.cs" />
+    <Compile Include="Almacen\cOtTiposDefConBL.cs" />
+    <Compile Include="Almacen\cPeriodicidadBL.cs" />
+    <Compile Include="Almacen\cProductosBL.cs" />
+    <Compile Include="Almacen\cPuntoMBL.cs" />
+    <Compile Include="Almacen\cPuntoMuestreoCaracteristicasValoresBL.cs" />
+    <Compile Include="Almacen\cPuntoMuestreoSubtiposBL.cs" />
+    <Compile Include="Almacen\cPuntoMuestreoTiposBL.cs" />
+    <Compile Include="Almacen\cPuntoMuestreoCaracteristicasBL.cs" />
+    <Compile Include="Almacen\cPuntoMuestreoTiposCarBL.cs" />
+    <Compile Include="Almacen\cReclinBL.cs" />
+    <Compile Include="Almacen\cRecuentoBL.cs" />
+    <Compile Include="Almacen\cContadorCambioBL.cs" />
+    <Compile Include="Almacen\cComponentesTiposBL.cs" />
+    <Compile Include="Almacen\cReferenciasProveedoresBL.cs" />
+    <Compile Include="Almacen\cStockBL.cs" />
+    <Compile Include="Almacen\cTiposAditivoBL.cs" />
+    <Compile Include="Almacen\cTiposEnvaseBL.cs" />
+    <Compile Include="Almacen\cTiposParametroAnalisisBL.cs" />
+    <Compile Include="Almacen\cMetodosEnsayoBL.cs" />
+    <Compile Include="Catastro\cAcometidasBL.cs" />
+    <Compile Include="Catastro\cBonificacionesBL.cs" />
+    <Compile Include="Catastro\cBonificacionesEstadosBL.cs" />
+    <Compile Include="Catastro\cBonificacionesFacturarTrabBL.cs" />
+    <Compile Include="Catastro\cBonificacionesRegESBL.cs" />
+    <Compile Include="Catastro\cBonificacionesSituacionesBL.cs" />
+    <Compile Include="Catastro\cBonificacionesTiposBL.cs" />
+    <Compile Include="Catastro\cBonificacionesTrabBL.cs" />
+    <Compile Include="Catastro\cCatalogosLocalidadBL.cs" />
+    <Compile Include="Catastro\cCatalogosPaisesBL.cs" />
+    <Compile Include="Catastro\cContadoresTiposBL.cs" />
+    <Compile Include="Catastro\cContratosComunitariosBL.cs" />
+    <Compile Include="Catastro\cEquiposTiposBL.cs" />
+    <Compile Include="Catastro\cMandatosBL.cs" />
+    <Compile Include="Catastro\cModConBL.cs" />
+    <Compile Include="Catastro\cOficinasContablesBL.cs" />
+    <Compile Include="Catastro\cOrganismosBL.cs" />
+    <Compile Include="Catastro\cOrganismosGestoresBL.cs" />
+    <Compile Include="Catastro\cTiposViaBL.cs" />
+    <Compile Include="Catastro\cTiposVipBL.cs" />
+    <Compile Include="Catastro\cUnidadesTramitadorasBL.cs" />
+    <Compile Include="Cobros\cAgentesCobrosBL.cs" />
+    <Compile Include="Cobros\cApremiosLinBL.cs" />
+    <Compile Include="Cobros\cApremiosCabBL.cs" />
+    <Compile Include="Cobros\cApremiosTrabBL.cs" />
+    <Compile Include="Cobros\cCobroApremiosBL.cs" />
+    <Compile Include="Cobros\cCobrosLinDesgloseBL.cs" />
+    <Compile Include="Cobros\cBicBL.cs" />
+    <Compile Include="Cobros\cComisionesFacturarTrabAgrupadasBL.cs" />
+    <Compile Include="Cobros\cComisionesFacturarTrabBL.cs" />
+    <Compile Include="Cobros\cCuaderno57BL.cs" />
+    <Compile Include="Cobros\cDeudasClienteBL.cs" />
+    <Compile Include="Cobros\cEfectosPendientesBL.cs" />
+    <Compile Include="Cobros\cComisionesBL.cs" />
+    <Compile Include="Cobros\cExpedientesCorteTiposBL.cs" />
+    <Compile Include="Cobros\cLiquidacionesBL.cs" />
+    <Compile Include="Cobros\cBOEBL.cs" />
+    <Compile Include="Cobros\cSapCobrosBL.cs" />
+    <Compile Include="Comun\cDataBaseOpsBL.cs" />
+    <Compile Include="Comun\cRespuestaJSON.cs" />
+    <Compile Include="Comun\cSMS.cs" />
+    <Compile Include="Contabilidad\cMod340BL.cs" />
+    <Compile Include="Contabilidad\cMod347BL.cs" />
+    <Compile Include="Contabilidad\cOrdenSAPBL.cs" />
+    <Compile Include="Contabilidad\cSAPMaestrosBL.cs" />
+    <Compile Include="Contabilidad\cTraspasoAsientosTrabBL.cs" />
+    <Compile Include="Excel\cExcelConsultaBL.cs" />
+    <Compile Include="Excel\cExcelFiltroBL.cs" />
+    <Compile Include="Facturacion\cCausasExencionBL.cs" />
+    <Compile Include="Facturacion\cEFacturasBL.cs" />
+    <Compile Include="Facturacion\cFaclinDesgloseBL.cs" />
+    <Compile Include="Facturacion\cFacTotalesTrabBL.cs" />
+    <Compile Include="Facturacion\cFacturaDeudaEstadosBL.cs" />
+    <Compile Include="Facturacion\cFacturasBL.cs" />
+    <Compile Include="Facturacion\cFacturasFicherosIntercambioCabBL.cs" />
+    <Compile Include="Facturacion\cFacturasFicherosIntercambioLinBL.cs" />
+    <Compile Include="Facturacion\cFacturasSIIBL.cs" />
+    <Compile Include="Facturacion\cFacturasSIIDesgloseBL.cs" />
+    <Compile Include="Facturacion\cFacturasSIILoteV1V1BL.cs" />
+    <Compile Include="Facturacion\cInterlocutoresFacturaeBL.cs" />
+    <Compile Include="Facturacion\cSERESBL.cs" />
+    <Compile Include="Facturacion\cFacturasSIILoteBL.cs" />
+    <Compile Include="Facturacion\cTPLLecturasFicherosJSONBL.cs" />
+    <Compile Include="Facturacion\cTPLLecturasBL.cs" />
+    <Compile Include="Facturacion\cTPLLecturasFicherosBL.cs" />
+    <Compile Include="Facturacion\cTPLLecturasFicherosXMLBL.cs" />
+    <Compile Include="Facturacion\cSituacionFacturasBL.cs" />
+    <Compile Include="Maestros\cDiasNoLaborablesBL.cs" />
+    <Compile Include="Maestros\cImputacionManualBL.cs" />
+    <Compile Include="Maestros\cImputacionGruposBL.cs" />
+    <Compile Include="Maestros\cSAP_TPagoBL.cs" />
+    <Compile Include="Online\cSolicitudesDocumentoBL.cs" />
+    <Compile Include="PanelControl\cPanelControlBL.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\cReportMethodsBL.cs" />
+    <Compile Include="Sistema\cEMailTemplatesBL.cs" />
+    <Compile Include="Sistema\cEMailTemplateTypeBL.cs" />
+    <Compile Include="Sistema\cExplotacion.cs" />
+    <Compile Include="Sistema\cFTPSiteBL.cs" />
+    <Compile Include="Sistema\cMotivosExencionBL.cs" />
+    <Compile Include="Sistema\cParametrosTPLBL.cs" />
+    <Compile Include="Sistema\cPlantillasCorreosBL.cs" />
+    <Compile Include="Sistema\cPlantillasWordBL.cs" />
+    <Compile Include="Comun\cMenuPerfilTitulosBL.cs" />
+    <Compile Include="Contabilidad\cTraspasoAsientosBL.cs" />
+    <Compile Include="Contabilidad\cVtoProBL.cs" />
+    <Compile Include="Almacen\cZonabasBL.cs" />
+    <Compile Include="Catastro\cPoblacionesBL.cs" />
+    <Compile Include="Catastro\cProvinciasBL.cs" />
+    <Compile Include="Catastro\cCartaTiposBL.cs" />
+    <Compile Include="Catastro\cCondicionBL.cs" />
+    <Compile Include="Catastro\cCondicionesCtrBL.cs" />
+    <Compile Include="Catastro\cCondicionesServiciosBL.cs" />
+    <Compile Include="Catastro\cCondicionesTarifasBL.cs" />
+    <Compile Include="Catastro\cCondicionesTiposBL.cs" />
+    <Compile Include="Catastro\cContratoservicioBL.cs" />
+    <Compile Include="Catastro\cContadorBL.cs" />
+    <Compile Include="Catastro\cDocContratosBL.cs" />
+    <Compile Include="Catastro\cDocumentacionBL.cs" />
+    <Compile Include="Catastro\cPackServBL.cs" />
+    <Compile Include="Catastro\cPackServLinBL.cs" />
+    <Compile Include="Catastro\cServicioDefConBL.cs" />
+    <Compile Include="Comun\cVarios.cs" />
+    <Compile Include="Contabilidad\cBalancesDefiniblesBL.cs" />
+    <Compile Include="Contabilidad\cBalancesDefiniblesDetBL.cs" />
+    <Compile Include="Contabilidad\cBalancesDefiniblesDetCtaBL.cs" />
+    <Compile Include="Contabilidad\cCapituloBL.cs" />
+    <Compile Include="Cobros\cCobrosBL.cs" />
+    <Compile Include="Cobros\cCobrosLinBL.cs" />
+    <Compile Include="Cobros\cDevBancariaBL.cs" />
+    <Compile Include="Cobros\cDevolucionBL.cs" />
+    <Compile Include="Cobros\cExpedientesCorteBL.cs" />
+    <Compile Include="Cobros\cGeneracionOTExpedienteCorteBL.cs" />
+    <Compile Include="Cobros\cPpagosBL.cs" />
+    <Compile Include="Cobros\cRemesasBL.cs" />
+    <Compile Include="Comun\cAccionesFrecuentesBL.cs" />
+    <Compile Include="Contabilidad\cActivoBL.cs" />
+    <Compile Include="Contabilidad\cActivosGrupoBL.cs" />
+    <Compile Include="Contabilidad\cConceptosContablesBL.cs" />
+    <Compile Include="Contabilidad\cContabVentasBL.cs" />
+    <Compile Include="Contabilidad\cMovConBL.cs" />
+    <Compile Include="Contabilidad\cCuentasBL.cs" />
+    <Compile Include="Contabilidad\cBalancesDefiniblesTiposBL.cs" />
+    <Compile Include="Contabilidad\cVtoProTrabBL.cs" />
+    <Compile Include="Almacen\cFacProTotalesBL.cs" />
+    <Compile Include="Maestros\cRegistroEntradasArchivosBL.cs" />
+    <Compile Include="Maestros\cRegistroEntradasBL.cs" />
+    <Compile Include="Maestros\cRegistroEntradasTipoBL.cs" />
+    <Compile Include="Online\cTextosBL.cs" />
+    <Compile Include="Sistema\cImpuestosBL.cs" />
+    <Compile Include="Sistema\cOficinasBL.cs" />
+    <Compile Include="Sistema\cOficinasTiposBL.cs" />
+    <Compile Include="Contabilidad\cPlantillasApuntesBL.cs" />
+    <Compile Include="Contabilidad\cPlantillasApuntesLineasBL.cs" />
+    <Compile Include="Contabilidad\cPresupuestosBL.cs" />
+    <Compile Include="Contabilidad\cTipoDiarioBL.cs" />
+    <Compile Include="Contabilidad\cApartadoBL.cs" />
+    <Compile Include="Contabilidad\cFacProTrabBL.cs" />
+    <Compile Include="Almacen\cOtManComBL.cs" />
+    <Compile Include="Contabilidad\cPartidaBL.cs" />
+    <Compile Include="Facturacion\cDiferidosBL.cs" />
+    <Compile Include="Almacen\cFacProBL.cs" />
+    <Compile Include="Facturacion\cLineasFacturaBL.cs" />
+    <Compile Include="Facturacion\cNotificacionesBL.cs" />
+    <Compile Include="Facturacion\cPerzonaloteBL.cs" />
+    <Compile Include="Facturacion\cPerzonaBL.cs" />
+    <Compile Include="Facturacion\cSituacionBL.cs" />
+    <Compile Include="Facturacion\cUsosBL.cs" />
+    <Compile Include="Maestros\cBancosBL.cs" />
+    <Compile Include="Catastro\cContratoBL.cs" />
+    <Compile Include="Catastro\cCtrConBL.cs" />
+    <Compile Include="Maestros\cReclamacionesBL.cs" />
+    <Compile Include="Maestros\cReclamacionLineasBL.cs" />
+    <Compile Include="Maestros\cSgreclamacionBL.cs" />
+    <Compile Include="Maestros\cGreclamacionBL.cs" />
+    <Compile Include="Cobros\cMedpcBL.cs" />
+    <Compile Include="Cobros\cPpcajaBL.cs" />
+    <Compile Include="Cobros\cPpoficinaBL.cs" />
+    <Compile Include="Catastro\cMarconBL.cs" />
+    <Compile Include="Almacen\cPedProBL.cs" />
+    <Compile Include="Almacen\cSectortBL.cs" />
+    <Compile Include="Almacen\cOrdenTrabajoBL.cs" />
+    <Compile Include="Almacen\cOttipoBL.cs" />
+    <Compile Include="Almacen\cSubclasifotBL.cs" />
+    <Compile Include="Catastro\cClaseconBL.cs" />
+    <Compile Include="Catastro\cEmplazaBL.cs" />
+    <Compile Include="Facturacion\cIncilecBL.cs" />
+    <Compile Include="Comun\cColoresBL.cs" />
+    <Compile Include="Comun\cMenuPerfilBL.cs" />
+    <Compile Include="Cobros\cPpentidadBL.cs" />
+    <Compile Include="Facturacion\cOrilecBL.cs" />
+    <Compile Include="Facturacion\cPeriodoBL.cs" />
+    <Compile Include="Facturacion\cTarifaBL.cs" />
+    <Compile Include="Facturacion\cTarvalBL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Catastro\cCalleBL.cs" />
+    <Compile Include="Catastro\cDocidenBL.cs" />
+    <Compile Include="Maestros\cImputacionBL.cs" />
+    <Compile Include="Almacen\cUmedidaBL.cs" />
+    <Compile Include="Catastro\cInmuebleBL.cs" />
+    <Compile Include="Maestros\cMpresentacionBL.cs" />
+    <Compile Include="Maestros\cTreclamacionBL.cs" />
+    <Compile Include="Maestros\cProveedorBL.cs" />
+    <Compile Include="Almacen\cSubfamiliaBL.cs" />
+    <Compile Include="Almacen\cTipoMovimientoBL.cs" />
+    <Compile Include="Comun\cBX000.cs" />
+    <Compile Include="Catastro\cZonaBL.cs" />
+    <Compile Include="Comun\cValidator.cs" />
+    <Compile Include="Catastro\cClienteBL.cs" />
+    <Compile Include="Almacen\cClasifotBL.cs" />
+    <Compile Include="Catastro\cMunicipioBL.cs" />
+    <Compile Include="Maestros\cForpagoBL.cs" />
+    <Compile Include="Catastro\cServicioBL.cs" />
+    <Compile Include="Maestros\cNacionBL.cs" />
+    <Compile Include="Maestros\cIdiomaBL.cs" />
+    <Compile Include="Online\cSolicitudesBL.cs" />
+    <Compile Include="Online\cSolicitudesDatosBL.cs" />
+    <Compile Include="Online\cSolicitudesTiposBL.cs" />
+    <Compile Include="Online\cUsuariosOnlineBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Comun\cAccesosBL.cs" />
+    <Compile Include="Sistema\cContratistaBL.cs" />
+    <Compile Include="Sistema\cEMailBL.cs" />
+    <Compile Include="Sistema\cEmpleadoBL.cs" />
+    <Compile Include="Sistema\cFormatoImpresionBL.cs" />
+    <Compile Include="Sistema\cMensajeBL.cs" />
+    <Compile Include="Online\cEMailOficinaOnlineBL.cs" />
+    <Compile Include="Sistema\cParametroBL.cs" />
+    <Compile Include="Sistema\cParametroTiposBL.cs" />
+    <Compile Include="Sistema\cPerfilBL.cs" />
+    <Compile Include="Sistema\cPublicacionesBL.cs" />
+    <Compile Include="Sistema\cRetencionBL.cs" />
+    <Compile Include="Sistema\cSerieBL.cs" />
+    <Compile Include="Sistema\cSociedadBL.cs" />
+    <Compile Include="Sistema\cUsuarioBL.cs" />
+    <Compile Include="Tasks\cTaskManagerBL.cs" />
+    <Compile Include="Web References\messenger\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ProcesarLotesFacturaV2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ProcesarLotesFactura\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\webSrvContratosBL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppBO\AppBO.csproj">
+      <Project>{09A0D7AF-C44D-4519-95B3-810551F328C1}</Project>
+      <Name>AppBO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppDL\AppDL.csproj">
+      <Project>{AC50E15C-C767-4762-B829-6B2C8BB021DB}</Project>
+      <Name>AppDL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\messenger\MessageStatusCode1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\messenger\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\messenger\sendservice.wsdl" />
+    <None Include="Web References\ProcesarLotesFacturaV2\consultaLoteResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ProcesarLotesFacturaV2\messages.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ProcesarLotesFacturaV2\ProcesarLoteResponseReturn.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ProcesarLotesFacturaV2\ProcesarLoteWSImplService.wsdl" />
+    <None Include="Web References\ProcesarLotesFacturaV2\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ProcesarLotesFacturaV2\respuestaConsultaDTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ProcesarLotesFacturaV2\respuestaConsultaDTO11.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ProcesarLotesFacturaV2\respuestaConsultaForalAlavaDTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ProcesarLotesFacturaV2\respuestaConsultaForalBizkaiaDTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ProcesarLotesFacturaV2\respuestaConsultaForalCanariasDTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ProcesarLotesFacturaV2\respuestaConsultaForalGipuzkoaDTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ProcesarLotesFactura\ProcesarLoteResponseReturn.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ProcesarLotesFactura\ProcesarLoteWSImplService.wsdl" />
+    <None Include="Web References\ProcesarLotesFactura\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ProcesarLotesFactura\respuestaConsultaDTO.datasource" />
+    <None Include="Web References\ProcesarLotesFactura\respuestaConsultaDTO2.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="C:\Acuama_doc_sacyr\SII\SACYR\ProcesarLoteFUSESII.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ProcesarLotesFactura\</RelPath>
+      <UpdateFromURL>C:\Acuama_doc_sacyr\SII\SACYR\ProcesarLoteFUSESII.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BL_ProcesarLotesFactura_ProcesarLoteWSImplService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Workspaces\Acuama\Pro\AppBL\Web References\ProcesarLoteSII.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ProcesarLotesFacturaV2\</RelPath>
+      <UpdateFromURL>C:\Workspaces\Acuama\Pro\AppBL\Web References\ProcesarLoteSII.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BL_ProcesarLotesFacturaV2_ProcesarLoteWSImplService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://www.esendex.com/secure/messenger/soap/sendservice.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\messenger\</RelPath>
+      <UpdateFromURL>https://www.esendex.com/secure/messenger/soap/sendservice.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BL_messenger_SendService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\messenger\sendservice.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

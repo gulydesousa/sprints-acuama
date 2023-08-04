@@ -1,0 +1,9 @@
+--BEGIN TRAN
+
+SELECT * 
+--UPDATE CL SET cblImporte=ROUND(cblImporte, 2)
+FROM coblin AS CL
+WHERE LEN(CONVERT(INT, PARSE(REPLACE(REVERSE(CONVERT(VARCHAR(50), ABS(cblImporte), 2)), '.', ',') AS FLOAT USING 'es-ES')))>2 
+
+
+--COMMIT 

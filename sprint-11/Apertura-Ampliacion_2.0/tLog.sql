@@ -1,0 +1,6 @@
+CREATE TYPE dbo.tLog AS TABLE(
+  iLog INT IDENTITY(1, 1)
+, keyLog VARCHAR(100)
+, valueLog VARCHAR(100)
+, msgLog VARCHAR(250)
+, keyDate DATETIME);
