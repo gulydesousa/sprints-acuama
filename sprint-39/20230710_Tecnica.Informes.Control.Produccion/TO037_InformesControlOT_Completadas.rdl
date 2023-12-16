@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Subreport Name="Detalle">
+        <ReportName>TO037_InformesControlOT_Completadas_Detalle</ReportName>
+        <Parameters>
+          <Parameter Name="fDesde">
+            <Value>=Parameters!fDesde.Value</Value>
+          </Parameter>
+          <Parameter Name="fHasta">
+            <Value>=Parameters!fHasta.Value</Value>
+          </Parameter>
+          <Parameter Name="origenOT">
+            <Value>=Parameters!origenOT.Value</Value>
+          </Parameter>
+        </Parameters>
+        <Top>1.20868cm</Top>
+        <Height>0.93514cm</Height>
+        <Width>17.58368cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Subreport>
+      <Subreport Name="Resumen">
+        <ReportName>TO037_InformesControlOT_Completadas_Totales</ReportName>
+        <Parameters>
+          <Parameter Name="fDesde">
+            <Value>=Parameters!fDesde.Value</Value>
+          </Parameter>
+          <Parameter Name="fHasta">
+            <Value>=Parameters!fHasta.Value</Value>
+          </Parameter>
+          <Parameter Name="origenOT">
+            <Value>=Parameters!origenOT.Value</Value>
+          </Parameter>
+        </Parameters>
+        <Height>0.6cm</Height>
+        <Width>17.58368cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Subreport>
+      <Rectangle Name="Rectangle1">
+        <PageBreak>
+          <BreakLocation>End</BreakLocation>
+        </PageBreak>
+        <KeepTogether>true</KeepTogether>
+        <Top>0.6cm</Top>
+        <Height>0.60868cm</Height>
+        <Width>17.58368cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Rectangle>
+    </ReportItems>
+    <Height>0.84402in</Height>
+    <Style />
+  </Body>
+  <Width>6.92271in</Width>
+  <Page>
+    <PageFooter>
+      <Height>1.03207cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Image Name="LogoPie">
+          <Source>External</Source>
+          <Value>logo.png</Value>
+          <Sizing>FitProportional</Sizing>
+          <Height>0.75cm</Height>
+          <Width>2cm</Width>
+          <Style />
+        </Image>
+        <Textbox Name="tFecha">
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Label>Página</Label>
+                  <Value>="Página " &amp; Globals!PageNumber &amp; " de " &amp; Globals!TotalPages</Value>
+                  <Style>
+                    <FontFamily>Verdana</FontFamily>
+                    <FontSize>7pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Label>Confidencial</Label>
+                  <Value />
+                  <MarkupType>HTML</MarkupType>
+                  <Style>
+                    <FontFamily>Verdana</FontFamily>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Label>FechaImpresion</Label>
+                  <Value>= "Fecha de Impresión " + FormatDateTime(First(Fields!AcuamaDateTime.Value,"dsAcuamaDateTime"),DateFormat.ShortDate)</Value>
+                  <Style>
+                    <FontFamily>Verdana</FontFamily>
+                    <FontSize>7pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Label>Confidencial</Label>
+                  <Value />
+                  <MarkupType>HTML</MarkupType>
+                  <Style>
+                    <FontFamily>Verdana</FontFamily>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <Left>2cm</Left>
+          <Height>1.03207cm</Height>
+          <Width>15.58368cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingTop>1pt</PaddingTop>
+            <PaddingBottom>1pt</PaddingBottom>
+            <Direction>RTL</Direction>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
+    <PageHeight>21cm</PageHeight>
+    <PageWidth>29.7cm</PageWidth>
+    <LeftMargin>0.3cm</LeftMargin>
+    <RightMargin>0.3cm</RightMargin>
+    <TopMargin>0.5cm</TopMargin>
+    <BottomMargin>0.5cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="dsAcuama">
+      <DataSourceReference>ConexionBD</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>cc4e9cba-8ed4-4724-a2d0-db776b33fb5f</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dsAcuamaDateTime">
+      <Query>
+        <DataSourceName>dsAcuama</DataSourceName>
+        <CommandText>SELECT dbo.GetAcuamaDate() AS AcuamaDateTime</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="AcuamaDateTime">
+          <DataField>AcuamaDateTime</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="fDesde">
+      <DataType>DateTime</DataType>
+      <Prompt>fDesde</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fHasta">
+      <DataType>DateTime</DataType>
+      <Prompt>fHasta</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="origenOT">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>origenOT</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>3db967f3-057d-4ab5-9f3e-aeadf19c5212</rd:ReportID>
+</Report>

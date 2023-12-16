@@ -1,0 +1,1542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="table1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>2.49999cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.67142cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.07856cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.25001cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>3.20896cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.75001cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.07124cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.40231cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2cm</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.75cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox11">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Sociedad: </Value>
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>=Fields!scdnom.Value</Value>
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox11</rd:DefaultName>
+                      <ZIndex>37</ZIndex>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                    <ColSpan>8</ColSpan>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox41">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox41</rd:DefaultName>
+                      <ZIndex>36</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.5cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox3">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Punto de Pago</Value>
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>7pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <LeftIndent>0cm</LeftIndent>
+                          <HangingIndent>0cm</HangingIndent>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox3</rd:DefaultName>
+                      <Style>
+                        <BottomBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                        </BottomBorder>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                    <ColSpan>8</ColSpan>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox43">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Importe</Value>
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>7pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox43</rd:DefaultName>
+                      <ZIndex>27</ZIndex>
+                      <Style>
+                        <BottomBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                        </BottomBorder>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.5cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox17">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!ppagDes.Value</Value>
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>7pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox17</rd:DefaultName>
+                      <ZIndex>35</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                    <ColSpan>8</ColSpan>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="cobImporte">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Round(Fields!cobImporte.Value,2,System.MidpointRounding.AwayFromZero)</Value>
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>7pt</FontSize>
+                                <Format>c2</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>cobImporte</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>2.6cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Subreport Name="Subreport1">
+                      <ReportName>CR011_ListadoCobrosDetalleAgrupado</ReportName>
+                      <Parameters>
+                        <Parameter Name="sociedad">
+                          <Value>=Fields!cobScd.Value</Value>
+                        </Parameter>
+                        <Parameter Name="ppago">
+                          <Value>=Fields!cobPpag.Value</Value>
+                        </Parameter>
+                        <Parameter Name="sociedadD">
+                          <Value>=Fields!cobScd.Value</Value>
+                        </Parameter>
+                        <Parameter Name="sociedadH">
+                          <Value>=Fields!cobScd.Value</Value>
+                        </Parameter>
+                        <Parameter Name="fechaRegistroD">
+                          <Value>=Fields!cobFecRegD.Value</Value>
+                        </Parameter>
+                        <Parameter Name="fechaRegistroH">
+                          <Value>=Fields!cobFecRegH.Value</Value>
+                        </Parameter>
+                        <Parameter Name="fechaCobroD">
+                          <Value>=Fields!cobFecD.Value</Value>
+                        </Parameter>
+                        <Parameter Name="fechaCobroH">
+                          <Value>=Fields!cobFecH.Value</Value>
+                        </Parameter>
+                        <Parameter Name="numeroD">
+                          <Value>=Fields!cobNumD.Value</Value>
+                        </Parameter>
+                        <Parameter Name="numeroH">
+                          <Value>=Fields!cobNumH.Value</Value>
+                        </Parameter>
+                        <Parameter Name="puntoPagoD">
+                          <Value>=Fields!cobPpagoD.Value</Value>
+                        </Parameter>
+                        <Parameter Name="puntoPagoH">
+                          <Value>=Fields!cobPpagoH.Value</Value>
+                        </Parameter>
+                      </Parameters>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </Subreport>
+                    <ColSpan>9</ColSpan>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.5cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox8">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox8</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox7">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox7</rd:DefaultName>
+                      <ZIndex>26</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox8">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox8</rd:DefaultName>
+                      <ZIndex>25</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox9">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox9</rd:DefaultName>
+                      <ZIndex>24</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox33">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox33</rd:DefaultName>
+                      <ZIndex>23</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox48">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox48</rd:DefaultName>
+                      <ZIndex>22</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox57">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox57</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox39">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>TOTAL</Value>
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>7pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox39</rd:DefaultName>
+                      <ZIndex>21</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox47">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Round(Fields!cobImporte.Value,2,System.MidpointRounding.AwayFromZero))</Value>
+                              <Style>
+                                <FontFamily>Verdana</FontFamily>
+                                <FontSize>7pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Format>c2</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox47</rd:DefaultName>
+                      <ZIndex>20</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="Sociedad">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!scdnom.Value</GroupExpression>
+                </GroupExpressions>
+              </Group>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                  <KeepTogether>true</KeepTogether>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="Ppag">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!cobPpag.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <TablixMembers>
+                    <TablixMember>
+                      <KeepWithGroup>After</KeepWithGroup>
+                      <RepeatOnNewPage>true</RepeatOnNewPage>
+                      <KeepTogether>true</KeepTogether>
+                    </TablixMember>
+                    <TablixMember>
+                      <Group Name="Detalles">
+                        <DataElementName>Detail</DataElementName>
+                      </Group>
+                      <TablixMembers>
+                        <TablixMember />
+                        <TablixMember>
+                          <Visibility>
+                            <Hidden>=Parameters!noDetallado.Value</Hidden>
+                          </Visibility>
+                        </TablixMember>
+                      </TablixMembers>
+                      <DataElementName>Detail_Collection</DataElementName>
+                      <DataElementOutput>Output</DataElementOutput>
+                      <KeepTogether>true</KeepTogether>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixMember>
+              </TablixMembers>
+            </TablixMember>
+            <TablixMember>
+              <Visibility>
+                <Hidden>= IsNothing( Sum(Round(Fields!cobImporte.Value,2,System.MidpointRounding.AwayFromZero)))</Hidden>
+              </Visibility>
+              <KeepWithGroup>Before</KeepWithGroup>
+              <KeepTogether>true</KeepTogether>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>dsListadoCobros</DataSetName>
+        <Left>0.00001cm</Left>
+        <Height>4.85cm</Height>
+        <Width>18.9325cm</Width>
+        <Style />
+      </Tablix>
+    </ReportItems>
+    <Height>4.85cm</Height>
+    <Style />
+  </Body>
+  <Width>18.93251cm</Width>
+  <Page>
+    <PageHeader>
+      <Height>4.5cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="textbox10">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>LISTADO DE COBROS AGRUPADOS</Value>
+                  <Style>
+                    <FontFamily>Verdana</FontFamily>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>textbox10</rd:DefaultName>
+          <Top>0.07055cm</Top>
+          <Left>2.5cm</Left>
+          <Height>0.92945cm</Height>
+          <Width>13.86501cm</Width>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="textbox5">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>= IIf(Isnothing(Parameters!sociedadD.value) and IsNothing(Parameters!sociedadH.value), "Todas las Sociedades", "Sociedad") &amp;
+  IIf(IsNothing(Parameters!sociedadD.value),"", " desde " &amp; Parameters!sociedadD.value) &amp;
+  IIf(IsNothing(Parameters!sociedadH.value),"", " hasta " &amp; Parameters!sociedadH.value)</Value>
+                  <Style>
+                    <FontFamily>Verdana</FontFamily>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>textbox5</rd:DefaultName>
+          <Top>1.365cm</Top>
+          <Left>0.00001cm</Left>
+          <Height>0.5cm</Height>
+          <Width>8.49998cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="textbox13">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>= IIf(Isnothing(Parameters!puntoPagoD.value) and IsNothing(Parameters!puntoPagoH.value), "Todas los puntos de pago", "Punto de pago") &amp;
+  IIf(IsNothing(Parameters!puntoPagoD.value),"", " desde " &amp; Parameters!puntoPagoD.value) &amp;
+  IIf(IsNothing(Parameters!puntoPagoH.value),"", " hasta " &amp; Parameters!puntoPagoH.value)</Value>
+                  <Style>
+                    <FontFamily>Verdana</FontFamily>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>textbox13</rd:DefaultName>
+          <Top>2.865cm</Top>
+          <Left>0.00001cm</Left>
+          <Height>0.5cm</Height>
+          <Width>8.49998cm</Width>
+          <ZIndex>2</ZIndex>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="textbox30">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>= IIf(Isnothing(Parameters!numeroD.value) and IsNothing(Parameters!numeroH.value), "Todos los Números", "Numero") &amp;
+  IIf(IsNothing(Parameters!numeroD.value),"", " desde " &amp; Parameters!numeroD.value) &amp;
+  IIf(IsNothing(Parameters!numeroH.value),"", " hasta " &amp; Parameters!numeroH.value)</Value>
+                  <Style>
+                    <FontFamily>Verdana</FontFamily>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <Top>1.865cm</Top>
+          <Left>0.00001cm</Left>
+          <Height>0.5cm</Height>
+          <Width>8.49998cm</Width>
+          <ZIndex>3</ZIndex>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="textbox21">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>= IIf(Isnothing(Parameters!fechaCobroD.value) and IsNothing(Parameters!fechaCobroH.value), "Todas las fechas de cobro", "Fechas de cobro") &amp;
+  IIf(IsNothing(Parameters!fechaCobroD.value),"", " desde " &amp; Parameters!fechaCobroD.value) &amp;
+  IIf(IsNothing(Parameters!fechaCobroH.value),"", " hasta " &amp; Parameters!fechaCobroH.value)</Value>
+                  <Style>
+                    <FontFamily>Verdana</FontFamily>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <Top>1.365cm</Top>
+          <Left>8.49999cm</Left>
+          <Height>0.5cm</Height>
+          <Width>10.43252cm</Width>
+          <ZIndex>4</ZIndex>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="textbox49">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>= IIf(Isnothing(Parameters!fechaRegistroD.value) and IsNothing(Parameters!fechaRegistroH.value), "Todas las fechas de registro", "Fechas de registro") &amp;
+  IIf(IsNothing(Parameters!fechaRegistroD.value),"", " desde " &amp; Parameters!fechaRegistroD.value) &amp;
+  IIf(IsNothing(Parameters!fechaRegistroH.value),"", " hasta " &amp; Parameters!fechaRegistroH.value)</Value>
+                  <Style>
+                    <FontFamily>Verdana</FontFamily>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <Top>1.865cm</Top>
+          <Left>8.49999cm</Left>
+          <Height>0.5cm</Height>
+          <Width>10.43252cm</Width>
+          <ZIndex>5</ZIndex>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="textbox44">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>= IIf(Isnothing(Parameters!medioPagoD.value) and IsNothing(Parameters!medioPagoH.value), "Todas los medios de pago", "Medios de pago") &amp;
+  IIf(IsNothing(Parameters!medioPagoD.value),"", " desde " &amp; Parameters!medioPagoD.value) &amp;
+  IIf(IsNothing(Parameters!medioPagoH.value),"", " hasta " &amp; Parameters!medioPagoH.value)</Value>
+                  <Style>
+                    <FontFamily>Verdana</FontFamily>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <Top>2.365cm</Top>
+          <Left>0.00001cm</Left>
+          <Height>0.5cm</Height>
+          <Width>8.49998cm</Width>
+          <ZIndex>6</ZIndex>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="textbox53">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>= IIf(Isnothing(Parameters!contratoD.value) and IsNothing(Parameters!contratoH.value), "Todas los contratos", "Contrato") &amp;
+  IIf(IsNothing(Parameters!contratoD.value),"", " desde " &amp; Parameters!contratoD.value) &amp;
+  IIf(IsNothing(Parameters!contratoH.value),"", " hasta " &amp; Parameters!contratoH.value)</Value>
+                  <Style>
+                    <FontFamily>Verdana</FontFamily>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <Top>2.365cm</Top>
+          <Left>8.49999cm</Left>
+          <Height>0.5cm</Height>
+          <Width>10.43252cm</Width>
+          <ZIndex>7</ZIndex>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="textbox51">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>= IIf(Isnothing(Parameters!usuario.value),"Todos los usuarios","Usuario: " &amp; Parameters!usuario.Value)</Value>
+                  <Style>
+                    <FontFamily>Verdana</FontFamily>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <Top>2.865cm</Top>
+          <Left>8.49999cm</Left>
+          <Height>0.5cm</Height>
+          <Width>10.43252cm</Width>
+          <ZIndex>8</ZIndex>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Line Name="line1">
+          <Top>4.3cm</Top>
+          <Left>0.00001cm</Left>
+          <Height>0cm</Height>
+          <Width>18.9325cm</Width>
+          <ZIndex>9</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+          </Style>
+        </Line>
+        <Image Name="LogoCabecera">
+          <Source>External</Source>
+          <Value>logo_sistema.png</Value>
+          <Sizing>FitProportional</Sizing>
+          <Height>1.32972cm</Height>
+          <Width>2.5cm</Width>
+          <ZIndex>10</ZIndex>
+          <Style />
+        </Image>
+        <Image Name="image1">
+          <Source>External</Source>
+          <Value>logo_cliente.png</Value>
+          <Sizing>FitProportional</Sizing>
+          <Top>0.07055cm</Top>
+          <Left>16.36501cm</Left>
+          <Height>1.25917cm</Height>
+          <Width>2.5675cm</Width>
+          <ZIndex>11</ZIndex>
+          <Style />
+        </Image>
+        <Textbox Name="textbox27">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Microsoft.VisualBasic.Interaction.IIf(Microsoft.VisualBasic.Information.Isnothing(Parameters!zonaD.Value) And Microsoft.VisualBasic.Information.IsNothing(Parameters!zonaH.Value), "Todas las zonas", "Zona") &amp; Microsoft.VisualBasic.Interaction.IIf(Microsoft.VisualBasic.Information.IsNothing(Parameters!zonaD.Value), "", " desde " &amp; Parameters!zonaD.Value) &amp; Microsoft.VisualBasic.Interaction.IIf(Microsoft.VisualBasic.Information.IsNothing(Parameters!zonaH.Value), "", " hasta " &amp; Parameters!zonaH.Value)</Value>
+                  <Style>
+                    <FontFamily>Verdana</FontFamily>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <Top>3.365cm</Top>
+          <Left>0.00001cm</Left>
+          <Height>0.45291cm</Height>
+          <Width>8.49998cm</Width>
+          <ZIndex>12</ZIndex>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style />
+    </PageHeader>
+    <PageFooter>
+      <Height>2cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Image Name="LogoPie">
+          <Source>External</Source>
+          <Value>logo.png</Value>
+          <Sizing>FitProportional</Sizing>
+          <Top>0.5cm</Top>
+          <Left>0.50001cm</Left>
+          <Height>0.75cm</Height>
+          <Width>2cm</Width>
+          <Style />
+        </Image>
+        <Line Name="line3">
+          <Top>0.25cm</Top>
+          <Left>0.00001cm</Left>
+          <Height>0cm</Height>
+          <Width>18.9325cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+          </Style>
+        </Line>
+        <Textbox Name="textbox6">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="Página " &amp; Globals!PageNumber &amp; " de " &amp; Globals!TotalPages</Value>
+                  <Style>
+                    <FontFamily>Verdana</FontFamily>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <Top>0.5cm</Top>
+          <Left>2.75001cm</Left>
+          <Height>0.5cm</Height>
+          <Width>16.1825cm</Width>
+          <ZIndex>2</ZIndex>
+          <Style>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+            <Direction>RTL</Direction>
+          </Style>
+        </Textbox>
+        <Textbox Name="tFecha">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>= "Confidencial " + "Fecha de Impresión " + today</Value>
+                  <Style>
+                    <FontFamily>Verdana</FontFamily>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <Top>1.25cm</Top>
+          <Left>2.75001cm</Left>
+          <Height>0.5cm</Height>
+          <Width>16.1825cm</Width>
+          <ZIndex>3</ZIndex>
+          <Style>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+            <Direction>RTL</Direction>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style />
+    </PageFooter>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>0.5cm</LeftMargin>
+    <RightMargin>0.4cm</RightMargin>
+    <TopMargin>1cm</TopMargin>
+    <BottomMargin>0.5cm</BottomMargin>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="ConexionBD">
+      <DataSourceReference>ConexionBD</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>e72049cb-2aa0-47dd-99da-f2c4287f0e1c</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dsListadoCobros">
+      <Query>
+        <DataSourceName>ConexionBD</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@sociedadD">
+            <Value>=Parameters!sociedadD.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@sociedadH">
+            <Value>=Parameters!sociedadH.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@puntoPagoD">
+            <Value>=Parameters!puntoPagoD.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@puntoPagoH">
+            <Value>=Parameters!puntoPagoH.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@numeroD">
+            <Value>=Parameters!numeroD.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@numeroH">
+            <Value>=Parameters!numeroH.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@fechaCobroD">
+            <Value>=Parameters!fechaCobroD.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@fechaCobroH">
+            <Value>=Parameters!fechaCobroH.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@contratoD">
+            <Value>=Parameters!contratoD.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@contratoH">
+            <Value>=Parameters!contratoH.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@fechaRegistroD">
+            <Value>=Parameters!fechaRegistroD.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@fechaRegistroH">
+            <Value>=Parameters!fechaRegistroH.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@medioPagoD">
+            <Value>=Parameters!medioPagoD.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@medioPagoH">
+            <Value>=Parameters!medioPagoH.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@usuario">
+            <Value>=Parameters!usuario.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@impoD">
+            <Value>=Parameters!impoD.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@impoH">
+            <Value>=Parameters!impoH.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@zonaD">
+            <Value>=Parameters!zonaD.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@zonaH">
+            <Value>=Parameters!zonaH.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>select  cobScd, 
+		scdnom
+		,cobPpag
+		,ppagDes
+		,min(cobFecReg) as cobFecRegD
+		,max(cobFecReg) as cobFecRegH
+		,min(cobFec) as cobFecD
+		,max(cobFec) as cobFecH
+		,min(cobNum) as cobNumD
+		,max(cobNum) as cobNumH
+		,min(cobPpag) as cobPpagoD
+		,max(cobPpag) as cobPpagoH
+		,sum(cobImporte) as cobImporte
+		from cobros
+		inner join ppagos on cobppag=ppagcod
+		inner join sociedades on cobscd=scdcod
+		inner join contratos on ctrcod=cobCtr and ctrVersion = isnull( (select max(ctrVersion) from contratos where ctrCod=cobCtr and (ctrFecAnu is null or ctrFecAnu &gt;= cobFecReg)),(select max(ctrVersion) from contratos where ctrCod=cobCtr))
+where  (cobScd&gt;=@sociedadD OR @sociedadD IS NULL)
+and (cobScd&lt;=@sociedadH OR @sociedadH IS NULL)
+and (cobPpag&gt;=@puntoPagoD OR @puntoPagoD IS NULL)
+and (cobPpag&lt;=@puntoPagoH OR @puntoPagoH IS NULL)
+and (cobNum&gt;=@numeroD or @numeroD IS NULL)
+and (cobNum&lt;=@numeroH or @numeroH IS NULL)
+and (cobFec&gt;=@fechaCobroD or @fechaCobroD IS NULL)
+and (cobFec&lt;=@fechaCobroH or @fechaCobroH IS NULL)
+and (cobCtr&gt;=@contratoD or @contratoD IS NULL)
+and (cobCtr&lt;=@contratoH or @contratoH IS NULL)
+and (cobFecReg&gt;=@fechaRegistroD or @fechaRegistroD IS NULL)
+and (cobFecReg&lt;=@fechaRegistroH or @fechaRegistroH IS NULL)
+and (cobMpc&gt;=@medioPagoD or @medioPagoD IS NULL)
+and (cobMpc&lt;=@medioPagoH or @medioPagoH IS NULL)
+and (cobUsr = @usuario OR @usuario IS NULL)
+and (cobImporte&gt;=@impoD or @impoD IS NULL)
+and (cobImporte&lt;=@impoH or @impoH IS NULL)
+and (ctrZonCod &gt;= @zonaD OR @zonaD IS NULL) 
+and (ctrZonCod &lt;= @zonaH OR @zonaH IS NULL )	
+group by cobscd,scdnom,cobPpag,ppagDes
+order by cobScd,scdnom,cobPpag,ppagDes</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="cobScd">
+          <DataField>cobScd</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="cobPpag">
+          <DataField>cobPpag</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="scdnom">
+          <DataField>scdnom</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cobImporte">
+          <DataField>cobImporte</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ppagDes">
+          <DataField>ppagDes</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cobFecRegD">
+          <DataField>cobFecRegD</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="cobFecRegH">
+          <DataField>cobFecRegH</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="cobFecD">
+          <DataField>cobFecD</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="cobFecH">
+          <DataField>cobFecH</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="cobNumD">
+          <DataField>cobNumD</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="cobPpagoD">
+          <DataField>cobPpagoD</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="cobNumH">
+          <DataField>cobNumH</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="cobPpagoH">
+          <DataField>cobPpagoH</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="sociedadD">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>sociedadD</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="sociedadH">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>sociedadH</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="puntoPagoD">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>puntoPagoD</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="puntoPagoH">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>puntoPagoH</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="numeroD">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>numeroD</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="numeroH">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>numeroH</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fechaCobroD">
+      <DataType>DateTime</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>fechaCobroD</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fechaCobroH">
+      <DataType>DateTime</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>fechaCobroH</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fechaRegistroD">
+      <DataType>DateTime</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>fechaRegistroD</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fechaRegistroH">
+      <DataType>DateTime</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>fechaRegistroH</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="medioPagoD">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>medioPagoD</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="medioPagoH">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>medioPagoH</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="contratoD">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>contratoD</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="contratoH">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>contratoH</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="impoD">
+      <DataType>Float</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Importe Desde</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="impoH">
+      <DataType>Float</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Importe Hasta</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="usuario">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <Prompt>usuario</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ordenFecha">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <Prompt>ordenFecha</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="noDetallado">
+      <DataType>Boolean</DataType>
+      <Prompt>noDetallado</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="zonaD">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>zonaD</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="zonaH">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>zonaH</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="totalesMedioPago">
+      <DataType>Boolean</DataType>
+      <Prompt>totalesMedioPago</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>es-ES</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>0dd11e83-1a86-4ecf-bca1-4ded5c79ecd9</rd:ReportID>
+</Report>

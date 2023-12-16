@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Rectangle Name="rectangle1">
+        <ReportItems>
+          <Image Name="QrImage">
+            <Source>External</Source>
+            <Value>= IIF(FIRST(Fields!esExploCodigoBarras.Value, "dsBarCode") = 0
+   OR ISNOTHING(Parameters!barcodeImgURL.Value) 
+   OR Variables!totalCobrado.Value &gt;= Variables!totalFacturado.Value
+   OR FIRST(Fields!esRectificada.Value, "dsBarCode")  = 1
+   OR FIRST(Fields!esPrefactura.Value,  "dsBarCode")  = 1
+   OR FIRST(Fields!inicioC57.Value, "dsBarCode") = 0
+   OR (FIRST(Fields!checkDomiciliacion.Value, "dsBarCode") = 1 AND FIRST(Fields!esDomiciliada.Value, "dsBarCode") = 1  AND FIRST(Fields!esDevolucion.Value, "dsBarCode") = 0)
+   OR NOT ISNOTHING(FIRST(Fields!aprNumero.Value, "dsBarCode")) 
+, ""
+, Parameters!urlQrCode.Value &amp; First(Fields!urlParams.Value, "dsBarCode"))
+
+'*******************************************
+'CONDICIONES PARA MOSTRAR EL CODIGO QR:
+'La explotacion es de las que sacan el codigo de barras
+'Se ha enviado la url desde la cabecera
+'Está pendiente de cobro
+'No es una rectificativa
+'No es una prefactura
+'La fecha de la factura es posterior a scdFecIniC57
+'Está domiciliada y devuelta
+'Es no domiciliada
+'No es apremiada
+'*******************************************</Value>
+            <Sizing>FitProportional</Sizing>
+            <Height>2.18cm</Height>
+            <Width>2.18cm</Width>
+            <ToolTip>QrImage</ToolTip>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+        </ReportItems>
+        <DataElementOutput>ContentsOnly</DataElementOutput>
+        <Height>2.18cm</Height>
+        <Width>2.18cm</Width>
+        <Style>
+          <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+        </Style>
+      </Rectangle>
+    </ReportItems>
+    <Height>2.1875cm</Height>
+    <Style />
+  </Body>
+  <Width>2.1875cm</Width>
+  <Page>
+    <PageHeight>3.6cm</PageHeight>
+    <PageWidth>9.4cm</PageWidth>
+    <LeftMargin>0cm</LeftMargin>
+    <RightMargin>0cm</RightMargin>
+    <TopMargin>0cm</TopMargin>
+    <BottomMargin>0cm</BottomMargin>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <Style>
+      <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+    </Style>
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="ConexionBD">
+      <DataSourceReference>ConexionBD</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>f8fb4524-5dd7-4666-8b87-8d5223925a75</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dsEmisionFacturaTotales">
+      <Query>
+        <DataSourceName>ConexionBD</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@periodo">
+            <Value>=Parameters!periodo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@contrato">
+            <Value>=Parameters!contrato.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@version">
+            <Value>=Parameters!version.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@codigo">
+            <Value>=Parameters!codigo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@fechaHasta">
+            <Value>=Parameters!fechaHasta.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT 
+	sum([fclBase]) base ,
+	[fclImpuesto], 
+	sum(fclImpImpuesto) totaliva,
+	CASE WHEN EXISTS(SELECT facVersion 
+			 FROM facturas 
+			 WHERE facCtrCod = @contrato AND facPerCod = @periodo AND facCod = @codigo AND facVersion &gt; @version) THEN 1 ELSE 0 END AS esFacturaRectificada
+FROM facturas
+	INNER JOIN faclin ON (facCod=fclFacCod AND facPerCod=fclFacPerCod AND facCtrCod=fclFacCtrCod AND facVersion=fclFacVersion)
+	INNER JOIN servicios ON fclTrfSvCod=svccod
+WHERE 
+    facCod = @codigo
+AND facPerCod = @periodo
+AND facCtrCod = @contrato
+AND facVersion = @version
+AND((fclFecLiq&gt;=@fechaHasta) OR (fclFecLiq IS NULL AND fclUsrLiq IS NULL))	
+GROUP BY fclImpuesto</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="base">
+          <DataField>base</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="fclImpuesto">
+          <DataField>fclImpuesto</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="totaliva">
+          <DataField>totaliva</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="esFacturaRectificada">
+          <DataField>esFacturaRectificada</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsEntrega">
+      <Query>
+        <DataSourceName>ConexionBD</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@codigo">
+            <Value>=Parameters!codigo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@periodo">
+            <Value>=Parameters!periodo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@contrato">
+            <Value>=Parameters!contrato.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT   sum(cblImporte) cobrado
+FROM cobros
+INNER JOIN coblin ON 
+	cblScd = cobScd and  cblPpag = cobPpag and cblNum = cobNum
+	and cblFacCod = @codigo and cblPer = @periodo
+
+where 
+cobCtr = @contrato
+and cobPpag = (SELECT pgsvalor FROM parametros WHERE pgsclave = 'PUNTO_PAGO_ENTREGAS_A_CTA')
+and cobMpc = (SELECT pgsvalor FROM parametros WHERE pgsclave = 'MEDIO_PAGO_ENTREGAS_A_CTA')</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="cobrado">
+          <DataField>cobrado</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsTotalCobrado">
+      <Query>
+        <DataSourceName>ConexionBD</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@contrato">
+            <Value>=Parameters!contrato.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@periodo">
+            <Value>=Parameters!periodo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@codigo">
+            <Value>=Parameters!codigo.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>DECLARE @result AS MONEY;
+
+EXEC [dbo].[Cobros_ImporteCobrado] 
+  @contrato= @contrato
+, @periodo  = @periodo
+, @codigo    =@codigo
+,  @impCobr= @result OUTPUT;
+
+SELECT @result AS totalCobrado; </CommandText>
+      </Query>
+      <Fields>
+        <Field Name="totalCobrado">
+          <DataField>totalCobrado</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsBarCode">
+      <Query>
+        <DataSourceName>ConexionBD</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@facCtrcod">
+            <Value>=Parameters!contrato.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@facPerCod">
+            <Value>=Parameters!periodo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@facCodigo">
+            <Value>=Parameters!codigo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@facVersion">
+            <Value>=Parameters!version.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@ultimoCobro">
+            <Value>1</Value>
+          </QueryParameter>
+          <QueryParameter Name="@soloOnlineUsuarios">
+            <Value>0</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>ReportingServices.CF010_EmisionFacTotales_CodigoBarras </CommandText>
+      </Query>
+      <Fields>
+        <Field Name="facCod">
+          <DataField>facCod</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="facPerCod">
+          <DataField>facPerCod</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="facCtrCod">
+          <DataField>facCtrCod</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="facVersion">
+          <DataField>facVersion</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="facNumero">
+          <DataField>facNumero</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CodExplotacion">
+          <DataField>CodExplotacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Explotacion">
+          <DataField>Explotacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="scdFecIniC57">
+          <DataField>scdFecIniC57</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="inicioC57">
+          <DataField>inicioC57</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ctrIban">
+          <DataField>ctrIban</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ctrTitDocIden">
+          <DataField>ctrTitDocIden</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cobScd">
+          <DataField>cobScd</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="cobPpag">
+          <DataField>cobPpag</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="cobNum">
+          <DataField>cobNum</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="cobFec">
+          <DataField>cobFec</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="cobFecReg">
+          <DataField>cobFecReg</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="cobDevCod">
+          <DataField>cobDevCod</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fechaLimitePagoVoluntario">
+          <DataField>fechaLimitePagoVoluntario</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="AcuamaGetDate">
+          <DataField>AcuamaGetDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="esExploCodigoBarras">
+          <DataField>esExploCodigoBarras</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="esUserOnline">
+          <DataField>esUserOnline</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="esRectificada">
+          <DataField>esRectificada</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="esPrefactura">
+          <DataField>esPrefactura</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="checkDomiciliacion">
+          <DataField>checkDomiciliacion</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="esDomiciliada">
+          <DataField>esDomiciliada</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="esDevolucion">
+          <DataField>esDevolucion</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="urlParams">
+          <DataField>urlParams</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fecVto">
+          <DataField>fecVto</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="aprNumero">
+          <DataField>aprNumero</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="periodo">
+      <DataType>String</DataType>
+      <Prompt>periodo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="contrato">
+      <DataType>String</DataType>
+      <Prompt>contrato</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="version">
+      <DataType>String</DataType>
+      <Prompt>version</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fecha">
+      <DataType>DateTime</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Fecha</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="codigo">
+      <DataType>Integer</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>codigo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="preimpreso">
+      <DataType>Boolean</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value>False</Value>
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>preimpreso</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fechaHasta">
+      <DataType>DateTime</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>fechaHasta</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="nombreImpuesto">
+      <DataType>String</DataType>
+      <Prompt>nombreImpuesto</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="barcodeImgURL">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>barcodeImgURL</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="iban">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>iban</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="urlQrCode">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>urlQrCode</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>es-ES</Language>
+  <Variables>
+    <Variable Name="totalFacturado">
+      <Value>=  ROUND(Sum(Fields!base.Value, "dsEmisionFacturaTotales") + Sum(Fields!totaliva.Value, "dsEmisionFacturaTotales")
+ , 2
+ , MidpointRounding.AwayFromZero)</Value>
+    </Variable>
+    <Variable Name="totalCobrado">
+      <Value>=ROUND(SUM(Fields!totalCobrado.Value, "dsTotalCobrado"), 2, MidpointRounding.AwayFromZero)</Value>
+    </Variable>
+  </Variables>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>1d09a65a-e9ed-488a-a6d8-62314c598f18</rd:ReportID>
+</Report>

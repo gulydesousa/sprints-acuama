@@ -16,3 +16,4 @@ INSERT INTO ExcelConsultas VALUES(
   
   
 --NO SALE POR INFORMES EXCEL: NO INSERTAR PERFILES
+--SELECT * FROM excelConsultas WHERE ExcDescCorta='Contadores F.Instalación' 

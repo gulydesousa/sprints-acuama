@@ -32,4 +32,4 @@ FOREIGN KEY(otottcod, otTipoOrigen)
 REFERENCES otTiposOrigen(ottoCodigo, ottoOrigen);
 
 
-SELECT otTipoOrigen FROM ordenTrabajo
+SELECT DISTINCT otTipoOrigen FROM ordenTrabajo

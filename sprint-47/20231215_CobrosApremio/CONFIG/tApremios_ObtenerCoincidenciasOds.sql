@@ -1,0 +1,32 @@
+CREATE TYPE tApremios_ObtenerCoincidenciasOds
+AS TABLE(
+ID INT,
+EJERCICIOS  VARCHAR(4),
+RECIBO	 VARCHAR(25),
+[V/E]   VARCHAR(1), 
+[T.I.]  VARCHAR(2),
+[FECHA]  DATE,	
+IMPORTE	 MONEY,
+NOMBRE	 VARCHAR(250),	
+[C.I.] VARCHAR(2),
+DEMORA	 MONEY,
+RECARGO	 MONEY,
+PRINCIPAL	 MONEY,
+COSTAS	 MONEY,
+-------------
+ctrTitNom VARCHAR(100), 
+facNumero VARCHAR(20), 
+facCtrCod INT, 
+facPerCod VARCHAR(6), 
+facVersion SMALLINT,
+facCod SMALLINT,
+aprCobradoAcuama BIT, 
+aprFechaCobradoAcuama DATETIME, 
+NOM VARCHAR(100), 
+NOM2 VARCHAR(100), 
+ANIO INT, 
+---------------
+fctFacturado MONEY, 
+fctCobrado MONEY, 
+fctDeuda MONEY, 
+XNOMBRE VARCHAR(100));

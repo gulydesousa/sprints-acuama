@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Rectangle Name="rectangle1">
+        <ReportItems>
+          <Tablix Name="table1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>0.25001cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.61499cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.92333cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.97938cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.63229cm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.33cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>SemiBold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>textbox1</rd:DefaultName>
+                          <ZIndex>4</ZIndex>
+                          <Style>
+                            <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=IIF(Fields!fclImpuesto.Value&lt;&gt;0,Parameters!nombreImpuesto.Value &amp; " " &amp; Fields!fclImpuesto.Value &amp; "% ", "Base exenta de " &amp; Parameters!nombreImpuesto.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>6.5pt</FontSize>
+                                    <FontWeight>SemiBold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>textbox2</rd:DefaultName>
+                          <ZIndex>3</ZIndex>
+                          <Style>
+                            <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+                            <PaddingLeft>1pt</PaddingLeft>
+                            <PaddingRight>1pt</PaddingRight>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox9">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!base.Value</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>6.5pt</FontSize>
+                                    <FontWeight>SemiBold</FontWeight>
+                                    <Format>n4</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>textbox9</rd:DefaultName>
+                          <ZIndex>2</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+                            <PaddingLeft>1pt</PaddingLeft>
+                            <PaddingRight>1pt</PaddingRight>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox6">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!totaliva.Value</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>6.5pt</FontSize>
+                                    <FontWeight>SemiBold</FontWeight>
+                                    <Format>n4</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>textbox6</rd:DefaultName>
+                          <ZIndex>1</ZIndex>
+                          <Visibility>
+                            <Hidden>=Fields!totaliva.Value=0</Hidden>
+                          </Visibility>
+                          <DataElementOutput>NoOutput</DataElementOutput>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+                            <PaddingLeft>1pt</PaddingLeft>
+                            <PaddingRight>1pt</PaddingRight>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox4">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!base.Value + Fields!totaliva.Value</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>6.5pt</FontSize>
+                                    <FontWeight>SemiBold</FontWeight>
+                                    <Format>#,0.0000;(#,0.0000)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>textbox4</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+                            <PaddingLeft>1pt</PaddingLeft>
+                            <PaddingRight>1pt</PaddingRight>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.37cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox5">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>textbox5</rd:DefaultName>
+                          <ZIndex>7</ZIndex>
+                          <Style>
+                            <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox3">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>TOTAL A PAGAR</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>7.5pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>textbox3</rd:DefaultName>
+                          <ZIndex>6</ZIndex>
+                          <Style>
+                            <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+                            <PaddingLeft>1pt</PaddingLeft>
+                            <PaddingRight>1pt</PaddingRight>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="tFactura">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!base.Value+Fields!totaliva.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>7.5pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <ZIndex>5</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+                            <PaddingLeft>1pt</PaddingLeft>
+                            <PaddingRight>1pt</PaddingRight>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.32cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox13">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox13</rd:DefaultName>
+                          <Visibility>
+                            <Hidden>=iif(reportItems!cobrado.Value &gt; 0, false, true)</Hidden>
+                          </Visibility>
+                          <Style>
+                            <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox14">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>A CUENTA</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>6.5pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox14</rd:DefaultName>
+                          <Visibility>
+                            <Hidden>=iif(reportItems!cobrado.Value &gt; 0, false, true)</Hidden>
+                          </Visibility>
+                          <Style>
+                            <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>1pt</PaddingLeft>
+                            <PaddingRight>1pt</PaddingRight>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="entrega">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=reportItems!cobrado.Value</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>6.5pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>#,0.0000;(#,0.0000)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Visibility>
+                            <Hidden>=iif(reportItems!cobrado.Value &gt; 0, false, true)</Hidden>
+                          </Visibility>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>1pt</PaddingLeft>
+                            <PaddingRight>1pt</PaddingRight>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox16">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=iif(
+	reportItems!tFactura.Value - reportItems!cobrado.Value &gt; 0,
+	"A PAGAR",
+	"")</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>6.5pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>#,0.0000;(#,0.0000)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox16</rd:DefaultName>
+                          <Visibility>
+                            <Hidden>=iif(reportItems!cobrado.Value &gt; 0, false, true)</Hidden>
+                          </Visibility>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>1pt</PaddingLeft>
+                            <PaddingRight>1pt</PaddingRight>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox17">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=iif(
+	reportItems!tFactura.Value - reportItems!cobrado.Value &gt; 0,
+	reportItems!tFactura.Value - reportItems!cobrado.Value,
+	"PAGADA")</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>6.5pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>c2</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox17</rd:DefaultName>
+                          <Visibility>
+                            <Hidden>=iif(reportItems!cobrado.Value &gt; 0, false, true)</Hidden>
+                          </Visibility>
+                          <Style>
+                            <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>1pt</PaddingLeft>
+                            <PaddingRight>1pt</PaddingRight>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>2.65233cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Rectangle Name="barCodeContainer">
+                          <ReportItems>
+                            <Image Name="imgBarCode">
+                              <Source>External</Source>
+                              <Value>= IIF(FIRST(Fields!esExploCodigoBarras.Value, "dsBarCode") = 0
+   OR ISNOTHING(Parameters!barcodeImgURL.Value) 
+   OR Variables!totalCobrado.Value &gt;= Variables!totalFacturado.Value
+   OR FIRST(Fields!esRectificada.Value, "dsBarCode")  = 1
+   OR FIRST(Fields!esPrefactura.Value,  "dsBarCode")  = 1
+   OR FIRST(Fields!inicioC57.Value, "dsBarCode") = 0
+   OR (FIRST(Fields!checkDomiciliacion.Value, "dsBarCode") = 1 AND FIRST(Fields!esDomiciliada.Value, "dsBarCode") = 1  AND FIRST(Fields!esDevolucion.Value, "dsBarCode") = 0)
+, ""
+, Parameters!barcodeImgURL.Value &amp; FIRST(Fields!urlParams.Value, "dsBarCode"))
+
+'*******************************************
+'CONDICIONES PARA MOSTRAR EL CODIGO DE BARRAS:
+'La explotacion es de las que sacan el codigo de barras
+'Se ha enviado la url desde la cabecera
+'Está pendiente de cobro
+'No es una rectificativa
+'No es una prefactura
+'La fecha de la factura es posterior a scdFecIniC57
+'Está domiciliada y devuelta
+'Es no domiciliada
+'*******************************************</Value>
+                              <Sizing>Fit</Sizing>
+                              <Top>0.03348cm</Top>
+                              <Left>0.25001cm</Left>
+                              <Height>2cm</Height>
+                              <Width>9.14999cm</Width>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Image>
+                            <Textbox Name="Textbox8">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Label>QRPagoOnline</Label>
+                                      <Value>= "Lea el código QR con su móvil para pago online."</Value>
+                                      <Style>
+                                        <FontFamily>Verdana</FontFamily>
+                                        <FontSize>6.5pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox8</rd:DefaultName>
+                              <Top>2.03348cm</Top>
+                              <Left>0.25001cm</Left>
+                              <Height>0.46652cm</Height>
+                              <Width>9.14999cm</Width>
+                              <ZIndex>1</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </ReportItems>
+                          <KeepTogether>true</KeepTogether>
+                          <ZIndex>3</ZIndex>
+                          <Visibility>
+                            <Hidden>= IIF(FIRST(Fields!esExploCodigoBarras.Value, "dsBarCode") = 0
+   OR ISNOTHING(Parameters!barcodeImgURL.Value) 
+   OR Variables!totalCobrado.Value &gt;= Variables!totalFacturado.Value
+   OR FIRST(Fields!esRectificada.Value, "dsBarCode")  = 1
+   OR FIRST(Fields!esPrefactura.Value,  "dsBarCode")  = 1
+   OR FIRST(Fields!inicioC57.Value, "dsBarCode") = 0
+   OR (FIRST(Fields!checkDomiciliacion.Value, "dsBarCode") = 1 AND FIRST(Fields!esDomiciliada.Value, "dsBarCode") = 1  AND FIRST(Fields!esDevolucion.Value, "dsBarCode") = 0)
+   OR NOT ISNOTHING(FIRST(Fields!aprNumero.Value, "dsBarCode"))
+, True
+, False)
+
+'*******************************************
+'CONDICIONES PARA MOSTRAR EL CODIGO DE BARRAS:
+'La explotacion es de las que sacan el codigo de barras
+'Se ha enviado la url desde la cabecera
+'Está pendiente de cobro
+'No es una rectificativa
+'No es una prefactura
+'La fecha de la factura es posterior a scdFecIniC57
+'Está domiciliada y devuelta
+'Es no domiciliada
+'No tiene apremios
+'*******************************************</Hidden>
+                          </Visibility>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <ColSpan>5</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                    <TablixCell />
+                    <TablixCell />
+                    <TablixCell />
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="table1_Details_Group">
+                    <DataElementName>Detail</DataElementName>
+                  </Group>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                  <DataElementName>Detail_Collection</DataElementName>
+                  <DataElementOutput>Output</DataElementOutput>
+                  <KeepTogether>true</KeepTogether>
+                </TablixMember>
+                <TablixMember>
+                  <KeepWithGroup>Before</KeepWithGroup>
+                  <KeepTogether>true</KeepTogether>
+                </TablixMember>
+                <TablixMember>
+                  <KeepWithGroup>Before</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <KeepWithGroup>Before</KeepWithGroup>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>dsEmisionFacturaTotales</DataSetName>
+            <Height>3.67233cm</Height>
+            <Width>9.4cm</Width>
+            <Style />
+          </Tablix>
+          <Textbox Name="cobrado">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>cobrado</Label>
+                    <Value>=Sum(Fields!cobrado.Value, "dsEntrega")</Value>
+                    <Style>
+                      <FontSize>5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>cobrado</rd:DefaultName>
+            <Top>3.7cm</Top>
+            <Left>0.03528cm</Left>
+            <Height>0.25cm</Height>
+            <Width>0.84cm</Width>
+            <ZIndex>1</ZIndex>
+            <Visibility>
+              <Hidden>true</Hidden>
+            </Visibility>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <BackgroundColor>Gold</BackgroundColor>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox7">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>GUADALAJARA: BarCodeURL</Label>
+                    <Value>= IIF(FIRST(Fields!esExploCodigoBarras.Value, "dsBarCode") = 0
+   OR ISNOTHING(Parameters!barcodeImgURL.Value)  OR Variables!totalCobrado.Value &gt;= Variables!totalFacturado.Value
+   OR FIRST(Fields!esRectificada.Value, "dsBarCode")  = 1
+   OR FIRST(Fields!esPrefactura.Value,  "dsBarCode")  = 1
+   OR FIRST(Fields!inicioC57.Value, "dsBarCode") = 0
+   OR (FIRST(Fields!checkDomiciliacion.Value, "dsBarCode") = 1 AND FIRST(Fields!esDomiciliada.Value, "dsBarCode") = 1  AND FIRST(Fields!esDevolucion.Value, "dsBarCode") = 0)
+, ""
+, "&lt;a href=""" &amp;
+  Parameters!barcodeImgURL.Value &amp; FIRST(Fields!urlParams.Value, "dsBarCode")
+  &amp; """&gt;GUADALAJARA: Código de Barras&lt;/a&gt;")
+
+'*******************************************
+'Este campo lo usamos solo para hacer pruebas, debe estar oculto por defecto. 
+'Su valor es una copia de la URL que se pasa a la imagen del barcode (imgBarCode)
+'*******************************************
+'CONDICIONES PARA MOSTRAR EL CODIGO DE BARRAS:
+'La explotacion es de las que sacan el codigo de barras
+'Se ha enviado la url desde la cabecera
+'Está pendiente de cobro
+'No es una rectificativa
+'No es una prefactura
+'La fecha de la factura es posterior a scdFecIniC57
+'Está domiciliada y devuelta
+'Es no domiciliada
+'*******************************************</Value>
+                    <MarkupType>HTML</MarkupType>
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                      <TextDecoration>Underline</TextDecoration>
+                      <Color>Blue</Color>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value xml:space="preserve"> </Value>
+                    <MarkupType>HTML</MarkupType>
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                      <TextDecoration>Underline</TextDecoration>
+                      <Color>Blue</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox7</rd:DefaultName>
+            <Top>3.7cm</Top>
+            <Left>0.95056cm</Left>
+            <Height>0.25cm</Height>
+            <Width>8.69944cm</Width>
+            <ZIndex>2</ZIndex>
+            <Visibility>
+              <Hidden>true</Hidden>
+            </Visibility>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <BackgroundColor>Pink</BackgroundColor>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <DataElementOutput>ContentsOnly</DataElementOutput>
+        <Height>4.0417cm</Height>
+        <Width>9.65cm</Width>
+        <Style>
+          <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+        </Style>
+      </Rectangle>
+    </ReportItems>
+    <Height>4.0417cm</Height>
+    <Style />
+  </Body>
+  <Width>9.65cm</Width>
+  <Page>
+    <PageHeight>3.6cm</PageHeight>
+    <PageWidth>9.4cm</PageWidth>
+    <LeftMargin>0cm</LeftMargin>
+    <RightMargin>0cm</RightMargin>
+    <TopMargin>0cm</TopMargin>
+    <BottomMargin>0cm</BottomMargin>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <Style>
+      <BackgroundColor>=iif(Parameters!preimpreso.Value = True, "White", "WhiteSmoke")</BackgroundColor>
+    </Style>
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="ConexionBD">
+      <DataSourceReference>ConexionBD</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>f8fb4524-5dd7-4666-8b87-8d5223925a75</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dsEmisionFacturaTotales">
+      <Query>
+        <DataSourceName>ConexionBD</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@periodo">
+            <Value>=Parameters!periodo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@contrato">
+            <Value>=Parameters!contrato.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@version">
+            <Value>=Parameters!version.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@codigo">
+            <Value>=Parameters!codigo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@fechaHasta">
+            <Value>=Parameters!fechaHasta.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT 
+	sum([fclBase]) base ,
+	[fclImpuesto], 
+	sum(fclImpImpuesto) totaliva,
+	CASE WHEN EXISTS(SELECT facVersion 
+			 FROM facturas 
+			 WHERE facCtrCod = @contrato AND facPerCod = @periodo AND facCod = @codigo AND facVersion &gt; @version) THEN 1 ELSE 0 END AS esFacturaRectificada
+FROM facturas
+	INNER JOIN faclin ON (facCod=fclFacCod AND facPerCod=fclFacPerCod AND facCtrCod=fclFacCtrCod AND facVersion=fclFacVersion)
+	INNER JOIN servicios ON fclTrfSvCod=svccod
+WHERE 
+    facCod = @codigo
+AND facPerCod = @periodo
+AND facCtrCod = @contrato
+AND facVersion = @version
+AND((fclFecLiq&gt;=@fechaHasta) OR (fclFecLiq IS NULL AND fclUsrLiq IS NULL))	
+GROUP BY fclImpuesto</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="base">
+          <DataField>base</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="fclImpuesto">
+          <DataField>fclImpuesto</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="totaliva">
+          <DataField>totaliva</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="esFacturaRectificada">
+          <DataField>esFacturaRectificada</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsEntrega">
+      <Query>
+        <DataSourceName>ConexionBD</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@codigo">
+            <Value>=Parameters!codigo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@periodo">
+            <Value>=Parameters!periodo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@contrato">
+            <Value>=Parameters!contrato.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT   sum(cblImporte) cobrado
+FROM cobros
+INNER JOIN coblin ON 
+	cblScd = cobScd and  cblPpag = cobPpag and cblNum = cobNum
+	and cblFacCod = @codigo and cblPer = @periodo
+
+where 
+cobCtr = @contrato
+and cobPpag = (SELECT pgsvalor FROM parametros WHERE pgsclave = 'PUNTO_PAGO_ENTREGAS_A_CTA')
+and cobMpc = (SELECT pgsvalor FROM parametros WHERE pgsclave = 'MEDIO_PAGO_ENTREGAS_A_CTA')</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="cobrado">
+          <DataField>cobrado</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsTotalCobrado">
+      <Query>
+        <DataSourceName>ConexionBD</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@contrato">
+            <Value>=Parameters!contrato.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@periodo">
+            <Value>=Parameters!periodo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@codigo">
+            <Value>=Parameters!codigo.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>DECLARE @result AS MONEY;
+
+EXEC [dbo].[Cobros_ImporteCobrado] 
+  @contrato= @contrato
+, @periodo  = @periodo
+, @codigo    =@codigo
+,  @impCobr= @result OUTPUT;
+
+SELECT @result AS totalCobrado; </CommandText>
+      </Query>
+      <Fields>
+        <Field Name="totalCobrado">
+          <DataField>totalCobrado</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsBarCode">
+      <Query>
+        <DataSourceName>ConexionBD</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@facCtrcod">
+            <Value>=Parameters!contrato.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@facPerCod">
+            <Value>=Parameters!periodo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@facCodigo">
+            <Value>=Parameters!codigo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@facVersion">
+            <Value>=Parameters!version.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@ultimoCobro">
+            <Value>1</Value>
+          </QueryParameter>
+          <QueryParameter Name="@soloOnlineUsuarios">
+            <Value>0</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>ReportingServices.CF010_EmisionFacTotales_CodigoBarras </CommandText>
+      </Query>
+      <Fields>
+        <Field Name="facCod">
+          <DataField>facCod</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="facPerCod">
+          <DataField>facPerCod</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="facCtrCod">
+          <DataField>facCtrCod</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="facVersion">
+          <DataField>facVersion</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="facNumero">
+          <DataField>facNumero</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CodExplotacion">
+          <DataField>CodExplotacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Explotacion">
+          <DataField>Explotacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="scdFecIniC57">
+          <DataField>scdFecIniC57</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="inicioC57">
+          <DataField>inicioC57</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ctrIban">
+          <DataField>ctrIban</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ctrTitDocIden">
+          <DataField>ctrTitDocIden</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cobScd">
+          <DataField>cobScd</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="cobPpag">
+          <DataField>cobPpag</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="cobNum">
+          <DataField>cobNum</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="cobFec">
+          <DataField>cobFec</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="cobFecReg">
+          <DataField>cobFecReg</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="cobDevCod">
+          <DataField>cobDevCod</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fechaLimitePagoVoluntario">
+          <DataField>fechaLimitePagoVoluntario</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="AcuamaGetDate">
+          <DataField>AcuamaGetDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="esExploCodigoBarras">
+          <DataField>esExploCodigoBarras</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="esUserOnline">
+          <DataField>esUserOnline</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="esRectificada">
+          <DataField>esRectificada</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="esPrefactura">
+          <DataField>esPrefactura</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="checkDomiciliacion">
+          <DataField>checkDomiciliacion</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="esDomiciliada">
+          <DataField>esDomiciliada</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="esDevolucion">
+          <DataField>esDevolucion</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="urlParams">
+          <DataField>urlParams</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fecVto">
+          <DataField>fecVto</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="aprNumero">
+          <DataField>aprNumero</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="periodo">
+      <DataType>String</DataType>
+      <Prompt>periodo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="contrato">
+      <DataType>String</DataType>
+      <Prompt>contrato</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="version">
+      <DataType>String</DataType>
+      <Prompt>version</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fecha">
+      <DataType>DateTime</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Fecha</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="codigo">
+      <DataType>Integer</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>codigo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="preimpreso">
+      <DataType>Boolean</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value>False</Value>
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>preimpreso</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fechaHasta">
+      <DataType>DateTime</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>fechaHasta</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="nombreImpuesto">
+      <DataType>String</DataType>
+      <Prompt>nombreImpuesto</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="pertipo">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>pertipo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="barcodeImgURL">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>barcodeImgURL</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="iban">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>iban</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="urlQrCode">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>urlQrCode</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>es-ES</Language>
+  <Variables>
+    <Variable Name="totalFacturado">
+      <Value>=  ROUND(Sum(Fields!base.Value, "dsEmisionFacturaTotales") + Sum(Fields!totaliva.Value, "dsEmisionFacturaTotales")
+ , 2
+ , MidpointRounding.AwayFromZero)</Value>
+    </Variable>
+    <Variable Name="totalCobrado">
+      <Value>=ROUND(SUM(Fields!totalCobrado.Value, "dsTotalCobrado"), 2, MidpointRounding.AwayFromZero)</Value>
+    </Variable>
+  </Variables>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>1d09a65a-e9ed-488a-a6d8-62314c598f18</rd:ReportID>
+</Report>

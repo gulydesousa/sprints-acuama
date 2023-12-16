@@ -30,6 +30,6 @@ CREATE TABLE dbo.otTiposOrigen (
 
 GO
 
-
+--SELECT * FROM otTiposOrigen
 
 

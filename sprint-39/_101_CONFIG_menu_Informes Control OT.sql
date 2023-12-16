@@ -26,3 +26,6 @@ INSERT INTO dbo.menu VALUES(@id+1
 , @orden+1
 , 1
 , 1)
+
+
+--SELECT * FROM menu WHERE menutitulo_es='Inf. Control: C.Contador'
